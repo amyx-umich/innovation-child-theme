@@ -102,11 +102,11 @@
     }
     .stats {
         background: linear-gradient(160deg, $arboretum-blue, $michigan-blue);
-        background-size: 400% 400%;
+        // background-size: 400% 400%;
         padding: 5rem 0;
         font-family: 'Montserrat';
         font-size: 1.125rem;
-        animation: statsAnimation 45s ease infinite;
+        // animation: statsAnimation 55s ease infinite;
 
         .image {
             a {
