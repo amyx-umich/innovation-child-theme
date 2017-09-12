@@ -48,161 +48,345 @@
 </head>
   <body>
 
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation for Sites</h1>
-        </div>
-      </div> 
-    
-      <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-margin-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowledge.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>        
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="grid-x grid-margin-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-    
-          <div class="grid-x grid-margin-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve column section in a grid-x with grid-margin-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-margin-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-margin-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-          
-          <hr />
-                  
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-margin-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x grid-margin-x collapse">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input class="input-group-field" type="text" placeholder="input-group" />
-                    <span class="input-group-label">.com</span>
-                  </div>
+    <div id="skip"><a href="#content">Skip to Main Content</a></div>
+    <div class="navigation not-index" id="navigation" data-hide-for="medium">
+        <div class="title-bar">
+            <div class="row bottom align-bottom expanded collapse">
+                <div class="small-1 medium-1 column hide-for-large menu_icon">
+                    <button class="hamburger hamburger--slider" type="button" data-open="offCanvas"><span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                    </button>
                 </div>
-              </div>
+                <div class="column small-7 medium-4 large-3 logo_container">
+                    <div class="title-bar-title">
+                        <a class="logo" href="./"><img src="assets/img/CoE-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a>
+                    </div>
+                </div>
+                <div class="column show-for-large menu_row">
+                    <div class="row main_menu align-spaced align-bottom expanded">
+                        <div class="column category nav-click" data-toggle="main-menu">
+                            <button><span class="menu_label">About</span></button>
+                        </div>
+                        <div class="column category nav-click" data-toggle="main-menu">
+                            <button><span class="menu_label">Research</span></button>
+                        </div>
+                        <div class="column category nav-click" data-toggle="main-menu">
+                            <button><span class="menu_label">Academics</span></button>
+                        </div>
+                        <div class="column category nav-click" data-toggle="main-menu">
+                            <button><span class="menu_label">Admissions</span></button>
+                        </div>
+                        <div class="column category nav-click" data-toggle="main-menu">
+                            <button><span class="menu_label">Departments</span></button>
+                        </div>
+                        <div class="column category nav-click" data-toggle="main-menu">
+                            <button><span class="menu_label">Giving</span></button>
+                        </div>
+                        <div class="column large-2 menu_controls">
+                            <div class="row align-center align-bottom">
+                                <div class="small-6 column search_control nav-click" data-toggle="search_drop">
+                                    <button class="menu_icon"><i class="fa fa-search" aria-hidden="true"></i>
+                                        <div class="icon_label search">search</div>
+                                    </button>
+                                </div>
+                                <div class="small-6 end column">
+                                    <button class="menu_icon hamburger hamburger--slider large nav-click" data-toggle="main-menu" aria-hidden="true"><span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                        <div class="icon_label for_button">menu</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
+            <div class="dropdown-pane hide-for-small-only" id="search_drop" data-dropdown data-close-on-click="true" data-auto-focus="true">
+                <div class="search_row row align-center expanded">
+                    <form class="search column small-12 align-center" action="search_results.html" method="get">
+                        <label for="input-group">
+                            <span class="search_hed">SEARCH</span>
+                            <br>Enter search term(s)</label>
+                        <div class="input-group">
+                            <input class="input-group-field" type="text" id="input-group" name="search">
+                            <input type="submit" class="button" value="go">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
+            <div class="dropdown-pane hide-for-small-only row expanded medium-uncollapse large-collapse menu" id="main-menu" data-dropdown data-close-on-click="true" data-auto-focus="true">
+                <div class="row expanded align-justify small-text-center medium-text-center large-text-left">
+                    <div class="column small-8 medium-6 large-2 large-expand">
+                        <p class="list_hed"><a href="landing.html">About</a></p>
+                        <ul>
+                            <li><a href="landing.html">Advanced Manufacturing</a></li>
+                            <li><a href="landing.html">Data &amp; Computing</a></li>
+                            <li><a href="landing.html">Energy &amp; Environment</a></li>
+                            <li><a href="landing.html">Health</a></li>
+                            <li><a href="landing.html">Infrastructure</a></li>
+                            <li><a href="landing.html">Materials</a></li>
+                            <li><a href="landing.html">Robotics</a></li>
+                        </ul>
+                    </div>
+                    <div class="column small-8 medium-6 large-2 large-expand">
+                        <p class="list_hed"><a href="landing.html">Research</a></p>
+                        <ul>
+                            <li><a href="landing.html">Photography</a></li>
+                            <li><a href="landing.html">Awards</a></li>
+                            <li><a href="landing.html">Faculty</a></li>
+                            <li><a href="landing.html">Students</a></li>
+                            <li><a href="landing.html">Alumni</a></li>
+                            <li><a href="generic.html">Events</a></li>
+                            <li><a href="generic.html">Giving</a></li>
+                            <li><a href="landing.html">Admin News &amp; Announcements</a></li>
+                        </ul>
+                    </div>
+                    <div class="column small-8 medium-6 large-2 large-expand">
+                        <p class="list_hed"><a href="landing.html">Academics</a></p>
+                        <ul class="">
+                            <li><a href="landing.html">Magazine</a></li>
+                            <li><a href="landing.html">About</a></li>
+                            <li><a href="landing.html">For the Media</a></li>
+                            <li><a href="landing.html">Features</a></li>
+                            <li><a href="landing.html">Videos</a></li>
+                            <li><a href="landing.html">Photography</a></li>
+                            <li><a href="landing.html">Faculty Perspectives</a></li>
+                        </ul>
+                    </div>
+                    <div class="column small-8 medium-6 large-2 large-expand">
+                        <p class="list_hed"><a href="landing.html">Admissions</a></p>
+                        <ul>
+                            <li><a href="landing.html">Magazine</a></li>
+                            <li><a href="landing.html">About</a></li>
+                            <li><a href="landing.html">For the Media</a></li>
+                            <li><a href="landing.html">Features</a></li>
+                            <li><a href="landing.html">Videos</a></li>
+                            <li><a href="landing.html">Photography</a></li>
+                            <li><a href="landing.html">Faculty Perspectives</a></li>
+                        </ul>
+                    </div>
+                    <div class="column small-8 medium-6 large-2 large-expand">
+                        <p class="list_hed"><a href="landing.html">Departments</a></p>
+                        <ul>
+                            <li><a href="landing.html">Aerospace Engineering</a></li>
+                            <li><a href="landing.html">Biomedical Engineering</a></li>
+                            <li><a href="landing.html">Chemical Engineering</a></li>
+                            <li><a href="landing.html">Civil and Environmental Engineering</a></li>
+                            <li><a href="landing.html">Climate and Space Sciences and Engineering</a></li>
+                            <li><a href="landing.html">Electrical Engineering and Computer Science</a></li>
+                            <li><a href="landing.html">Industrial and Operations Engineering</a></li>
+                            <li><a href="landing.html">Integrative Systems + Design</a></li>
+                            <li><a href="landing.html">Materials Science and Engineering</a></li>
+                            <li><a href="landing.html">Mechanical Engineering</a></li>
+                            <li><a href="landing.html">Naval Architecture and Marine Engineering</a></li>
+                            <li><a href="landing.html">Nuclear Engineering and Radiological Sciences</a></li>
+                            <li><a href="landing.html">Other Units</a></li>
+                        </ul>
+                    </div>
+                    <div class="column small-8 medium-6 large-2 large-expand">
+                        <p class="list_hed"><a href="landing.html">Giving</a></p>
+                        <ul>
+                            <li><a href="landing.html">Aerospace Engineering</a></li>
+                            <li><a href="landing.html">Biomedical Engineering</a></li>
+                            <li><a href="landing.html">Chemical Engineering</a></li>
+                            <li><a href="landing.html">Civil and Environmental Engineering</a></li>
+                        </ul>
+                        <div class="social_drop">
+                            <div>
+                                <p class="follow_us_hed">FOLLOW US | <a href="#rss"><i class="fa fa-rss" aria-hidden="true"></i></a></p>
+                            </div>
+                            <div class="row social_row collapse">
+                                <div class="column"><a class="facebook menu_icon" href="http://www.facebook.com/michigan.engineering"><i class="fa fa-facebook fa-inverse"></i></a></div>
+                                <div class="column"><a class="twitter menu_icon" href="https://twitter.com/UMengineering"><i class="fa fa-twitter fa-inverse"></i></a></div>
+                                <div class="column"><a class="instagram menu_icon" href="https://www.instagram.com/michiganengineering/"><i class="fa fa-instagram fa-inverse"></i></a></div>
+                                <div class="column"><a class="youtube menu_icon" href="https://www.youtube.com/user/michiganengineering"><i class="fa fa-youtube fa-inverse"></i></a></div>
+                            </div>
+                            <div class="row social_row collapse">
+                                <div class="column"><a class="snapchat-ghost menu_icon" data-open="snapchat"><i class="fa fa-snapchat-ghost fa-inverse"></i></a></div>
+                                <div class="column"><a class="tumblr menu_icon" href="https://twitter.com/UMengineering"><i class="fa fa-tumblr fa-inverse"></i></a></div>
+                                <div class="column"><a class="linkedin menu_icon" href="https://www.instagram.com/michiganengineering/"><i class="fa fa-linkedin fa-inverse"></i></a></div>
+                                <div class="column"><a class="pinterest menu_icon" href="https://www.youtube.com/user/michiganengineering"><i class="fa fa-pinterest fa-inverse"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>     
-    
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="small button">Simple Button</a><br/>          
-          <a href="#" class="medium success button">Success Btn</a><br/>
-          <a href="#" class="medium alert button">Alert Btn</a><br/>
-          <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-          </div>
         </div>
-      </div>
     </div>
-    
-
+    <div class="main-content">
+        <div class="slider-parent">
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="autoPlay:false; accessible:true;">
+                <div class="orbit-wrapper row expanded align-bottom">
+                    <div class="orbit-controls row">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                    </div>
+                    <ul class="orbit-container row align-bottom">
+                        <li class="is-active orbit-slide">
+                            <div class="row hed">
+                                <div class="column large-10">
+                                    <div class="eyebrow">NEWS</div>
+                                    <h3>Professor Ruf flies into Hurricane Harvey with NOAA science team</h3></div>
+                            </div>
+                            <div class="row align-center align-middle">
+                                <div class="column image large-4"><a href=""><img class="orbit-image" src="assets/img/foto.jpg" alt="Space"></a>
+                                </div>
+                                <div class="column large-4 dek align-self-right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                                    <p class="cta"><a href="">Read more »</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="orbit-slide">
+                            <div class="row hed">
+                                <div class="column large-10">
+                                    <div class="eyebrow">NEWS</div>
+                                    <h3>Maecenas sed diam eget risus varius blandit sit amet non magna</h3></div>
+                            </div>
+                            <div class="row align-center align-middle">
+                                <div class="column image large-4"><a href=""><img class="orbit-image" src="assets/img/foto.jpg" alt="Space"></a>
+                                </div>
+                                <div class="column large-4 dek align-self-right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                                    <p class="cta"><a href="">Read more »</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="orbit-slide">
+                            <div class="row hed">
+                                <div class="column large-10">
+                                    <div class="eyebrow">NEWS</div>
+                                    <h3>Morbi leo risus, porta ac consectetur ac, vestibulum at eros</h3></div>
+                            </div>
+                            <div class="row align-center align-middle">
+                                <div class="column image large-4"><a href=""><img class="orbit-image" src="assets/img/foto.jpg" alt="Space"></a>
+                                </div>
+                                <div class="column large-4 dek align-self-right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                                    <p class="cta"><a href="">Read more »</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="orbit-slide">
+                            <div class="row hed">
+                                <div class="column large-10">
+                                    <div class="eyebrow">NEWS</div>
+                                    <h3>Professor Ruf flies into Hurricane </h3></div>
+                            </div>
+                            <div class="row align-center align-middle">
+                                <div class="column image large-4"><a href=""><img class="orbit-image" src="assets/img/foto.jpg" alt="Space"></a>
+                                </div>
+                                <div class="column large-4 dek align-self-right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                                    <p class="cta"><a href="">Read more »</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="orbit-slide">
+                            <div class="row hed">
+                                <div class="column large-10">
+                                    <div class="eyebrow">NEWS</div>
+                                    <h3>Professor Ruf flies into Hurricane Harvey with NOAA science team</h3></div>
+                            </div>
+                            <div class="row align-center align-middle">
+                                <div class="column image large-4"><a href=""><img class="orbit-image" src="assets/img/foto.jpg" alt="Space"></a>
+                                </div>
+                                <div class="column large-4 dek align-self-right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                                    <p><a class="cta" href="">Read more »</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets columns large-12 align-self-bottom">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                        <button data-slide="4"><span class="show-for-sr">Fourth slide details.</span></button>
+                    </nav>
+                </div>
+            </div>
+            <div class="slider-bg blue-duotone"></div>
+        </div>
+        <div class="row">
+            <div class="small-6 columns">6 columns</div>
+            <div class="small-6 columns">6 columns</div>
+        </div>
+        <div class="row">
+            <div class="medium-6 large-4 columns">12/6/4 columns</div>
+            <div class="medium-6 large-8 columns">12/6/8 columns</div>
+        </div>
+        <div class="row">
+            <div class="small-6 columns">6 columns</div>
+            <div class="small-6 columns">6 columns</div>
+        </div>
+        <div class="row">
+            <div class="medium-6 large-4 columns">12/6/4 columns</div>
+            <div class="medium-6 large-8 columns">12/6/8 columns</div>
+        </div>
+        <div class="row">
+            <div class="small-6 columns">6 columns</div>
+            <div class="small-6 columns">6 columns</div>
+        </div>
+        <div class="row">
+            <div class="medium-6 large-4 columns">12/6/4 columns</div>
+            <div class="medium-6 large-8 columns">12/6/8 columns</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row align-center align-middle">
+            <div class="small-4 medium-2 large-2 columns logo-cell">
+                <a class="logo" href="/index.html"><img src="./assets/img/CoE-block-m.svg" alt="College of Engineering | University of Michigan"></a>
+            </div>
+            <div class="small-12 medium-10 large-10 columns footer-text">
+                <div class="row align-spaced">
+                    <div class="small-6 medium-3 large-3 columns">
+                        <h6>MICHIGAN ENGINEERING</h6>
+                        <p>1221 Beal Avenue</p>
+                        <p>Ann Arbor, MI 48109-2102</p>
+                        <p>+1 (734) 647-7000</p>
+                        <p><a href="mailto:engin-info@umich.edu">engin-info@umich.edu</a></p>
+                        <p><a href="https://leadersandbest.umich.edu/find/#!/scu/eng">Give to the College »</a></p>
+                    </div>
+                    <div class="small-6 medium-3 large-3 columns">
+                        <h6>College of ENGINEERING</h6>
+                        <p><a href="http://www.engin.umich.edu/college/" target="_blank">Michigan Engineering Home</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/about" target="_blank">About</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/research" target="_blank">Research</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/academics" target="_blank">Academics</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/admissions" target="_blank">Admissions</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/departments" target="_blank">Departments</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/giving/" target="_blank">Giving</a></p>
+                        <p><a href="http://www.engin.umich.edu/college/info" target="_blank">Info for You</a></p>
+                    </div>
+                    <div class="small-6 medium-2 large-2 columns">
+                        <h6>follow us</h6>
+                        <p><a href="http://www.facebook.com/michigan.engineering" target="_blank">Facebook</a></p>
+                        <p><a href="http://www.twitter.com/UMengineering" target="_blank">Twitter</a></p>
+                        <p><a href="http://instagram.com/michiganengineering" target="_blank">Instagram</a></p>
+                        <p><a href="http://www.linkedin.com/edu/school?id=42083" target="_blank">LinkedIn</a></p>
+                        <p><a href="http://pinterest.com/umengineering/" target="_blank">Pinterest</a></p>
+                        <p><a href="http://www.youtube.com/user/michiganengineering" target="_blank">YouTube</a></p>
+                        <p><a href="http://michiganengineering.tumblr.com/" target="_blank">Tumblr</a></p>
+                        <p><a href="https://plus.google.com/111653579154776311686/posts" target="_blank">Google+</a></p>
+                        <p><a data-open="snapchat">Snapchat</a></p>
+                    </div>
+                    <div class="one-cool-thing-container hide-for-print small-6 medium-3 large-3 columns">
+                        <div class="app">
+                            <h6 class="section_title">Always Innovating. Forever Valiant.</h6>
+                            <a href="http://bicentennial.engin.umich.edu/">
+                            </a>
+                            <p style="text-decoration: none;">The Michigan Engineering Bicentennial Web Project is a multimedia story collection.
+                                <br><a href="http://bicentennial.engin.umich.edu/">See all stories »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row legal">
+            <div class="">
+                <a href="http://regents.umich.edu/" target="_blank">© The Regents of the University of Michigan Ann Arbor, MI 48109 USA</a> | <a href="https://coecongrats.wpengine.com/acceptable-use-and-privacy-policies/" target="_blank">Privacy Policy</a> | <a href="contact.html">Contact</a> | <a href="http://hr.umich.edu/oie/ndpolicy.html" target="_blank">Non-Discrimination Policy</a> | <a href="http://safety.engin.umich.edu/">Campus Safety</a> | <a href="http://umich.edu" target="_blank">U-M Home</a> | <a href="text_only.html">Text-only version</a> | <a href="#">Site map</a>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,133 @@
+//Footer 
+// ----------------
+footer {
+    background: url(../img/background-pattern-footer.png) center bottom fixed no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: $white;
+    width: 100%;
+    .columns {
+        @include breakpoint(small only) {
+            margin-bottom: 1rem;
+        }
+    }
+    a.logo {
+        opacity: .9;
+        transition: all .2s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            width: 80%;
+        }
+    }
+    a {
+        color: $white;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: $michigan-maize;
+        }
+        &:focus {
+            color: $michigan-maize;
+        }
+    }
+    h6 {
+        font-family: 'bebas_neue_regular';
+        font-size: 1.65rem;
+        line-height: 1;
+        font-weight: normal;
+        @include breakpoint(medium down) {
+            font-size: 1.1rem;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: .85rem;
+        @include breakpoint(medium down) {
+            font-size: .8rem;
+        }
+        a {
+            color: $white;
+            transition: all .2s ease-in-out;
+            &:hover {
+                color: $michigan-maize;
+            }
+            &:focus {
+                color: $michigan-maize;
+            }
+        }
+    }
+    .one-cool-thing-container {
+        @include breakpoint(small only) {
+            margin-bottom: 1.5rem;
+        }
+        .app {
+            color: $white;
+            @include breakpoint(small only) {
+                margin-left: 0;
+            }
+            .section_title {
+                font-family: 'bebas_neue_regular';
+                font-size: 1.65rem;
+                line-height: 1;
+                margin-bottom: 1rem;
+                @include breakpoint(medium down) {
+                    font-size: 1.1rem;
+                }
+            }
+            p {
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+    .legal {
+        padding: $global-padding 0;
+        border-top: 1px solid $lighter-gray;
+        @include breakpoint(medium down) {
+            font-size: .65rem;
+            padding: $global-padding;
+        }
+        color: $light-gray;
+        a {
+            font-size: .75rem;
+            color: $light-gray;
+            &:hover {
+                color: $michigan-maize;
+            }
+            &:focus {
+                color: $michigan-maize;
+            }
+        }
+    }
+    .logo-cell {
+        padding: .5rem;
+        @include breakpoint(small only) {
+            padding: 1.5rem .5rem .5rem;
+            border-bottom: 0;
+        }
+    }
+    .footer-text {
+        padding: 1.5rem 0 1.5rem 1.25rem;
+        border-left: 1px solid rgba($white, .4);
+        @include breakpoint(small only) {
+            border: 0;
+        }
+    }
+}
+
+.reveal {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    &.footer {
+        color: $black;
+        padding: $global-padding;
+        background-color: $white-100 !important;
+        z-index: 9999;
+        h6,
+        p {
+            color: $black;
+        }
+        .close-button {
+            color: $black !important;
+        }
+    }
+}
