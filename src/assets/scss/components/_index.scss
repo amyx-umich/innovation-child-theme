@@ -28,6 +28,11 @@
         height: 100%;
         .orbit-wrapper {
             height: 100%;
+            .orbit-controls {
+            	button {
+            		cursor: pointer;
+            	}
+            }
             .orbit-container {
                 .orbit-slide {
                     color: $white;
