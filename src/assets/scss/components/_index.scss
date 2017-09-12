@@ -1,89 +1,163 @@
-.slider-parent {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 57vh;
-    overflow: hidden;
-    .slider-bg {
+.main-content {
+    .slider-parent {
+        position: relative;
+        top: 0;
         width: 100%;
-        height: 100%;
-        // background: url('../img/orbit-bg.jpg');
-        background-size: 100%;
-        content: '\00a0';
-        filter: blur(7px);
-        transform: translate3d(0, 0, 0) scale(1.1);
-        &.blue-duotone {
-            background-color: rgba($arboretum-blue, 1);
-            background-blend-mode: multiply;
-        }
-        &.red-duotone {
-            background-color: rgba($tappan-red, 1);
-            background-blend-mode: multiply;
-        }
-    }
-    .orbit {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        .orbit-wrapper {
+        height: 57vh;
+        overflow: hidden;
+        .slider-bg {
+            width: 100%;
             height: 100%;
-            .orbit-controls {
-            	button {
-            		cursor: pointer;
-            	}
+            background-size: 100%;
+            content: '\00a0';
+            filter: blur(7px);
+            transform: translate3d(0, 0, 0) scale(1.1);
+            &.blue-duotone {
+                background-color: rgba($arboretum-blue, 1);
+                background-blend-mode: multiply;
             }
-            .orbit-container {
-                .orbit-slide {
-                    color: $white;
-                    transition: all .2s ease-in-out;
-                    .hed {
-                        margin-bottom: 1.5rem;
-                        text-shadow: 2px 2px 7px rgba($black, .4);
-                        .eyebrow {
-                            font-family: 'bebas_neue_regular';
-                            font-size: 2.25rem;
-                            line-height: 1;
-                            color: $ross-orange;
-                        }
-                        h3 {
-                            font-size: 2.875rem;
-                            line-height: 1;
-                            padding-bottom: .5rem;
-                            border-bottom: 1px solid $white-24;
-                        }
+            &.red-duotone {
+                background-color: rgba($tappan-red, 1);
+                background-blend-mode: multiply;
+            }
+        }
+        .orbit {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            .orbit-wrapper {
+                height: 100%;
+                .orbit-controls {
+                    button {
+                        cursor: pointer;
                     }
-                    .dek {
-                        font-size: 1.25rem;
-                        padding-left: $global-padding;
-                        text-shadow: 2px 2px 7px rgba($black, .4);
-                        .cta {
-                            margin-bottom: 0;
-                            a {
-                                color: $michigan-maize;
-                                transition: all .1s ease-in-out;
-                                &:hover {
-                                    color: $white;
+                }
+                .orbit-container {
+                    .orbit-slide {
+                        color: $white;
+                        transition: all .2s ease-in-out;
+                        .hed {
+                            margin-bottom: 1.5rem;
+                            text-shadow: 2px 2px 7px rgba($black, .4);
+                            .eyebrow {
+                                font-family: 'bebas_neue_regular';
+                                font-size: 2.25rem;
+                                line-height: 1;
+                                color: $ross-orange;
+                            }
+                            h3 {
+                                font-size: 2.875rem;
+                                line-height: 1;
+                                padding-bottom: .5rem;
+                                border-bottom: 1px solid $white-24;
+                            }
+                        }
+                        .dek {
+                            font-size: 1.25rem;
+                            padding-left: $global-padding;
+                            text-shadow: 2px 2px 7px rgba($black, .4);
+                            .cta {
+                                margin-bottom: 0;
+                                a {
+                                    color: $michigan-maize;
+                                    transition: all .1s ease-in-out;
+                                    &:hover {
+                                        color: $white;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                .orbit-bullets {
+                    button {
+                        cursor: pointer;
+                        width: 7px;
+                        height: 7px;
+                        margin: 0 .75rem;
+                        background-color: $white;
+                        transition: all .1s ease-in-out;
+                        &:hover {
+                            background-color: darken($white, 50%);
+                        }
+                        &.is-active {
+                            background-color: $michigan-maize;
+                        }
+                    }
+                }
             }
-            .orbit-bullets {
-                button {
-                	cursor: pointer;
-                    width: 7px;
-                    height: 7px;
-                    margin: 0 .75rem;
-                    background-color: $white;
-                    transition: all .1s ease-in-out;
-                    &:hover {
-                    	background-color: darken($white, 50%);
+        }
+    }
+    @keyframes statsAnimation {
+        0% {
+            background-position: 0% 15%
+        }
+        50% {
+            background-position: 100% 86%
+        }
+        100% {
+            background-position: 0% 15%
+        }
+    }
+    .stats {
+        background: linear-gradient(160deg, $arboretum-blue, $michigan-blue);
+        background-size: 400% 400%;
+        padding: 5rem 0;
+        font-family: 'Montserrat';
+        font-size: 1.125rem;
+        animation: statsAnimation 45s ease infinite;
+
+        .image {
+            a {
+                position: relative;
+                .stat {
+                    font-family: 'bebas_neue_regular';
+                    font-size: 6rem;
+                    color: $white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-shadow: 2px 2px 7px rgba($black, .75);
+                }
+                img {
+                    border-radius: 10rem;
+                }
+                svg {
+                    position: absolute;
+                    left: -20px;
+                    bottom: -140px;
+                    transform: scale(1);
+                    transition: all 1s;
+                    transform-origin: 50% 50%;
+                    transform: perspective(1px) translateZ(0);
+                    box-shadow: 0 0 1px transparent;
+                    transition-duration: 0.5s;
+                    opacity: 1;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        transform: scale(1.05);
+                        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                        opacity: .5;
                     }
-                    &.is-active {
-                        background-color: $michigan-maize;
-                    }
+                }
+            }
+        }
+        .dek {
+            font-weight: 800;
+            color: $white;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+        .cta {
+            margin-bottom: 0;
+            a {
+                color: $michigan-maize;
+                transition: all .1s ease-in-out;
+                &:hover {
+                    color: $white;
                 }
             }
         }
