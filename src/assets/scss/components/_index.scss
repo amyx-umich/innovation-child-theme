@@ -328,4 +328,30 @@
             }
         }
     }
+    .quote {
+    	margin-bottom: 5rem;
+    	.quote-container {
+    		padding: 1rem;
+    		border: 1px solid $tappan-red;
+    		&:before {
+    			content: '\201D';
+    			font-family: 'Cardo';
+    			font-size: 9rem;
+    			font-weight: 700;
+    			color: $tappan-red;
+    			background-color: $body-background;
+    			display: inline-block;
+    			padding: 1rem;
+    			margin-top: -5rem;
+    			line-height: 1;
+    			height: 6rem;
+    		}
+    		.the-quote {
+    			font-size: 3rem;
+    			font-style: italic;
+    			line-height: 1.2;
+    			margin-top: -3rem;
+    		}
+    	}
+    }
 }
