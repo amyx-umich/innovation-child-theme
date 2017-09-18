@@ -3,8 +3,14 @@
         position: relative;
         top: 0;
         width: 100%;
-        height: 57vh;
+        height: 66vh;
         overflow: hidden;
+        @include breakpoint(medium only) {
+            height: 50vh;
+        }
+        @include breakpoint(small only) {
+            height: 100vh;
+        }
         .slider-bg {
             width: 100%;
             height: 100%;
@@ -14,11 +20,11 @@
             transform: translate3d(0, 0, 0) scale(1.1);
             &.blue-duotone {
                 background-color: rgba($arboretum-blue, 1);
-                background-blend-mode: multiply;
+                background-blend-mode: multiply; // not supported in IE11 or Edge :( 
             }
             &.red-duotone {
                 background-color: rgba($tappan-red, 1);
-                background-blend-mode: multiply;
+                background-blend-mode: multiply; // see above comment >:|
             }
         }
         .orbit {
@@ -41,23 +47,31 @@
                             margin-bottom: 1.5rem;
                             text-shadow: 2px 2px 7px rgba($black, .4);
                             .eyebrow {
-                                font-family: 'bebas_neue_regular';
+                                font-family: 'Pathway Gothic One';
                                 font-size: 2.25rem;
                                 line-height: 1;
+                                text-transform: uppercase;
                                 color: $ross-orange;
                             }
                             h3 {
-                                font-size: 2.875rem;
+                                font-size: 2rem;
                                 line-height: 1;
                                 padding-bottom: .5rem;
                                 border-bottom: 1px solid $white-24;
+                                @include breakpoint(medium down) {
+                                    font-size: 1.875rem;
+                                }
                             }
                         }
                         .dek {
-                            font-size: 1.25rem;
+                            font-size: 1.1rem;
                             padding-left: $global-padding;
                             text-shadow: 2px 2px 7px rgba($black, .4);
+                            @include breakpoint(medium down) {
+                                font-size: 1rem;
+                            }
                             .cta {
+                                font-weight: 700;
                                 margin-bottom: 0;
                                 a {
                                     color: $michigan-maize;
@@ -102,45 +116,55 @@
     }
     .stats {
         background: linear-gradient(160deg, $arboretum-blue, $michigan-blue);
-        // background-size: 400% 400%;
         padding: 5rem 0;
         font-family: 'Montserrat';
         font-size: 1.125rem;
-        // animation: statsAnimation 55s ease infinite;
-
         .image {
             a {
+                // width: 100%;
+                // height: 100%;
+                // display: block;
                 position: relative;
                 .stat {
-                    font-family: 'bebas_neue_regular';
+                    font-family: 'Pathway Gothic One';
                     font-size: 6rem;
                     color: $white;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    text-shadow: 2px 2px 7px rgba($black, .75);
+                    text-shadow: 2px 2px 7px rgba($black, .79);
                 }
                 img {
                     border-radius: 10rem;
                 }
                 svg {
+                    width: 100%;
                     position: absolute;
-                    left: -20px;
-                    bottom: -140px;
-                    transform: scale(1);
+                    left: 0;
+                    bottom: -7.5rem;
                     transition: all 1s;
                     transform-origin: 50% 50%;
                     transform: perspective(1px) translateZ(0);
                     box-shadow: 0 0 1px transparent;
                     transition-duration: 0.5s;
-                    opacity: 1;
+                    opacity: .5;
+                    overflow: visible;
                     &:hover,
                     &:focus,
                     &:active {
                         transform: scale(1.05);
                         transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-                        opacity: .5;
+                        opacity: 1;
+                    }
+                    @include breakpoint(768px down) {
+                        bottom: -6.125rem;
+                    }
+                    @include breakpoint(large only) {
+                        bottom: -7.5rem;
+                    }
+                    @include breakpoint(small only) {
+                    	bottom: -7.5rem;
                     }
                 }
             }
@@ -148,14 +172,20 @@
         .dek {
             font-weight: 800;
             color: $white;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             margin-bottom: 0;
+            text-shadow: 2px 2px 7px rgba($black, .4);
         }
         .cta {
             margin-bottom: 0;
+            @include breakpoint(medium down) {
+                margin-bottom: 2.5rem;
+            }
             a {
+                font-weight: 700;
                 color: $michigan-maize;
                 transition: all .1s ease-in-out;
+                text-shadow: 2px 2px 7px rgba($black, .4);
                 &:hover {
                     color: $white;
                 }

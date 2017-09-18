@@ -63,6 +63,7 @@
 @import 'util/util';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
 
 @font-face {
     font-family: 'bebas_neuebold';
@@ -196,7 +197,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
