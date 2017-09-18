@@ -347,10 +347,24 @@
     			height: 6rem;
     		}
     		.the-quote {
+    			color: $black;
+    			border: 0;
     			font-size: 3rem;
     			font-style: italic;
     			line-height: 1.2;
     			margin-top: -3rem;
+    		}
+    		cite {
+    			font-family: 'Montserrat';
+    			font-style: normal;
+    			color: $black;
+    			font-size: 1.25rem;
+    		}
+    		.cta {
+    			a {
+    				font-family: 'Montserrat';
+    				font-weight: bold;
+    			}
     		}
     	}
     }
