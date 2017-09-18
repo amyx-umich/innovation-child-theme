@@ -195,8 +195,15 @@
     .aud-row {
         margin-top: 1px;
         margin-bottom: 5rem;
+        @include breakpoint(small only) {
+            margin-bottom: 0;
+        }
         .column {
             border-right: 1px solid $faintest-gray;
+            @include breakpoint(small only) {
+                margin-bottom: 2rem;
+            }
+
             .image {
                 z-index: 0;
                 position: relative;
@@ -310,12 +317,12 @@
                         }
                     }
                     .cta {
-                    	padding-bottom: 1rem;
-                    	a {
-                    		font-family: 'Montserrat';
-                    		font-weight: 700;
-                    		color: $michigan-blue;
-                    	}
+                        padding-bottom: 1rem;
+                        a {
+                            font-family: 'Montserrat';
+                            font-weight: 700;
+                            color: $michigan-blue;
+                        }
                     }
                 }
             }
