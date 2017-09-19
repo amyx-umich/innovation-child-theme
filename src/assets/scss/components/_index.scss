@@ -156,8 +156,8 @@
                         transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
                         opacity: 1;
                         circle {
-                        	stroke: $michigan-maize;
-                        	stroke-dasharray: 0 2.875;
+                            stroke: $michigan-maize;
+                            stroke-dasharray: 0 2.875;
                         }
                     }
                     @include breakpoint(768px down) {
@@ -203,6 +203,12 @@
         }
         .column {
             border-right: 1px solid $faintest-gray;
+            &:hover {
+                .text-box {
+                    top: -0.0625rem;
+                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                }
+            }
             @include breakpoint(small only) {
                 margin-bottom: 2rem;
                 border-right: 0;
@@ -221,10 +227,6 @@
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
                 z-index: 1;
                 position: relative;
-                &:hover {
-                    top: -0.0625rem;
-                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-                }
                 &.blue {
                     .icon {
                         border: 2px solid $michigan-blue;
@@ -352,17 +354,21 @@
                         margin-top: -1.875rem;
                         margin-bottom: 0;
                     }
+                    p {
+                        color: $black;
+                    }
                     .cta {
+                        font-family: 'Montserrat';
+                        font-weight: 700;
                         padding-bottom: 1rem;
-                        a {
-                            font-family: 'Montserrat';
-                            font-weight: 800;
-                            color: $tappan-red;
-                            transition: all .2s ease-in-out;
-                            &:hover {
-                                color: darken($tappan-red, 15%);
-                            }
-                        }
+                    }
+                }
+            }
+            a {
+                color: $black;
+                &:hover {
+                    .cta {
+                        color: $tappan-red;
                     }
                 }
             }
@@ -433,28 +439,28 @@
                 margin-bottom: 1.25rem;
             }
             .section_title {
-            	font-size: 1.875rem;
-            	font-family: 'Pathway Gothic One';
-            	text-transform: uppercase;
-            	margin-bottom: $global-padding;
-            	line-height: 1;
-            	svg {
-            		color: $ross-orange;
-            	}
-            	span {
-            		margin-left: .5rem;
-            	}
-            	a {
-            		font-size: .875rem;
-            		font-family: 'Montserrat';
-            		font-weight: 700;
-            		text-transform: none;
-            		color: $black;
-            		transition: all .2s ease-in-out;
-            		&:hover {
-            			color: $tappan-red;
-            		}
-            	}
+                font-size: 1.875rem;
+                font-family: 'Pathway Gothic One';
+                text-transform: uppercase;
+                margin-bottom: $global-padding;
+                line-height: 1;
+                svg {
+                    color: $ross-orange;
+                }
+                span {
+                    margin-left: .5rem;
+                }
+                a {
+                    font-size: .875rem;
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                    text-transform: none;
+                    color: $black;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        color: $tappan-red;
+                    }
+                }
             }
             .article {
                 margin-bottom: 2rem;
