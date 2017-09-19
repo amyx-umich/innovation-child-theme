@@ -142,7 +142,7 @@
                     position: absolute;
                     left: 0;
                     bottom: -7.5rem;
-                    transition: all 1s;
+                    transition: all 1s ease;
                     transform-origin: 50% 50%;
                     transform: perspective(1px) translateZ(0);
                     box-shadow: 0 0 1px transparent;
@@ -156,7 +156,8 @@
                         transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
                         opacity: 1;
                         circle {
-                        	stroke-dasharray: 0 3.1875;
+                        	stroke: $michigan-maize;
+                        	stroke-dasharray: 0 2.875;
                         }
                     }
                     @include breakpoint(768px down) {
