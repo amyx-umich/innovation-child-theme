@@ -470,6 +470,7 @@
                         .border {
                             .stroke {
                                 stroke: $tappan-red;
+                                stroke-dasharray: 1;
                             }
                         }
                     }
@@ -501,10 +502,10 @@
                         height: 1px;
                         .stroke {
                             stroke: $dark-gray;
+                            transition: all .1s ease;
                         }
                     }
                 }
-
                 &:last-child {
                     svg {
                         display: none;
