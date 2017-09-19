@@ -221,6 +221,110 @@
                     top: -0.0625rem;
                     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
                 }
+                &.blue {
+                    .icon {
+                        border: 2px solid $michigan-blue;
+                        svg {
+                            color: $michigan-blue;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $michigan-blue;
+                        }
+                    }
+                }
+                &.maize {
+                    .icon {
+                        border: 2px solid $michigan-maize;
+                        svg {
+                            color: $michigan-maize;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $michigan-maize;
+                        }
+                    }
+                }
+                &.red {
+                    .icon {
+                        border: 2px solid $tappan-red;
+                        svg {
+                            color: $tappan-red;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $tappan-red;
+                        }
+                    }
+                }
+                &.light-blue {
+                    .icon {
+                        border: 2px solid $arboretum-blue;
+                        svg {
+                            color: $arboretum-blue;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $arboretum-blue;
+                        }
+                    }
+                }
+                &.orange {
+                    .icon {
+                        border: 2px solid $ross-orange;
+                        svg {
+                            color: $ross-orange;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $ross-orange;
+                        }
+                    }
+                }
+                &.teal {
+                    .icon {
+                        border: 2px solid $taubman-teal;
+                        svg {
+                            color: $taubman-teal;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $taubman-teal;
+                        }
+                    }
+                }
+                &.green {
+                    .icon {
+                        border: 2px solid $wave-field-green;
+                        svg {
+                            color: $wave-field-green;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $wave-field-green;
+                        }
+                    }
+                }
+                &.purple {
+                    .icon {
+                        border: 2px solid $a2-amethyst;
+                        svg {
+                            color: $a2-amethyst;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            color: $a2-amethyst;
+                        }
+                    }
+                }
                 .icon {
                     width: 4rem;
                     margin-bottom: -1.75rem;
@@ -229,58 +333,10 @@
                     margin: 0 auto;
                     position: relative;
                     top: -1.875rem;
-                    &.blue {
-                        border: 2px solid $michigan-blue;
-                    }
-                    &.maize {
-                        border: 2px solid $michigan-maize;
-                    }
-                    &.red {
-                        border: 2px solid $tappan-red;
-                    }
-                    &.light-blue {
-                        border: 2px solid $arboretum-blue;
-                    }
-                    &.orange {
-                        border: 2px solid $ross-orange;
-                    }
-                    &.teal {
-                        border: 2px solid $taubman-teal;
-                    }
-                    &.green {
-                        border: 2px solid $wave-field-green;
-                    }
-                    &.purple {
-                        border: 2px solid $a2-amethyst;
-                    }
                     svg {
                         margin: .875rem;
                         padding: 0;
                         display: block;
-                        &.blue {
-                            color: $michigan-blue;
-                        }
-                        &.maize {
-                            color: $michigan-maize;
-                        }
-                        &.red {
-                            color: $tappan-red;
-                        }
-                        &.light-blue {
-                            color: $arboretum-blue;
-                        }
-                        &.orange {
-                            color: $ross-orange;
-                        }
-                        &.teal {
-                            color: $taubman-teal;
-                        }
-                        &.green {
-                            color: $wave-field-green;
-                        }
-                        &.purple {
-                            color: $a2-amethyst;
-                        }
                     }
                 }
                 .text {
@@ -291,37 +347,17 @@
                         font-size: 1.875rem;
                         margin-top: -1.875rem;
                         margin-bottom: 0;
-                        &.blue {
-                            color: $michigan-blue;
-                        }
-                        &.maize {
-                            color: $michigan-maize;
-                        }
-                        &.red {
-                            color: $tappan-red;
-                        }
-                        &.light-blue {
-                            color: $arboretum-blue;
-                        }
-                        &.orange {
-                            color: $ross-orange;
-                        }
-                        &.teal {
-                            color: $taubman-teal;
-                        }
-                        &.green {
-                            color: $wave-field-green;
-                        }
-                        &.purple {
-                            color: $a2-amethyst;
-                        }
                     }
                     .cta {
                         padding-bottom: 1rem;
                         a {
                             font-family: 'Montserrat';
-                            font-weight: 700;
-                            color: $michigan-blue;
+                            font-weight: 800;
+                            color: $tappan-red;
+                            transition: all .2s ease-in-out;
+                            &:hover {
+                                color: darken($tappan-red, 15%);
+                            }
                         }
                     }
                 }
@@ -329,43 +365,48 @@
         }
     }
     .quote {
-    	margin-bottom: 5rem;
-    	.quote-container {
-    		padding: 1rem;
-    		border: 1px solid $tappan-red;
-    		&:before {
-    			content: '\201D';
-    			font-family: 'Cardo';
-    			font-size: 9rem;
-    			font-weight: 700;
-    			color: $tappan-red;
-    			background-color: $body-background;
-    			display: inline-block;
-    			padding: 1rem;
-    			margin-top: -5rem;
-    			line-height: 1;
-    			height: 6rem;
-    		}
-    		.the-quote {
-    			color: $black;
-    			border: 0;
-    			font-size: 3rem;
-    			font-style: italic;
-    			line-height: 1.2;
-    			margin-top: -3rem;
-    		}
-    		cite {
-    			font-family: 'Montserrat';
-    			font-style: normal;
-    			color: $black;
-    			font-size: 1.25rem;
-    		}
-    		.cta {
-    			a {
-    				font-family: 'Montserrat';
-    				font-weight: bold;
-    			}
-    		}
-    	}
+        margin-bottom: 5rem;
+        .quote-container {
+            padding: 1rem;
+            border: 1px solid $tappan-red;
+            &:before {
+                content: '\201D';
+                font-family: 'Cardo';
+                font-size: 9rem;
+                font-weight: 700;
+                color: $tappan-red;
+                background-color: $body-background;
+                display: inline-block;
+                padding: 1rem;
+                margin-top: -4.75rem;
+                line-height: 1;
+                height: 6rem;
+            }
+            .the-quote {
+                color: $black;
+                border: 0;
+                font-size: 3rem;
+                font-style: italic;
+                line-height: 1.2;
+                margin-top: -3.75rem;
+            }
+            cite {
+                font-family: 'Montserrat';
+                font-style: normal;
+                color: $black;
+                font-size: 1.25rem;
+            }
+            .cta {
+                a {
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    color: $tappan-red;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        color: darken($tappan-red, 15%);
+                    }
+                }
+            }
+        }
     }
 }
