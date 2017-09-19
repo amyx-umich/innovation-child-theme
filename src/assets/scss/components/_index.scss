@@ -650,19 +650,27 @@
         }
     }
     .section_title {
+    	hr {
+    		border: 1px solid $tappan-red;
+    		margin: 0;
+    		max-width: none;
+    	}
         h4 {
             font-family: 'Pathway Gothic One';
             text-transform: uppercase;
             font-weight: normal;
-            &:before {
-                display: inline;
-                border-top: 2px solid $tappan-red;
-                width: 100%;
-            }
+            background-color: $body-background;
+            margin-top: -1.25rem;
+            padding-left: .5rem;
+            padding-right: .5rem;
         }
     }
     .research {
         margin-bottom: 5rem;
+        .column {
+        	padding-left: 1px;
+        	padding-right: 1px;
+        }
         .card {
             border: 0;
             height: 22rem;
@@ -690,6 +698,7 @@
                 overflow: hidden;
                 transition: all .75s ease-in-out;
                 @extend .row,
+                .collapse,
                 .align-bottom;
                 &.card-01 {
                     background-image: url('../img/research-img-01.jpg');
