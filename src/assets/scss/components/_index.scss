@@ -64,8 +64,7 @@
                             }
                         }
                         .dek {
-                            font-size: 1.1rem;
-                            padding-left: $global-padding;
+                            font-size: 1.1rem; // padding-left: $global-padding;
                             text-shadow: 2px 2px 7px rgba($black, .4);
                             @include breakpoint(medium down) {
                                 font-size: 1rem;
@@ -119,11 +118,11 @@
         padding: 5rem 0;
         font-family: 'Montserrat';
         font-size: 1.125rem;
+        @include breakpoint(small only) {
+            padding: 3rem 0 0;
+        }
         .image {
             a {
-                // width: 100%;
-                // height: 100%;
-                // display: block;
                 position: relative;
                 .stat {
                     font-family: 'Pathway Gothic One';
@@ -156,6 +155,9 @@
                         transform: scale(1.05);
                         transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
                         opacity: 1;
+                        circle {
+                        	stroke-dasharray: 0 3.1875;
+                        }
                     }
                     @include breakpoint(768px down) {
                         bottom: -6.125rem;
@@ -196,12 +198,13 @@
         margin-top: 1px;
         margin-bottom: 5rem;
         @include breakpoint(small only) {
-            margin-bottom: 0;
+            margin-bottom: 2rem;
         }
         .column {
             border-right: 1px solid $faintest-gray;
             @include breakpoint(small only) {
                 margin-bottom: 2rem;
+                border-right: 0;
             }
 
             .image {
@@ -389,12 +392,18 @@
                 font-style: italic;
                 line-height: 1.2;
                 margin-top: -3.75rem;
+                @include breakpoint(small only) {
+                    font-size: 1.5rem;
+                }
             }
             cite {
                 font-family: 'Montserrat';
                 font-style: normal;
                 color: $black;
                 font-size: 1.25rem;
+                @include breakpoint(small only) {
+                    font-size: 1rem;
+                }
             }
             .cta {
                 a {
@@ -404,6 +413,100 @@
                     transition: all .2s ease-in-out;
                     &:hover {
                         color: darken($tappan-red, 15%);
+                    }
+                }
+                @include breakpoint(small only) {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+    .feeds {
+        margin-bottom: 5rem;
+        .news {
+            padding: $global-padding;
+            background-color: $white-100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            @include breakpoint(small only) {
+                margin-bottom: 1.25rem;
+            }
+            .section_title {
+            	font-size: 1.875rem;
+            	font-family: 'Pathway Gothic One';
+            	text-transform: uppercase;
+            	margin-bottom: $global-padding;
+            	line-height: 1;
+            	svg {
+            		color: $ross-orange;
+            	}
+            	span {
+            		margin-left: .5rem;
+            	}
+            	a {
+            		font-size: .875rem;
+            		font-family: 'Montserrat';
+            		font-weight: 700;
+            		text-transform: none;
+            		color: $black;
+            		transition: all .2s ease-in-out;
+            		&:hover {
+            			color: $tappan-red;
+            		}
+            	}
+            }
+            .article {
+                margin-bottom: 2rem;
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+                a {
+                    color: $black;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        color: $tappan-red;
+                        .border {
+                            .stroke {
+                                stroke: $tappan-red;
+                            }
+                        }
+                    }
+                    .text {
+                        padding-left: $global-padding;
+                        @include breakpoint(small only) {
+                            padding-left: 0;
+                            padding-right: $global-padding;
+                        }
+                        .hed {
+                            font-family: 'Montserrat';
+                            font-weight: 700;
+                            font-size: 1.85rem;
+                            line-height: 1.2;
+                            @include breakpoint(small only) {
+                                font-size: .9rem;
+                            }
+                        }
+                        .dek {
+                            font-size: 1.125rem;
+                            margin-bottom: 0;
+                            @include breakpoint(small only) {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                    .border {
+                        margin-top: 2rem;
+                        height: 1px;
+                        .stroke {
+                            stroke: $dark-gray;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    svg {
+                        display: none;
                     }
                 }
             }
