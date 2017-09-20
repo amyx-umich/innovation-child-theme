@@ -882,6 +882,13 @@
                 border-left: 1rem solid $body-background;
                 border-bottom: 1rem solid $body-background;
                 height: 50%;
+                background-position: center;
+                background-size: cover;
+                @include breakpoint(small only) {
+                	height: 19vh;
+                	border: 0;
+                	margin-bottom: 1rem;
+                }
                 &.black {
                     background-color: $black;
                 }
@@ -889,20 +896,98 @@
                     border-bottom: 0;
                 }
                 .promo-inner {
-                    // height: 100%;
-                    // padding: 1rem;
                     p {
                         margin: 0;
                     }
+                    a {
+                        transition: all .2s ease-in-out;
+                    }
                 }
                 &.custom-01 {
-                    // margin-bottom: 1rem;
+                    background-image: url('../img/promo-01.jpg');
+                    background-position: 5rem center;
+                    background-size: 110%;
+                    color: $white;
+                    .promo-inner {
+                        font-family: 'Montserrat';
+                        position: relative;
+                        bottom: -55%;
+                        p {
+                            font-size: 2.25rem;
+                            line-height: 1;
+                            font-weight: 700;
+                            .small {
+                                display: block;
+                                font-size: 1rem;
+                                font-weight: normal;
+                                text-transform: uppercase;
+                            }
+                            &.cta {
+                                font-size: 1rem;
+                                font-family: 'Cardo';
+                                a {
+                                    color: $michigan-maize;
+                                    &:hover {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                &.custom-02 {}
+                &.custom-02 {
+                    background-image: url('../img/promo-03.jpg');
+                    .promo-inner {
+                        font-family: 'Cardo';
+                        position: relative;
+                        bottom: -67%;
+                        p {
+                            font-size: 2.25rem;
+                            line-height: 1;
+                            font-weight: 700;
+                            color: $white;
+                            &.cta {
+                                font-size: 1rem;
+                                font-family: 'Montserrat';
+                                text-transform: uppercase;
+                                text-indent: 1rem;
+                                a {
+                                    color: $michigan-maize;
+                                    &:hover {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            &.rule {
+                                position: relative;
+                                &:before,
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    height: 1px;
+                                    border-top: 1px solid $white;
+                                    top: 1.2rem;
+                                }
+                                &:before {
+                                    right: 100%;
+                                    margin-right: 5px;
+                                    width: 1rem;
+                                }
+                                &:after {
+                                    left: 56%;
+                                    margin-left: 1rem;
+                                    width: 45%;
+                                }
+                            }
+                        }
+                    }
+                }
                 &.custom-03 {
-                    // margin-bottom: 1rem;
+                    background-image: url('../img/promo-02.jpg');
                 }
-                &.custom-04 {}
+                &.custom-04 {
+                    background-image: url('../img/promo-04.jpg');
+                }
             }
         }
     }
