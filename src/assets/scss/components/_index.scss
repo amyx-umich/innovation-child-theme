@@ -785,9 +785,7 @@
     }
     .video {
         margin-bottom: 5rem;
-        background: url('../img/background-pattern.jpg') fixed center repeat;
-        background-color: rgba($darker-gray, .5);
-        background-blend-mode: multiply;
+        background: $black url('../img/background-pattern.jpg') fixed center repeat;
         .responsive-embed {
             margin-bottom: 0;
             @include breakpoint(small only) {
@@ -799,7 +797,7 @@
             font-size: 1.25rem;
             font-weight: 700;
             padding: 1.875rem 0.9375rem;
-            color: $white;
+            color: $white-87;
             @include breakpoint(medium only) {
                 font-size: .95rem;
             }
@@ -825,8 +823,9 @@
                     margin-top: .5rem;
                     display: block;
                     text-decoration: none;
+                    transition: all .2s ease-in-out;
                     &:hover {
-                        color: darken($michigan-maize, 10%);
+                        color: lighten($michigan-maize, 50%);
                     }
                 }
             }
