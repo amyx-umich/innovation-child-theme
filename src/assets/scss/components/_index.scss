@@ -4,6 +4,11 @@
         background-blend-mode: multiply; // not supported in IE11 or Edge :( 
         // filter: sepia(100%) hue-rotate(180deg) saturate(300%);
     }
+    .dark-blue-duotone {
+        background-color: rgba($michigan-blue, 1);
+        background-blend-mode: multiply; // not supported in IE11 or Edge :( 
+        // filter: sepia(100%) hue-rotate(180deg) saturate(300%);
+    }
     .red-duotone {
         background-color: rgba($tappan-red, 1);
         background-blend-mode: multiply; // see above comment >:|
@@ -119,17 +124,6 @@
             }
         }
     }
-    @keyframes statsAnimation {
-        0% {
-            background-position: 0% 15%
-        }
-        50% {
-            background-position: 100% 86%
-        }
-        100% {
-            background-position: 0% 15%
-        }
-    }
     .stats {
         background: linear-gradient(160deg, $arboretum-blue, $michigan-blue);
         padding: 5rem 0;
@@ -238,8 +232,7 @@
                     width: 85%;
                     padding: 0 .5rem;
                     margin: -2.625rem auto 0;
-                    background-color: $white-100; 
-                    // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                    background-color: $white-100; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
                     // border: 1px solid $tappan-red;
                     border-width: 1px;
                     border-style: solid;
@@ -401,9 +394,9 @@
                     }
                 }
                 &:hover {
-                	.image {
-                		filter: grayscale(1) sepia(0.15);
-                	}
+                    .image {
+                        filter: grayscale(1) sepia(0.15);
+                    }
                     .text-box {
                         top: -0.0625rem; // box-shadow: -5px 5px 0 transparent;
                         // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -832,6 +825,84 @@
                         color: lighten($michigan-maize, 50%);
                     }
                 }
+            }
+        }
+    }
+    .more-promos {
+        margin-bottom: 5rem;
+        .quick-links {
+            padding: 0;
+            background-color: $tappan-red;
+            .section_title {
+                font-size: 1.875rem;
+                font-family: 'Pathway Gothic One';
+                color: $white;
+                text-transform: uppercase;
+                padding: $global-padding;
+                line-height: 1;
+                background-color: darken($tappan-red, 3.3%);
+                svg {
+                    color: $michigan-maize;
+                }
+                span {
+                    margin-left: .5rem;
+                }
+            }
+            ul {
+                font-family: 'Montserrat';
+                color: $white;
+                margin-left: 2.5rem;
+                padding: $global-padding $global-padding 0;
+                list-style: none;
+                text-indent: -1.85rem;
+                li {
+                    font-size: 1.5rem;
+                    margin-bottom: .5rem;
+                    transition: all .2s ease-in-out;
+                    &:before {
+                        content: "\0BB \020";
+                    }
+                    a {
+                        color: $white;
+                        transition: all .2s ease-in-out;
+                    }
+                    &:hover {
+                        a {
+                            color: $michigan-maize;
+                        }
+                        &:before {
+                            color: $michigan-maize;
+                        }
+                    }
+                }
+            }
+        }
+        .promo-col {
+            .promo {
+                border-left: 1rem solid $body-background;
+                border-bottom: 1rem solid $body-background;
+                height: 50%;
+                &.black {
+                    background-color: $black;
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
+                .promo-inner {
+                    // height: 100%;
+                    // padding: 1rem;
+                    p {
+                        margin: 0;
+                    }
+                }
+                &.custom-01 {
+                    // margin-bottom: 1rem;
+                }
+                &.custom-02 {}
+                &.custom-03 {
+                    // margin-bottom: 1rem;
+                }
+                &.custom-04 {}
             }
         }
     }
