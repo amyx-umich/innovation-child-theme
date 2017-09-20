@@ -2,7 +2,7 @@
     .blue-duotone {
         background-color: rgba($arboretum-blue, 1);
         background-blend-mode: multiply; // not supported in IE11 or Edge :( 
-        filter: sepia(100%) hue-rotate(180deg) saturate(300%);
+        // filter: sepia(100%) hue-rotate(180deg) saturate(300%);
     }
     .red-duotone {
         background-color: rgba($tappan-red, 1);
@@ -220,12 +220,6 @@
         }
         .column {
             border-right: 1px solid $faintest-gray;
-            &:hover {
-                .text-box {
-                    top: -0.0625rem;
-                    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-                }
-            }
             &:last-child {
                 border-right: 0;
             }
@@ -233,162 +227,209 @@
                 margin-bottom: 2rem;
                 border-right: 0;
             }
-
-            .image {
-                z-index: 0;
-                position: relative;
-            }
-            .text-box {
-                width: 85%;
-                padding: 0 .5rem;
-                margin: -2.625rem auto 0;
-                background-color: $white-100;
-                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-                transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-                z-index: 1;
-                position: relative;
-                &.blue {
-                    .icon {
-                        border: 2px solid $michigan-blue;
-                        svg {
-                            color: $michigan-blue;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $michigan-blue;
-                        }
-                    }
-                }
-                &.maize {
-                    .icon {
-                        border: 2px solid $michigan-maize;
-                        svg {
-                            color: $michigan-maize;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $michigan-maize;
-                        }
-                    }
-                }
-                &.red {
-                    .icon {
-                        border: 2px solid $tappan-red;
-                        svg {
-                            color: $tappan-red;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $tappan-red;
-                        }
-                    }
-                }
-                &.light-blue {
-                    .icon {
-                        border: 2px solid $arboretum-blue;
-                        svg {
-                            color: $arboretum-blue;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $arboretum-blue;
-                        }
-                    }
-                }
-                &.orange {
-                    .icon {
-                        border: 2px solid $ross-orange;
-                        svg {
-                            color: $ross-orange;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $ross-orange;
-                        }
-                    }
-                }
-                &.teal {
-                    .icon {
-                        border: 2px solid $taubman-teal;
-                        svg {
-                            color: $taubman-teal;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $taubman-teal;
-                        }
-                    }
-                }
-                &.green {
-                    .icon {
-                        border: 2px solid $wave-field-green;
-                        svg {
-                            color: $wave-field-green;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $wave-field-green;
-                        }
-                    }
-                }
-                &.purple {
-                    .icon {
-                        border: 2px solid $a2-amethyst;
-                        svg {
-                            color: $a2-amethyst;
-                        }
-                    }
-                    .text {
-                        h3 {
-                            color: $a2-amethyst;
-                        }
-                    }
-                }
-                .icon {
-                    width: 4rem;
-                    margin-bottom: -1.75rem;
-                    background-color: $white-100;
-                    border-radius: 2rem;
-                    margin: 0 auto;
-                    position: relative;
-                    top: -1.875rem;
-                    svg {
-                        margin: .875rem;
-                        padding: 0;
-                        display: block;
-                    }
-                }
-                .text {
-                    h3 {
-                        font-family: 'Pathway Gothic One';
-                        text-transform: uppercase;
-                        font-weight: normal;
-                        font-size: 1.875rem;
-                        margin-top: -1.875rem;
-                        margin-bottom: 0;
-                    }
-                    p {
-                        color: $black;
-                    }
-                    .cta {
-                        font-family: 'Montserrat';
-                        font-weight: 700;
-                        padding-bottom: 1rem;
-                    }
-                }
-            }
             a {
                 color: $black;
+                .image {
+                    z-index: 0;
+                    position: relative;
+                }
+                .text-box {
+                    width: 85%;
+                    padding: 0 .5rem;
+                    margin: -2.625rem auto 0;
+                    background-color: $white-100; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                    // border: 1px solid $tappan-red;
+                    border-width: 1px;
+                    border-style: solid;
+                    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                    z-index: 1;
+                    position: relative;
+                    @include breakpoint(small only) {
+                        width: 92%;
+                    }
+                    &.blue {
+                        border-color: $michigan-blue;
+                        box-shadow: 0 0 0 $michigan-blue;
+                        .icon {
+                            border: 2px solid $michigan-blue;
+                            svg {
+                                color: $michigan-blue;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $michigan-blue;
+                            }
+                        }
+                        &:hover {
+                            top: -0.0625rem;
+
+                            border-color: $michigan-blue;
+                            box-shadow: -5px 5px 0 $michigan-blue;
+                        }
+                    }
+                    &.maize {
+                        border-color: $michigan-maize;
+                        .icon {
+                            border: 2px solid $michigan-maize;
+                            svg {
+                                color: $michigan-maize;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $michigan-maize;
+                            }
+                        }
+                    }
+                    &.red {
+                        border-color: $tappan-red;
+                        .icon {
+                            border: 2px solid $tappan-red;
+                            svg {
+                                color: $tappan-red;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $tappan-red;
+                            }
+                        }
+                    }
+                    &.light-blue {
+                        border-color: $arboretum-blue;
+                        .icon {
+                            border: 2px solid $arboretum-blue;
+                            svg {
+                                color: $arboretum-blue;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $arboretum-blue;
+                            }
+                        }
+                    }
+                    &.orange {
+                        border-color: $ross-orange;
+                        .icon {
+                            border: 2px solid $ross-orange;
+                            svg {
+                                color: $ross-orange;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $ross-orange;
+                            }
+                        }
+                    }
+                    &.teal {
+                        border-color: $taubman-teal;
+                        .icon {
+                            border: 2px solid $taubman-teal;
+                            svg {
+                                color: $taubman-teal;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $taubman-teal;
+                            }
+                        }
+                    }
+                    &.green {
+                        border-color: $wave-field-green;
+                        .icon {
+                            border: 2px solid $wave-field-green;
+                            svg {
+                                color: $wave-field-green;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $wave-field-green;
+                            }
+                        }
+                    }
+                    &.purple {
+                        border-color: $a2-amethyst;
+                        .icon {
+                            border: 2px solid $a2-amethyst;
+                            svg {
+                                color: $a2-amethyst;
+                            }
+                        }
+                        .text {
+                            h3 {
+                                color: $a2-amethyst;
+                            }
+                        }
+                    }
+                    .icon {
+                        width: 4rem;
+                        margin-bottom: -1.75rem;
+                        background-color: $white-100;
+                        border-radius: 2rem;
+                        margin: 0 auto;
+                        position: relative;
+                        top: -1.875rem;
+                        svg {
+                            margin: .875rem;
+                            padding: 0;
+                            display: block;
+                        }
+                    }
+                    .text {
+                        h3 {
+                            font-family: 'Pathway Gothic One';
+                            text-transform: uppercase;
+                            font-weight: normal;
+                            font-size: 1.875rem;
+                            margin-top: -1.875rem;
+                            margin-bottom: 0;
+                        }
+                        p {
+                            color: $black;
+                        }
+                        .cta {
+                            font-family: 'Montserrat';
+                            font-weight: 700;
+                            padding-bottom: 1rem;
+                        }
+                    }
+                }
                 &:hover {
-                    .cta {
-                        color: $tappan-red;
+                    .text-box {
+                        top: -0.0625rem; // box-shadow: -5px 5px 0 transparent;
+                        // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                        .cta {
+                            color: $tappan-red;
+                        }
+                    }
+                    .blue {
+                        box-shadow: -5px 5px 0 $michigan-blue;
+                    }
+                    .light-blue {
+                        box-shadow: -5px 5px 0 $arboretum-blue;
+                    }
+                    .red {
+                        box-shadow: -5px 5px 0 $tappan-red;
+                    }
+                    .orange {
+                        box-shadow: -5px 5px 0 $ross-orange;
+                    }
+                    .yellow {
+                        box-shadow: -5px 5px 0 $michigan-maize;
+                    }
+                    .purple {
+                        box-shadow: -5px 5px 0 $a2-amethyst;
+                    }
+                    .green {
+                        box-shadow: -5px 5px 0 $wave-field-green;
+                    }
+                    .teal {
+                        box-shadow: -5px 5px 0 $taubman-teal;
                     }
                 }
             }
@@ -396,6 +437,9 @@
     }
     .quote {
         margin-bottom: 5rem;
+        @include breakpoint(small only) {
+            margin-bottom: 2rem;
+        }
         .quote-container {
             padding: 1rem;
             border: 1px solid $tappan-red;
@@ -441,10 +485,10 @@
                 a {
                     font-family: 'Montserrat';
                     font-weight: bold;
-                    color: $tappan-red;
+                    color: darken($tappan-red, 15%);
                     transition: all .2s ease-in-out;
                     &:hover {
-                        color: darken($tappan-red, 15%);
+                        color: $tappan-red;
                     }
                 }
                 @include breakpoint(small only) {
@@ -455,13 +499,15 @@
     }
     .feeds {
         margin-bottom: 5rem;
+        @include breakpoint(small only) {
+            margin-bottom: 2rem;
+        }
         .news {
             padding: $global-padding;
-            background-color: $white-100;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            background-color: $white-100; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border: 1px solid $medium-gray; // transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
             @include breakpoint(small only) {
-                margin-bottom: 1.25rem;
+                margin-bottom: 2rem;
             }
             .section_title {
                 font-size: 1.875rem;
@@ -500,18 +546,13 @@
                         color: $tappan-red;
                         .image {
                             opacity: 1;
-                            box-shadow: -5px 5px 0 $tappan-red;
-                        } // .border {
-                        //     .stroke {
-                        //         stroke: $tappan-red;
-                        //         stroke-dasharray: 1;
-                        //     }
-                        // }
+                            box-shadow: -5px 5px 0 $ross-orange;
+                        }
                     }
                     .image {
                         opacity: .8;
                         transition: all 0.2s;
-                        box-shadow: 0 0 0 $tappan-red;
+                        box-shadow: 0 0 0 $ross-orange;
                     }
                     .text {
                         padding-left: $global-padding;
@@ -560,16 +601,14 @@
                 background-color: transparent;
                 .promo {
                     padding: $global-padding;
-                    background-color: $arboretum-blue;
-                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-                    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                    background-color: $arboretum-blue; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                    border: 1px solid darken($arboretum-blue, 15%); // transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
                     margin-bottom: 1rem;
                 }
                 .events {
                     padding: 0;
-                    background-color: $michigan-blue;
-                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-                    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                    background-color: $michigan-blue; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                    border: 1px solid darken($michigan-blue, 35%); // transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
                     color: $white;
                     .section_title {
                         font-size: 1.875rem;
@@ -605,6 +644,11 @@
                             margin-bottom: 2rem;
                             &:last-child {
                                 margin-bottom: 0;
+                            }
+                            @include breakpoint(small only) {
+                                &:last-child {
+                                    margin-bottom: 2rem;
+                                }
                             }
                         }
                         .title {
@@ -650,11 +694,11 @@
         }
     }
     .section_title {
-    	hr {
-    		border: 1px solid $tappan-red;
-    		margin: 0;
-    		max-width: none;
-    	}
+        hr {
+            border: 1px solid $tappan-red;
+            margin: 0;
+            max-width: none;
+        }
         h4 {
             font-family: 'Pathway Gothic One';
             text-transform: uppercase;
@@ -663,24 +707,46 @@
             margin-top: -1.25rem;
             padding-left: .5rem;
             padding-right: .5rem;
+            @include breakpoint(small only) {
+                font-size: 1.25rem;
+            }
         }
     }
     .research {
         margin-bottom: 5rem;
         .column {
-        	padding-left: 1px;
-        	padding-right: 1px;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            @include breakpoint(small only) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                &:first-child {
+                    padding-left: 1rem;
+                }
+                &:last-child {
+                    padding-right: 1rem;
+                }
+            }
         }
         .card {
+            margin-bottom: 0;
             border: 0;
-            height: 22rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-            display: block;
-            .image {
-                img {
-                    max-width: 100%;
-                    transition: all .75s ease-in-out;
+            height: 20rem; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            // transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            &:hover {
+                .text {
+                    background-size: 105%;
+                    background-color: rgba($darker-gray, .9);
+                    background-blend-mode: multiply;
+                    .title {
+                        color: $michigan-maize;
+                    }
                 }
             }
             .text {
@@ -692,11 +758,13 @@
                 padding: 1rem;
                 width: 100%;
                 height: 100%;
-                background-size: 100%;
+                background-size: 110%;
                 background-position: center;
                 background-repeat: no-repeat;
-                overflow: hidden;
-                transition: all .75s ease-in-out;
+                transition: all .75s ease;
+                .title {
+                    transition: all .75s ease;
+                }
                 @extend .row,
                 .collapse,
                 .align-bottom;
@@ -712,10 +780,55 @@
                 &.card-04 {
                     background-image: url('../img/research-img-04.jpg');
                 }
-                &:hover {
-                    background-size: 108%;
+            }
+        }
+    }
+    .video {
+        margin-bottom: 5rem;
+        background: url('../img/background-pattern.jpg') fixed center repeat;
+        background-color: rgba($darker-gray, .5);
+        background-blend-mode: multiply;
+        .responsive-embed {
+            margin-bottom: 0;
+            @include breakpoint(small only) {
+                margin-bottom: 1rem;
+            }
+        }
+        .caption {
+            font-family: 'Montserrat';
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 1.875rem 0.9375rem;
+            color: $white;
+            @include breakpoint(medium only) {
+                font-size: .95rem;
+            }
+            .top-border {
+                height: 10px;
+                background-color: $arboretum-blue;
+                width: 33.33%;
+                border: none;
+                margin-bottom: 1rem;
+            }
+            .dek {
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
+            .cta {
+                color: $michigan-maize;
+                margin-top: .5rem;
+                display: block;
+                text-decoration: none;
+                a {
+                    font-family: 'Open Sans';
+                    color: $michigan-maize;
+                    margin-top: .5rem;
+                    display: block;
+                    text-decoration: none;
+                    &:hover {
+                        color: darken($michigan-maize, 10%);
+                    }
                 }
-                .title {}
             }
         }
     }
