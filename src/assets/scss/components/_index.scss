@@ -2,6 +2,7 @@
     .blue-duotone {
         background-color: rgba($arboretum-blue, 1);
         background-blend-mode: multiply;
+        background-repeat: no-repeat;
     }
     .dark-blue-duotone {
         background-color: rgba($michigan-blue, 1);
@@ -42,10 +43,14 @@
         .slider-bg {
             width: 100%;
             height: 100%;
-            background-size: 100%;
+            background-size: cover;
             content: '\00a0';
             filter: blur(7px);
             transform: translate3d(0, 0, 0) scale(1.1);
+            @include breakpoint(small only) {
+                background-size: cover;
+                background-attachment: scroll;
+            }
         }
         .orbit {
             position: absolute;
