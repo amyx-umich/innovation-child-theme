@@ -501,10 +501,12 @@
         }
         .news {
             padding: $global-padding;
-            background-color: $white-100; // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            border: 1px solid $medium-gray; // transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            background-color: $white-100;
+            border: 1px solid $medium-gray;
             @include breakpoint(small only) {
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
+                border-left: 0;
+                border-right: 0;
             }
             .section_title {
                 font-size: 1.875rem;
@@ -539,17 +541,23 @@
                 a {
                     color: $black;
                     transition: all .2s ease-in-out;
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         color: $tappan-red;
                         .image {
-                            opacity: 1;
-                            box-shadow: -5px 5px 0 $ross-orange;
+                            img {
+                                opacity: 1;
+                                box-shadow: -5px 5px 0 $ross-orange;
+                            }
                         }
                     }
                     .image {
-                        opacity: .8;
-                        transition: all 0.2s;
-                        box-shadow: 0 0 0 $ross-orange;
+
+                        img {
+                            opacity: .8;
+                            transition: all 0.2s;
+                            box-shadow: 0 0 0 $ross-orange;
+                        }
                     }
                     .text {
                         padding-left: $global-padding;
@@ -711,6 +719,9 @@
     }
     .research {
         margin-bottom: 5rem;
+        @include breakpoint(small only) {
+            margin-bottom: 2rem;
+        }
         .column {
             padding-left: .5rem;
             padding-right: .5rem;
@@ -723,11 +734,13 @@
             @include breakpoint(small only) {
                 padding-left: 1rem;
                 padding-right: 1rem;
+                margin-bottom: 1rem;
                 &:first-child {
                     padding-left: 1rem;
                 }
                 &:last-child {
                     padding-right: 1rem;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -784,6 +797,9 @@
     .video {
         margin-bottom: 5rem;
         background: $black url('../img/background-pattern.jpg') fixed center repeat;
+        @include breakpoint(small only) {
+            margin-bottom: 2rem;
+        }
         .responsive-embed {
             margin-bottom: 0;
             @include breakpoint(small only) {
@@ -796,7 +812,7 @@
             font-weight: 700;
             padding: 1.875rem 0.9375rem;
             color: $white-87;
-            @include breakpoint(medium only) {
+            @include breakpoint(medium down) {
                 font-size: .95rem;
             }
             .top-border {
@@ -807,7 +823,6 @@
                 margin-bottom: 1rem;
             }
             .dek {
-                font-size: 1.25rem;
                 line-height: 1.5;
             }
             .cta {
@@ -816,7 +831,7 @@
                 display: block;
                 text-decoration: none;
                 a {
-                    font-family: 'Open Sans';
+                    font-family: 'Montserrat';
                     color: $michigan-maize;
                     margin-top: .5rem;
                     display: block;
@@ -831,10 +846,16 @@
     }
     .more-promos {
         margin-bottom: 5rem;
+        @include breakpoint(small only) {
+            margin-bottom: 2rem;
+        }
         .quick-links {
             padding: 0;
             background-color: $tappan-red;
             border: 1px solid darken($tappan-red, 3.3%);
+            @include breakpoint(small only) {
+                margin-bottom: 1rem;
+            }
             .section_title {
                 font-size: 1.875rem;
                 font-family: 'Pathway Gothic One';
@@ -887,7 +908,7 @@
                 background-position: center;
                 background-size: cover;
                 @include breakpoint(small only) {
-                    height: 19vh;
+                    height: 22vh;
                     border: 0;
                     margin-bottom: 1rem;
                 }
@@ -912,8 +933,7 @@
                     color: $white;
                     .promo-inner {
                         font-family: 'Montserrat';
-                        position: relative;
-                        bottom: -55%;
+                        padding-bottom: $global-padding;
                         p {
                             font-size: 2.25rem;
                             line-height: 1;
@@ -941,8 +961,7 @@
                     background-image: url('../img/promo-03.jpg');
                     .promo-inner {
                         font-family: 'Cardo';
-                        position: relative;
-                        bottom: -67%;
+                        padding-bottom: $global-padding;
                         p {
                             font-size: 2.25rem;
                             line-height: 1;
@@ -979,7 +998,10 @@
                                 &:after {
                                     left: 56%;
                                     margin-left: 1rem;
-                                    width: 45%;
+                                    width: 43.5%;
+                                    @include breakpoint(small only) {
+                                        width: 42.25%;
+                                    }
                                 }
                             }
                         }
@@ -987,9 +1009,76 @@
                 }
                 &.custom-03 {
                     background-image: url('../img/promo-02.jpg');
+                    background-color: darken($michigan-maize, 25%);
+                    .promo-inner {
+                        text-shadow: 2px 2px 0px rgba($black, .99);
+                        a {
+                            color: $michigan-maize;
+                            &:hover {
+                                color: $white;
+                            }
+                            p {
+                                line-height: 1;
+                                color: $white;
+                                text-align: center;
+                                width: 60%;
+                                margin: 0 auto;
+                                &.top {
+                                    font-size: 2.5625rem;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    border-top: 1px solid $white;
+                                    padding-top: .625rem;
+                                }
+                                &.bottom {
+                                    font-size: 1.5rem;
+                                    font-weight: normal;
+                                    font-style: italic;
+                                    padding-bottom: .75rem;
+                                    border-bottom: 1px solid $white;
+                                }
+                            }
+                        }
+                    }
                 }
                 &.custom-04 {
                     background-image: url('../img/promo-04.jpg');
+                    .promo-inner {
+                        font-family: 'Montserrat';
+                        margin-bottom: $global-padding;
+                        padding-left: .625rem;
+                        color: $white;
+                        border-left: 3px solid $michigan-maize;
+                        font-weight: 700;
+                        @include breakpoint(small only) {
+                            margin-top: $global-padding;
+                        }
+                        .brand {
+                            font-size: 2.25rem;
+                            font-style: italic;
+                            font-weight: 800;
+                            line-height: .9;
+                            i {
+                                font-weight: 400;
+                                color: $michigan-maize;
+                            }
+                            .top,
+                            .bottom {
+                                display: block;
+                            }
+                        }
+                        .sub-hed {
+                            text-transform: uppercase;
+                            margin-top: .625rem;
+                        }
+                        a {
+                            text-transform: uppercase;
+                            color: $michigan-maize;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
                 }
             }
         }
