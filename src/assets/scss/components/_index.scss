@@ -38,7 +38,7 @@
             height: 55vh;
         }
         @include breakpoint(small only) {
-            height: 85vh;
+            height: 100vh;
         }
         .slider-bg {
             width: 100%;
@@ -55,11 +55,12 @@
         .orbit {
             position: absolute;
             z-index: 1;
-            width: 100%;
-            height: 100%;
+            // width: 100%;
+            // height: 100%;
             .orbit-wrapper {
-                height: 100%;
+                // height: 100%;
                 .orbit-controls {
+                	bottom: 0;
                     button {
                         cursor: pointer;
                     }
