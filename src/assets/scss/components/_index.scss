@@ -934,24 +934,28 @@
                     .promo-inner {
                         font-family: 'Montserrat';
                         padding-bottom: $global-padding;
-                        p {
-                            font-size: 2.25rem;
-                            line-height: 1;
-                            font-weight: 700;
-                            .small {
-                                display: block;
-                                font-size: 1rem;
-                                font-weight: normal;
-                                text-transform: uppercase;
-                            }
-                            &.cta {
-                                font-size: 1rem;
-                                font-family: 'Cardo';
-                                a {
+                        a {
+                            p {
+                                font-size: 2.25rem;
+                                line-height: 1;
+                                font-weight: 700;
+                                color: $white;
+                                .small {
+                                    display: block;
+                                    font-size: 1rem;
+                                    font-weight: normal;
+                                    text-transform: uppercase;
+                                }
+                                &.cta {
                                     color: $michigan-maize;
-                                    &:hover {
-                                        color: $white;
-                                    }
+                                    font-size: 1rem;
+                                    font-family: 'Cardo';
+                                    transition: all .2s ease-in-out;
+                                }
+                            }
+                            &:hover {
+                                .cta {
+                                    color: $white;
                                 }
                             }
                         }
@@ -962,46 +966,49 @@
                     .promo-inner {
                         font-family: 'Cardo';
                         padding-bottom: $global-padding;
-                        p {
-                            font-size: 2.25rem;
-                            line-height: 1;
-                            font-weight: 700;
-                            color: $white;
-                            &.cta {
-                                font-size: 1rem;
-                                font-family: 'Montserrat';
-                                text-transform: uppercase;
-                                text-indent: 1rem;
-                                font-weight: normal;
-                                a {
+                        a {
+                            p {
+                                font-size: 2.25rem;
+                                line-height: 1;
+                                font-weight: 700;
+                                color: $white;
+                                &.cta {
+                                    font-size: 1rem;
+                                    font-family: 'Montserrat';
+                                    text-transform: uppercase;
+                                    text-indent: 1rem;
+                                    font-weight: normal;
                                     color: $michigan-maize;
-                                    &:hover {
-                                        color: $white;
+                                    transition: all .2s ease-in-out;
+                                }
+                                &.rule {
+                                    position: relative;
+                                    &:before,
+                                    &:after {
+                                        content: "";
+                                        position: absolute;
+                                        height: 1px;
+                                        border-top: 1px solid $white;
+                                        top: 1.2rem;
+                                    }
+                                    &:before {
+                                        right: 100%;
+                                        margin-right: 5px;
+                                        width: 1rem;
+                                    }
+                                    &:after {
+                                        left: 56%;
+                                        margin-left: 1rem;
+                                        width: 43.5%;
+                                        @include breakpoint(small only) {
+                                            width: 42.25%;
+                                        }
                                     }
                                 }
                             }
-                            &.rule {
-                                position: relative;
-                                &:before,
-                                &:after {
-                                    content: "";
-                                    position: absolute;
-                                    height: 1px;
-                                    border-top: 1px solid $white;
-                                    top: 1.2rem;
-                                }
-                                &:before {
-                                    right: 100%;
-                                    margin-right: 5px;
-                                    width: 1rem;
-                                }
-                                &:after {
-                                    left: 56%;
-                                    margin-left: 1rem;
-                                    width: 43.5%;
-                                    @include breakpoint(small only) {
-                                        width: 42.25%;
-                                    }
+                            &:hover {
+                                .cta {
+                                    color: $white;
                                 }
                             }
                         }
@@ -1013,13 +1020,17 @@
                     .promo-inner {
                         text-shadow: 2px 2px 0px rgba($black, .99);
                         a {
-                            color: $michigan-maize;
+                            color: $white;
+                            transition: all .2s ease-in-out;
                             &:hover {
-                                color: $white;
+                                color: $michigan-maize;
+                                .top,
+                                .bottom {
+                                    border-color: $michigan-maize;
+                                }
                             }
                             p {
                                 line-height: 1;
-                                color: $white;
                                 text-align: center;
                                 width: 60%;
                                 margin: 0 auto;
@@ -1053,29 +1064,36 @@
                         @include breakpoint(small only) {
                             margin-top: $global-padding;
                         }
-                        .brand {
-                            font-size: 2.25rem;
-                            font-style: italic;
-                            font-weight: 800;
-                            line-height: .9;
-                            i {
-                                font-weight: 400;
-                                color: $michigan-maize;
-                            }
-                            .top,
-                            .bottom {
-                                display: block;
-                            }
-                        }
-                        .sub-hed {
-                            text-transform: uppercase;
-                            margin-top: .625rem;
-                        }
                         a {
-                            text-transform: uppercase;
-                            color: $michigan-maize;
+                            color: $white;
+                            transition: all .2s ease-in-out;
                             &:hover {
-                                color: $white;
+                                .cta {
+                                    color: $white;
+                                }
+                            }
+                            .brand {
+                                font-size: 2.25rem;
+                                font-style: italic;
+                                font-weight: 800;
+                                line-height: .9;
+                                i {
+                                    font-weight: 400;
+                                    color: $michigan-maize;
+                                }
+                                .top,
+                                .bottom {
+                                    display: block;
+                                }
+                            }
+                            .sub-hed {
+                                text-transform: uppercase;
+                                margin-top: .625rem;
+                            }
+                            .cta {
+                                color: $michigan-maize;
+                                text-transform: uppercase;
+                                transition: all .2s ease-in-out;
                             }
                         }
                     }
