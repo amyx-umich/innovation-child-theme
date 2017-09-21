@@ -628,6 +628,8 @@
                         background-color: lighten($michigan-blue, 3%);
                         svg {
                             color: lighten($arboretum-blue, 19.75%);
+                            vertical-align: bottom;
+                            margin-bottom: 2px;
                         }
                         span {
                             margin-left: .5rem;
@@ -869,6 +871,7 @@
                 background-color: darken($tappan-red, 3.3%);
                 svg {
                     color: $michigan-maize;
+                    margin-bottom: 2px;
                 }
                 span {
                     margin-left: .5rem;
