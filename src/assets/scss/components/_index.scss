@@ -64,10 +64,8 @@
                     }
                 }
                 .orbit-container {
-                    // max-height: 66vh;
                     .orbit-slide {
                         color: $white;
-                        // transition: all .2s ease-in-out; // overflow: visible;
                         width: 100vw;
                         .hed {
                             margin-bottom: 1.5rem;
@@ -199,17 +197,24 @@
         }
     }
     .slider-parent-full {
-    	.orbit-slide {
-    		// transition: all .2s ease;
-    	}
+        .orbit-slide {}
+
         .orbit-caption {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 66.666%;
             background-color: $black-54;
-        }
-        .orbit-caption {
+            @include breakpoint(medium down) {
+                font-size: 1rem;
+            }
+            @include breakpoint(small only) {
+                font-size: .85rem;
+                position: static;
+                background-color: $michigan-blue;
+                width: 100%;
+                padding: 1 1.5rem;
+            }
             .eyebrow {
                 font-family: 'Pathway Gothic One';
                 font-size: 2.25rem;
@@ -232,15 +237,7 @@
                     font-size: 1.2rem;
                 }
             }
-            font-size: 1.125rem;
-            text-shadow: 2px 2px 7px rgba($black, .4);
-            @include breakpoint(medium down) {
-                font-size: 1rem;
-            }
-            @include breakpoint(small only) {
-                font-size: .85rem;
-                margin-top: .5rem;
-            }
+
             .cta {
                 font-weight: 700;
                 color: $michigan-maize;
@@ -272,6 +269,13 @@
                 &.is-active {
                     background-color: $michigan-maize;
                 }
+            }
+            @include breakpoint(small only) {
+                font-size: .85rem;
+                position: static;
+                background-color: $michigan-blue;
+                width: 100%;
+                padding: 1 1.5rem;
             }
         }
     }
