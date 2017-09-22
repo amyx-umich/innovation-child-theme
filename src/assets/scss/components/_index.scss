@@ -67,8 +67,7 @@
                     // max-height: 66vh;
                     .orbit-slide {
                         color: $white;
-                        transition: all .2s ease-in-out;
-                        // overflow: visible;
+                        // transition: all .2s ease-in-out; // overflow: visible;
                         width: 100vw;
                         .hed {
                             margin-bottom: 1.5rem;
@@ -195,6 +194,83 @@
                     &.is-active {
                         background-color: $michigan-maize;
                     }
+                }
+            }
+        }
+    }
+    .slider-parent-full {
+    	.orbit-slide {
+    		// transition: all .2s ease;
+    	}
+        .orbit-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 66.666%;
+            background-color: $black-54;
+        }
+        .orbit-caption {
+            .eyebrow {
+                font-family: 'Pathway Gothic One';
+                font-size: 2.25rem;
+                line-height: 1;
+                text-transform: uppercase;
+                color: $ross-orange;
+                @include breakpoint(small only) {
+                    font-size: 1.1rem;
+                }
+            }
+            h3 {
+                font-size: 3rem;
+                line-height: 1;
+                padding-bottom: .5rem;
+                border-bottom: 1px solid $white-24;
+                @include breakpoint(medium down) {
+                    font-size: 1.875rem;
+                }
+                @include breakpoint(small only) {
+                    font-size: 1.2rem;
+                }
+            }
+            font-size: 1.125rem;
+            text-shadow: 2px 2px 7px rgba($black, .4);
+            @include breakpoint(medium down) {
+                font-size: 1rem;
+            }
+            @include breakpoint(small only) {
+                font-size: .85rem;
+                margin-top: .5rem;
+            }
+            .cta {
+                font-weight: 700;
+                color: $michigan-maize;
+                transition: all .1s ease-in-out;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        .orbit-bullets {
+            // background-color: $black;
+            margin: 0;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            button {
+                cursor: pointer;
+                width: 7px;
+                height: 7px;
+                margin: 0 .75rem;
+                padding: 0;
+                background-color: $white;
+                transition: all .1s ease-in-out;
+                &:hover {
+                    background-color: darken($white, 50%);
+                }
+                &.is-active {
+                    background-color: $michigan-maize;
                 }
             }
         }
