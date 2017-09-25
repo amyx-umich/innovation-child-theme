@@ -64,6 +64,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face {
     font-family: 'bebas_neuebold';
@@ -167,7 +168,7 @@ $white-54: rgba(255,255,255,0.54);
 $white-24: rgba(255,255,255,0.24);
 $body-background: $faint-gray;
 $body-font-color: $black;
-$body-font-family: 'Cardo', Georgie, serif;
+$body-font-family: 'Cardo', Georgia, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1.25rem;
@@ -216,6 +217,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: 'Montserrat', Helvetica, sans-serif;
+$super-header-font-family: 'Pathway Gothic One', Helvetica, sans-serif;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

@@ -74,7 +74,7 @@
                                 margin-bottom: .5rem;
                             }
                             .eyebrow {
-                                font-family: 'Pathway Gothic One';
+                                font-family: $super-header-font-family;
                                 font-size: 2.25rem;
                                 line-height: 1;
                                 text-transform: uppercase;
@@ -147,7 +147,7 @@
                                     }
                                 }
                                 .tagline {
-                                    font-family: 'Montserrat';
+                                    font-family: $header-font-family;
                                     font-size: 2.75rem;
                                     text-transform: uppercase;
                                     border-top: 1px solid $white-54;
@@ -161,7 +161,7 @@
                                     }
                                 }
                                 .cta {
-                                    font-family: 'Montserrat';
+                                    font-family: $header-font-family;
                                     @include breakpoint(small only) {
                                         font-size: .85rem;
                                     }
@@ -216,7 +216,7 @@
                 padding: 1rem 2.5rem;
             }
             .eyebrow {
-                font-family: 'Pathway Gothic One';
+                font-family: $super-header-font-family;
                 font-size: 2.25rem;
                 line-height: 1;
                 text-transform: uppercase;
@@ -281,7 +281,7 @@
     .stats {
         background: linear-gradient(160deg, $arboretum-blue, $michigan-blue);
         padding: 5rem 0;
-        font-family: 'Montserrat';
+        font-family: $header-font-family;
         font-size: 1.125rem;
         @include breakpoint(small only) {
             padding: 3rem 0 0;
@@ -290,7 +290,7 @@
             a {
                 position: relative;
                 .stat {
-                    font-family: 'Pathway Gothic One';
+                    font-family: $super-header-font-family;
                     font-size: 6rem;
                     color: $white;
                     position: absolute;
@@ -534,7 +534,7 @@
                     }
                     .text {
                         h3 {
-                            font-family: 'Pathway Gothic One';
+                            font-family: $super-header-font-family;
                             text-transform: uppercase;
                             font-weight: normal;
                             font-size: 1.875rem;
@@ -545,7 +545,7 @@
                             color: $black;
                         }
                         .cta {
-                            font-family: 'Montserrat';
+                            font-family: $header-font-family;
                             font-weight: 700;
                             padding-bottom: 1rem;
                         }
@@ -601,7 +601,7 @@
             transition: all .2s ease;
             &:before {
                 content: '\201D';
-                font-family: 'Cardo';
+                font-family: $body-font-family;
                 font-size: 9rem;
                 font-weight: 700;
                 color: $tappan-red;
@@ -628,7 +628,7 @@
                 }
             }
             cite {
-                font-family: 'Montserrat';
+                font-family: $header-font-family;
                 font-style: normal;
                 color: $black;
                 font-size: 1.25rem;
@@ -638,7 +638,7 @@
             }
             .cta {
                 a {
-                    font-family: 'Montserrat';
+                    font-family: $header-font-family;
                     font-weight: bold;
                     color: darken($tappan-red, 15%);
                     transition: all .2s ease-in-out;
@@ -668,7 +668,7 @@
             }
             .section_title {
                 font-size: 1.875rem;
-                font-family: 'Pathway Gothic One';
+                font-family: $super-header-font-family;
                 text-transform: uppercase;
                 margin-bottom: $global-padding;
                 line-height: 1;
@@ -680,7 +680,7 @@
                 }
                 a {
                     font-size: .875rem;
-                    font-family: 'Montserrat';
+                    font-family: $header-font-family;
                     font-weight: 700;
                     text-transform: none;
                     color: $black;
@@ -724,7 +724,7 @@
                             padding-right: $global-padding;
                         }
                         .hed {
-                            font-family: 'Montserrat';
+                            font-family: $header-font-family;
                             font-weight: 700;
                             font-size: 1.85rem;
                             line-height: 1.2;
@@ -775,7 +775,7 @@
                     color: $white;
                     .section_title {
                         font-size: 1.875rem;
-                        font-family: 'Pathway Gothic One';
+                        font-family: $super-header-font-family;
                         text-transform: uppercase;
                         margin-bottom: $global-padding;
                         padding: $global-padding;
@@ -791,7 +791,7 @@
                         }
                         a {
                             font-size: .875rem;
-                            font-family: 'Montserrat';
+                            font-family: $header-font-family;
                             font-weight: 700;
                             text-transform: none;
                             color: $white;
@@ -820,7 +820,7 @@
                             margin-bottom: 0;
                             line-height: 1.2;
                             font-size: 1.25rem;
-                            font-family: 'Montserrat';
+                            font-family: $header-font-family;
                             font-weight: 700;
                         }
                         .location {
@@ -832,7 +832,7 @@
                             margin-right: 10px;
                             .month,
                             .day {
-                                font-family: 'Pathway Gothic One';
+                                font-family: $super-header-font-family;
                                 color: lighten($arboretum-blue, 19.75%);
                                 padding-right: 5px;
                                 border-right: 2px solid lighten($arboretum-blue, 19.75%);
@@ -865,7 +865,7 @@
             max-width: none;
         }
         h4 {
-            font-family: 'Pathway Gothic One';
+            font-family: $super-header-font-family;
             text-transform: uppercase;
             font-weight: normal;
             background-color: $body-background;
@@ -920,7 +920,7 @@
                 }
             }
             .text {
-                font-family: 'Montserrat';
+                font-family: $header-font-family;
                 font-weight: 700;
                 font-size: 1.75rem;
                 line-height: 1;
@@ -967,7 +967,7 @@
             }
         }
         .caption {
-            font-family: 'Montserrat';
+            font-family: $header-font-family;
             font-size: 1.25rem;
             font-weight: 700;
             padding: 1.875rem 0.9375rem;
@@ -991,7 +991,7 @@
                 display: block;
                 text-decoration: none;
                 a {
-                    font-family: 'Montserrat';
+                    font-family: $header-font-family;
                     font-size: 75%;
                     color: $michigan-maize;
                     margin-top: .5rem;
@@ -1019,7 +1019,7 @@
             }
             .section_title {
                 font-size: 1.875rem;
-                font-family: 'Pathway Gothic One';
+                font-family: $super-header-font-family;
                 color: $white;
                 text-transform: uppercase;
                 padding: $global-padding;
@@ -1034,7 +1034,7 @@
                 }
             }
             ul {
-                font-family: 'Montserrat';
+                font-family: $header-font-family;
                 color: $white;
                 margin-left: 2.5rem;
                 padding: $global-padding $global-padding 0;
@@ -1094,7 +1094,7 @@
                     background-size: 110%;
                     color: $white;
                     .promo-inner {
-                        font-family: 'Montserrat';
+                        font-family: $header-font-family;
                         padding-bottom: $global-padding;
                         a {
                             p {
@@ -1111,7 +1111,7 @@
                                 &.cta {
                                     color: $michigan-maize;
                                     font-size: 1rem;
-                                    font-family: 'Cardo';
+                                    font-family: $body-font-family;
                                     transition: all .2s ease-in-out;
                                 }
                             }
@@ -1126,7 +1126,7 @@
                 &.custom-02 {
                     background-image: url('../img/promo-03.jpg');
                     .promo-inner {
-                        font-family: 'Cardo';
+                        font-family: $body-font-family;
                         padding-bottom: $global-padding;
                         a {
                             p {
@@ -1136,7 +1136,7 @@
                                 color: $white;
                                 &.cta {
                                     font-size: 1rem;
-                                    font-family: 'Montserrat';
+                                    font-family: $header-font-family;
                                     text-transform: uppercase;
                                     text-indent: 1rem;
                                     font-weight: normal;
@@ -1217,7 +1217,7 @@
                 &.custom-04 {
                     background-image: url('../img/promo-04.jpg');
                     .promo-inner {
-                        font-family: 'Montserrat';
+                        font-family: $header-font-family;
                         margin-bottom: $global-padding;
                         padding-left: .625rem;
                         color: $white;
