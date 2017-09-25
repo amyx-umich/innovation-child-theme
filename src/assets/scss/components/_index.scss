@@ -213,7 +213,7 @@
                 position: static;
                 background-color: $michigan-blue;
                 width: 100%;
-                padding: 1 1.5rem;
+                padding: 1rem 2.5rem;
             }
             .eyebrow {
                 font-family: 'Pathway Gothic One';
@@ -237,7 +237,9 @@
                     font-size: 1.2rem;
                 }
             }
-
+            p {
+                margin-bottom: 2.25rem;
+            }
             .cta {
                 font-weight: 700;
                 color: $michigan-maize;
@@ -271,11 +273,9 @@
                 }
             }
             @include breakpoint(small only) {
-                font-size: .85rem;
                 position: static;
                 background-color: $michigan-blue;
                 width: 100%;
-                padding: 1 1.5rem;
             }
         }
     }
