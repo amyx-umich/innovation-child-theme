@@ -1,5 +1,5 @@
-<section class="feeds promo row" data-equalizer="foo" data-equalize-on="medium" data-equalize-by-row="true">
-    <div class="column small-12 large-8 news" data-equalizer-watch="foo">
+<section class="feeds promo row" data-equalizer data-equalize-on="medium">
+    <div class="column small-12 large-8 news" data-equalizer-watch>
         <div class="section_title row align-justify">
             <div class="column small-10 shrink">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
@@ -50,8 +50,16 @@
         </div>
     </div>
     <div class="column promos">
-        <div class="callout row" data-equalizer-watch="foo">
-            <div class="promo column align-self-stretch small-12 wunderground">weather underground was founded here</div>
+        <div class="callout row align-center collapse" data-equalizer-watch>
+            <div class="promo column align-self-stretch small-12 wunderground">
+                <div class="weather-widget row collapse">
+                    <div class="column small-12 widget text-center"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:48103.1.99999&bannertypeclick=wu_clean2day" title="Ann Arbor, Michigan Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KARB&ForcedCity=Ann Arbor&ForcedState=MI&zip=48103&language=EN" alt="Find more about Weather in Ann Arbor, MI" /></a>
+                    </div>
+                </div>
+                <div class="copy row align-middle">
+                    <div class="column small-12 text-center"><a href="{{root}}">weather underground was founded here</a></div>
+                </div>
+            </div>
             <div class="events column align-self-stretch small-12 blue">
                 <div class="section_title row align-justify align-bottom collapse">
                     <div class="column small-10 shrink">

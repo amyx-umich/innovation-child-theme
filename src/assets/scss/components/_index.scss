@@ -31,7 +31,7 @@
     .slider-parent {
         position: relative;
         top: 0;
-        width: 100%; 
+        width: 100%;
         overflow: hidden;
         .slider-bg {
             width: 100%;
@@ -113,8 +113,8 @@
                             }
                         }
                         &.welcome-slide {
-                            width: 100vw;
-                            height: 100%;
+                            // width: 100vw;
+                            // height: 100%;
                             .hed {
                                 .eyebrow {
                                     color: $michigan-maize;
@@ -192,7 +192,10 @@
     }
     .slider-parent-full {
         .orbit-slide {}
-
+        .orbit-container {
+            position: static;
+            height: 100%;
+        }
         .orbit-caption {
             position: absolute;
             bottom: 0;
@@ -751,16 +754,38 @@
             }
         }
         .promos {
+            // height: 100%;
             .callout {
                 padding-top: 0;
                 padding-bottom: 0;
                 border: 0;
                 background-color: transparent;
-                .promo {
-                    padding: $global-padding;
+                .wunderground {
                     background-color: $arboretum-blue;
-                    border: 1px solid darken($arboretum-blue, 15%);
                     margin-bottom: 1rem;
+                    .weather-widget {
+                        height: 35%;
+                        background-color: darken($arboretum-blue, 35%);
+                        .widget {
+                            margin-top: 3rem;
+                        }
+                    }
+                    .copy {
+                        height: 65%;
+                        .column {
+                            a {
+                                font-family: 'Pathway Gothic One';
+                                text-transform: uppercase;
+                                color: $white;
+                                font-size: 2.75rem;
+                                line-height: .9;
+                                transition: all .2s ease-in-out;
+                                &:hover {
+                                    color: $michigan-maize;
+                                }
+                            }
+                        }
+                    }
                 }
                 .events {
                     padding: 0;
