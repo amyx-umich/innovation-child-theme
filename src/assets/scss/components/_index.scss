@@ -754,7 +754,6 @@
             }
         }
         .promos {
-            // height: 100%;
             .callout {
                 padding-top: 0;
                 padding-bottom: 0;
@@ -765,9 +764,18 @@
                     margin-bottom: 1rem;
                     .weather-widget {
                         height: 35%;
-                        background-color: darken($arboretum-blue, 35%);
+                        background-color: $michigan-blue;
                         .widget {
                             margin-top: 3rem;
+                            a {
+                                img {
+                                    box-shadow: 0 0 0 $michigan-maize;
+                                    transition: all .2s ease-in-out;
+                                    &:hover {
+                                        box-shadow: -5px 5px 0 $tappan-red;
+                                    }
+                                }
+                            }
                         }
                     }
                     .copy {
