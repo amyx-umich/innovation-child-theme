@@ -3,15 +3,15 @@
 <p class="lead">Below you can find the different values used for the theme.</p>
 
 ---
-
+<h3>Primary Colors</h3>
 <div class="row up-1 medium-up-3 large-up-6">
   <div class="column">
     <div class="color-block">
       <div class="color-name">michigan blue</div>
       <span style="background: #00274c;"></span>
       #00274c
-    </div>
-  </div>
+</div>
+</div>
   <div class="column">
     <div class="color-block">
       <div class="color-name">michigan maize</div>
@@ -19,6 +19,9 @@
       #ffcb05
     </div>
   </div>
+</div>
+<h3>Secondary Colors</h3>
+  <div class="row up-1 medium-up-3 large-up-6">
   <div class="column">
     <div class="color-block">
       <div class="color-name">tappan red</div>
@@ -47,6 +50,9 @@
       #702082
     </div>
   </div>
+  </div>
+  <h3>Supporting Values</h3>
+  <div class="row up-1 medium-up-3 large-up-6">
    <div class="column">
     <div class="color-block">
       <div class="color-name">black 100</div>
@@ -109,7 +115,7 @@
 
 # Typography
 
-<p class="lead">This design uses Pathway Gothic One for super-headings, Montserrat for headings and subheadings, and Cardo paragraph text.</p>
+<p class="lead">This design uses [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One) for super-headings, [Montserrat](https://fonts.google.com/specimen/Montserrat) for headings and subheadings, and [Cardo](https://fonts.google.com/specimen/Cardo) paragraph text.</p>
 
 ---
 
@@ -125,131 +131,126 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 
 ---
 
-<h1 class="super-headings">Super Heading Level 1</h1>
+<h1 class="super-headings">Super Heading h1</h1>
 
-<h2 class="super-headings">Super Heading Level 2</h2>
+<h2 class="super-headings">Super Heading h2</h2>
 
-<h3 class="super-headings">Super Heading Level 3</h3>
+<h3 class="super-headings">Super Heading h3</h3>
 
-<h4 class="super-headings">Super Heading Level 4</h4>
+<h4 class="super-headings">Super Heading h4</h4>
 
-<h5 class="super-headings">Super Heading Level 5</h5>
+<h5 class="super-headings">Super Heading h5</h5>
 
-<h6 class="super-headings">Super Heading Level 6</h6>
+<h6 class="super-headings">Super Heading h6</h6>
 
 ---
 
-<h1>Heading Level 1</h1>
-
-<h2>Heading Level 2</h2>
-
-<h3>Heading Level 3</h3>
-
-<h4>Heading Level 4</h4>
-
-<h5>Heading Level 5</h5>
-
-<h6>Heading Level 6</h6>
+<h1>Heading h1</h1>
+<h2>Heading h2</h2>
+<h3>Heading h3</h3>
+<h4>Heading h4</h4>
+<h5>Heading h5</h5>
+<h6>Heading h6</h6>
 
 
 
 # The Grid
 
-<p class="lead">Problem: You've got tons of content, each needing different sized cells, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+<p class="lead">Problem: You've got tons of content, each needing different sized columns, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
 
 ---
 
 ## Overview
 
-The grid is built around two key elements: grid-x and cells. grid-container create a max-width and contain the grid, and cells create the final structure. Everything on your page that you don't give a specific structural style to should be within a grid-x or cell.
+The grid is built around two key elements: row and columns. grid-container create a max-width and contain the grid, and columns create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or column.
 
 ---
 
 ## Nesting
 
-In the Grid you can nest cells down as far as you'd like. Just embed grid-x inside cells and go from there. Each embedded grid-x can contain up to 12 cells.
+In the Grid you can nest columns down as far as you'd like. Just embed row inside columns and go from there. Each embedded row can contain up to 12 columns.
 
 ---
 
 ## How to Use
 
-Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create cells.
+Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create columns.
 
 ```html
-<div class="grid-x">
-  <div class="small-6 medium-4 large-3 cell">...</div>
-  <div class="small-6 medium-8 large-9 cell">...</div>
+<div class="row">
+  <div class="small-6 medium-4 large-3 column">...</div>
+  <div class="small-6 medium-8 large-9 column">...</div>
 </div>
 ```
 
-<div class="grid-x display">
-  <div class="small-12 large-4 cell">4</div>
-  <div class="small-12 large-4 cell">4</div>
-  <div class="small-12 large-4 cell">4</div>
+<div class="row display">
+  <div class="small-12 large-4 column">4</div>
+<div class="small-12 large-4 column">4</div>
+<div class="small-12 large-4 column">4</div>
 </div>
-<div class="grid-x display">
-  <div class="small-12 large-3 cell">3</div>
-  <div class="small-12 large-6 cell">6</div>
-  <div class="small-12 large-3 cell">3</div>
+<div class="row display">
+  <div class="small-12 large-3 column">3</div>
+  <div class="small-12 large-6 column">6</div>
+  <div class="small-12 large-3 column">3</div>
 </div>
-<div class="grid-x display">
-  <div class="small-12 large-2 cell">2</div>
-  <div class="small-12 large-8 cell">8</div>
-  <div class="small-12 large-2 cell">2</div>
+<div class="row display">
+  <div class="small-12 large-2 column">2</div>
+  <div class="small-12 large-8 column">8</div>
+  <div class="small-12 large-2 column">2</div>
 </div>
-<div class="grid-x display">
-  <div class="small-12 large-3 cell">3</div>
-  <div class="small-12 large-9 cell">9</div>
+<div class="row display">
+  <div class="small-12 large-3 column">3</div>
+  <div class="small-12 large-9 column">9</div>
 </div>
-<div class="grid-x display">
-  <div class="small-12 large-4 cell">4</div>
-  <div class="small-12 large-8 cell">8</div>
+<div class="row display">
+  <div class="small-12 large-4 column">4</div>
+  <div class="small-12 large-8 column">8</div>
 </div>
-<div class="grid-x display">
-  <div class="small-12 large-5 cell">5</div>
-  <div class="small-12 large-7 cell">7</div>
+<div class="row display">
+  <div class="small-12 large-5 column">5</div>
+  <div class="small-12 large-7 column">7</div>
 </div>
-<div class="grid-x display">
-  <div class="small-12 large-6 cell">6</div>
-  <div class="small-12 large-6 cell">6</div>
+<div class="row display">
+  <div class="small-12 large-6 column">6</div>
+  <div class="small-12 large-6 column">6</div>
 </div>
 
 ---
 
-## Nesting grid-x
+## Nesting row
 
-In the Grid you can nest cells down as far as you'd like. Just embed grid-x inside cells and go from there. Each embedded grid-x can contain up to 12 cells.
+In the Grid you can nest columns down as far as you'd like. Just embed row inside columns and go from there. Each embedded row can contain up to 12 columns.
 
 ```html
-<div class="grid-x">
-  <div class="small-8 cell">8
-    <div class="grid-x">
-      <div class="small-8 cell">8 Nested
-        <div class="grid-x">
-          <div class="small-8 cell">8 Nested Again</div>
-          <div class="small-4 cell">4</div>
+<div class="row">
+  <div class="small-8 column">8
+    <div class="row">
+      <div class="small-8 column">8 Nested
+        <div class="row">
+          <div class="small-8 column">8 Nested Again</div>
+          <div class="small-4 column">4</div>
         </div>
       </div>
-      <div class="small-4 cell">4</div>
+      <div class="small-4 column">4</div>
     </div>
   </div>
-  <div class="small-4 cell">4</div>
+  <div class="small-4 column">4</div>
 </div>
 ```
 
-<div class="grid-x display">
-  <div class="small-8 cell">8
-    <div class="grid-x">
-      <div class="small-8 cell">8 Nested
-        <div class="grid-x">
-          <div class="small-8 cell">8 Nested Again</div>
-          <div class="small-4 cell">4</div>
-        </div>
+<div class="row display">
+  <div class="small-8 column">8
+    <div class="row display">
+      <div class="small-8 column">8 Nested
+        <div class="row display">
+          <div class="small-8 column">8 Nested Again</div>
+<div class="small-4 column">4</div>
+</div>
       </div>
-      <div class="small-4 cell">4</div>
+      <div class="small-4 column">4</div>
     </div>
   </div>
-  <div class="small-4 cellgi">4</div>
+  <div class="small-4 columngi">4</div>
 </div>
 
 ---
@@ -259,23 +260,23 @@ In the Grid you can nest cells down as far as you'd like. Just embed grid-x insi
 As you've probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.
 
 ```html
-<div class="grid-x">
-  <div class="small-2 cell">2</div>
-  <div class="small-10 cell">10, last</div>
+<div class="row">
+  <div class="small-2 column">2</div>
+  <div class="small-10 column">10, last</div>
 </div>
-<div class="grid-x">
-  <div class="small-3 cell">3</div>
-  <div class="small-9 cell">9, last</div>
+<div class="row">
+  <div class="small-3 column">3</div>
+  <div class="small-9 column">9, last</div>
 </div>
 ```
 
-<div class="grid-x display">
-  <div class="small-2 cell">2</div>
-  <div class="small-10 cell">10, last</div>
+<div class="row display">
+  <div class="small-2 column">2</div>
+  <div class="small-10 column">10, last</div>
 </div>
-<div class="grid-x display">
-  <div class="small-3 cell">3</div>
-  <div class="small-9 cell">9, last</div>
+<div class="row display">
+  <div class="small-3 column">3</div>
+  <div class="small-9 column">9, last</div>
 </div>
 
 

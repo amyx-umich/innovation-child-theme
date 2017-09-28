@@ -2,23 +2,39 @@
     header {
         margin-bottom: 2rem;
         background-color: $michigan-blue;
-        background: linear-gradient(to right, rgba(0,39,76,1) 0%, rgba(0,39,76,1) 43%, rgba(64,126,201,1) 100%);
+        background: linear-gradient(to right, rgba(0, 39, 76, 1) 0%, rgba(0, 39, 76, 1) 43%, rgba(64, 126, 201, 1) 100%);
         .logo {
             margin: 1.75rem 0;
         }
+    }
+    .title {
+        margin-bottom: 3rem;
     }
     .sidebar {
         font-family: $header-font-family;
         li {
             a {
+                border-left: 2px solid transparent;
                 transition: all .2s ease-in-out;
                 &.is-active {
-                    background-color: rgba($medium-gray, .5);
+                    border-left-color: $tappan-red;
+                    background-color: $light-gray;
+                    color: $tappan-red;
                 }
             }
         }
     }
     .main {
+        #typography {
+            a {
+                border-bottom: 1px solid transparent;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $tappan-red;
+                    border-bottom: 2px solid $tappan-red;
+                }
+            }
+        }
         h1,
         h2,
         h3,
@@ -85,6 +101,9 @@
                 height: 100px;
                 margin-bottom: 0.42857rem;
             }
+        }
+        .lead {
+            font-family: $header-font-family;
         }
     }
 }
