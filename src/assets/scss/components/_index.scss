@@ -369,8 +369,13 @@
             &:last-child {
                 border-right: 0;
             }
-            @include breakpoint(small only) {
+            @include breakpoint(medium down) {
                 margin-bottom: 2rem;
+                &:nth-child(2) {
+                    border-right: 0;
+                }
+            }
+            @include breakpoint(small only) {
                 border-right: 0;
             }
             a {
@@ -658,6 +663,9 @@
             padding: $global-padding;
             background-color: $white-100;
             border: 1px solid $medium-gray;
+            @include breakpoint(medium down) {
+                margin-bottom: 5rem;
+            }
             @include breakpoint(small only) {
                 margin-bottom: 1rem;
                 border-left: 0;
@@ -762,6 +770,9 @@
                 .wunderground {
                     background-color: $arboretum-blue;
                     margin-bottom: 1rem;
+                    @include breakpoint(medium down) {
+                        min-height: 18.75rem;
+                    }
                     .weather-widget {
                         height: 35%;
                         background-color: $michigan-blue;
@@ -837,7 +848,7 @@
                             &:last-child {
                                 margin-bottom: 0;
                             }
-                            @include breakpoint(small only) {
+                            @include breakpoint(medium down) {
                                 &:last-child {
                                     margin-bottom: 2rem;
                                 }
@@ -918,15 +929,14 @@
             &:last-child {
                 padding-right: 0;
             }
-            @include breakpoint(small only) {
-                padding-left: 1rem;
-                padding-right: 1rem;
-                margin-bottom: 1rem;
+            @include breakpoint(medium down) {
+                padding-left: 0;
+                padding-right: 0; // margin-bottom: 1rem;
                 &:first-child {
-                    padding-left: 1rem;
+                    // padding-left: 1rem;
                 }
                 &:last-child {
-                    padding-right: 1rem;
+                    // padding-right: 1rem;
                     margin-bottom: 0;
                 }
             }
@@ -1041,7 +1051,7 @@
             padding: 0;
             background-color: $tappan-red;
             border: 1px solid darken($tappan-red, 3.3%);
-            @include breakpoint(small only) {
+            @include breakpoint(medium down) {
                 margin-bottom: 1rem;
             }
             .section_title {
@@ -1096,7 +1106,7 @@
                 height: 50%;
                 background-position: center;
                 background-size: cover;
-                @include breakpoint(small only) {
+                @include breakpoint(medium down) {
                     height: 22vh;
                     border: 0;
                     margin-bottom: 1rem;
@@ -1229,6 +1239,9 @@
                                     text-transform: uppercase;
                                     border-top: 1px solid $white;
                                     padding-top: .625rem;
+                                    @include breakpoint(medium down) {
+                                        font-size: 1rem;
+                                    }
                                 }
                                 &.bottom {
                                     font-size: 1.5rem;
