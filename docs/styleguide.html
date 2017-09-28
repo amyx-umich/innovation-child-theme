@@ -1,87 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Guide</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+</head>
 
-    <!-- Style guide-specific CSS goes here. -->
-    <style>
-    /* This styles individual sections of the style guide */
-    .ss-section:not(:last-child) {
-      padding-bottom: 4rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 4rem;
-    }
-
-    /* This styles code blocks used for examples. */
-    .ss-code code {
-      display: block;
-      padding: 1rem;
-      overflow-x: scroll;
-      margin-bottom: 1.5rem;
-    }
-
-    /* This styles the example rows used in the grid documentation. */
-    .row.display {
-      background: #eee;
-      font-size: 11px;
-      margin-bottom: 10px;
-      line-height: 2rem;
-      border: solid 1px #c6c6c6;
-      margin-left: 0 !important;
-      margin-right: 0 !important; }
-      .row.display .columns:nth-child(2), .row.display .columns.small-centered, .row.display .columns.large-centered {
-        background: #e1e1e1; }
-      .row.display .columns.color-end {
-        background: #d4d4d4; }
-
-    /* This styles the color blocks used in the color documentation. */
-    .color-block {
-      border-radius: 2px;
-      display: block;
-      padding: 8px 8px 6px;
-      color: #333;
-      text-transform: uppercase;
-      border: 1px solid #ddd;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    }
-      .color-block span {
-        display: block;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 0.42857rem;
-      }
-    </style>
-  </head>
-  <body>
-
+<body class="styleguide">
+    <header class="row expanded">
+        <div class="logo column small-3"><img src="assets/img/CoE-horiz-rev.svg" alt=""></div>
+    </header>
     <div class="column row">
-      <h1>Client Style Guide</h1>
-      <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation, get help from the Foundation community, or request immediate technical support.</p>
-      <a href="http://foundation.zurb.com/docs/" class="button">Visit the Docs</a>
-      <a href="http://foundation.zurb.com/forum/" class="secondary button">Foundation Forum</a>
-      <a href="http://foundation.zurb.com/business/business-support.html" class="secondary button">Technical Support</a>
+        <h1>Innovation Theme Style Guide</h1>
+        <p class="lead">This style guide was built for the CoE department child theme: Innovation. </p>
     </div>
+    <div class="column row">
+        <div class="row collapse align-justify">
+            <div class="large-2 medium-3 columns">
+                <div class="container" data-sticky-container>
+                    <nav data-sticky data-anchor="main" data-sticky-on="large">
+                        <ul class="vertical menu sidebar" data-magellan>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#colors">Colors</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#typography">Typography</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#the-grid">The Grid</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#buttons">Buttons</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#forms">Forms</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#new-section">New Section</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="large-9 medium-8 columns main" id="main">
+                <section class="ss-section" id="colors" data-magellan-target="colors">
+                    <h1>Colors</h1><p class="lead">Below you can find the different values used for the theme.</p>
 
-    <div class="column row"><div class="row collapse">
+<hr>
+<div class="row up-1 medium-up-3 large-up-6">
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">michigan blue</div>
+      <span style="background: #00274c;"></span>
+      #00274c
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">michigan maize</div>
+      <span style="background: #ffcb05"></span>
+      #ffcb05
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">tappan red</div>
+      <span style="background: #9a3324"></span>
+      #9a3324
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">arboretum blue</div>
+      <span style="background: #407ec9"></span>
+      #407ec9
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">ross orange</div>
+      <span style="background: #d86018"></span>
+      #d86018
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">a2 amethyst</div>
+      <span style="background: #702082"></span>
+      #702082
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">black 100</div>
+      <span style="background: #000"></span>
+      #000000
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 8</div>
+      <span style="background: #202020"></span>
+      #202020
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 24</div>
+      <span style="background: #3d3d3d"></span>
+      #3d3d3d
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 54</div>
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 77</div>
+      <span style="background: #c4c4c4"></span>
+      #c4c4c4
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 93</div>
+      <span style="background: #ededed"></span>
+      #ededed
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 98</div>
+      <span style="background: #fafafa"></span>
+      #fafafa
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">white 100</div>
+      <span style="background: #fff"></span>
+      #ffffff
+    </div>
+  </div>
+</div>
+                </section>
+                <section class="ss-section" id="typography" data-magellan-target="typography">
+                    <h1>Typography</h1><p class="lead">This design uses Pathway Gothic One for super-headings, Montserrat for headings and subheadings, and Cardo paragraph text.</p>
 
-      <div class="large-3 medium-4 columns" data-sticky-container>
-        <ul class="vertical menu">
-            <li><a href="#the-grid">The Grid</a></li>
-            <li><a href="#colors">Colors</a></li>
-            <li><a href="#typography">Typography</a></li>
-            <li><a href="#buttons">Buttons</a></li>
-            <li><a href="#forms">Forms</a></li>
-            <li><a href="#new-section">New Section</a></li>
-        </ul>
-      </div>
+<hr>
+<h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
+<hr>
+<h2>Paragraphs</h2><p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+<hr>
+<h1 class="super-headings">Super Heading Level 1</h1>
 
-      <div class="large-9 medium-8 columns">
-          <section class="ss-section" id="the-grid">
-            <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized cells, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+<h2 class="super-headings">Super Heading Level 2</h2>
+
+<h3 class="super-headings">Super Heading Level 3</h3>
+
+<h4 class="super-headings">Super Heading Level 4</h4>
+
+<h5 class="super-headings">Super Heading Level 5</h5>
+
+<h6 class="super-headings">Super Heading Level 6</h6>
+
+<hr>
+<h1>Heading Level 1</h1>
+
+<h2>Heading Level 2</h2>
+
+<h3>Heading Level 3</h3>
+
+<h4>Heading Level 4</h4>
+
+<h5>Heading Level 5</h5>
+
+<h6>Heading Level 6</h6>
+                </section>
+                <section class="ss-section" id="the-grid" data-magellan-target="the-grid">
+                    <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized cells, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
 
 <hr>
 <h2>Overview</h2><p>The grid is built around two key elements: grid-x and cells. grid-container create a max-width and contain the grid, and cells create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a grid-x or cell.</p>
@@ -171,74 +263,9 @@
   <div class="small-3 cell">3</div>
   <div class="small-9 cell">9, last</div>
 </div>
-          </section>
-          <section class="ss-section" id="colors">
-            <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
-
-<hr>
-<div class="row up-1 medium-up-3 large-up-5">
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #2199e8"></span>
-      #2199e8
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #3adb76"></span>
-      #3adb76
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #ffae00"></span>
-      #ffae00
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #ec5840"></span>
-      #ec5840
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
-    </div>
-  </div>
-</div>
-          </section>
-          <section class="ss-section" id="typography">
-            <h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
-
-<hr>
-<h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
-<hr>
-<h2>Paragraphs</h2><p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.</p>
-<hr>
-<h1>Heading Level 1</h1>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-<h2>Heading Level 2</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-<h3>Heading Level 3</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-<h4>Heading Level 4</h4>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-<h5>Heading Level 5</h5>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-<h6>Heading Level 6</h6>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-
-          </section>
-          <section class="ss-section" id="buttons">
-            <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
+                </section>
+                <section class="ss-section" id="buttons" data-magellan-target="buttons">
+                    <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
 
 <hr>
 <h2>Primary Buttons</h2><p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code>.tiny</code>, <code>.small</code>, and <code>.large</code> classes.</p>
@@ -261,9 +288,9 @@
 <a href="#" class="secondary button">Regular button</a>
 <a href="#" class="secondary small button">Small button</a>
 <a href="#" class="secondary tiny button">Tiny button</a></div>
-          </section>
-          <section class="ss-section" id="forms">
-            <h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
+                </section>
+                <section class="ss-section" id="forms" data-magellan-target="forms">
+                    <h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
 
 <hr>
 <h2>Elements of a Form</h2><p>A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):</p>
@@ -394,9 +421,9 @@
     </div>
   </div>
 </form></div>
-          </section>
-          <section class="ss-section" id="new-section">
-            <h1>New Section</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
+                </section>
+                <section class="ss-section" id="new-section" data-magellan-target="new-section">
+                    <h1>New Section</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
@@ -404,11 +431,11 @@
 <div class="ss-code-live"><a href="#" class="button">Button</a>
 <a href="#" class="button">Button</a>
 <a href="#" class="button">Button</a></div>
-          </section>
-      </div>
-
-    </div></div>
-
+                </section>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/app.js"></script>
-  </body>
+</body>
+
 </html>

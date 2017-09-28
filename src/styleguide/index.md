@@ -1,3 +1,158 @@
+# Colors
+
+<p class="lead">Below you can find the different values used for the theme.</p>
+
+---
+
+<div class="row up-1 medium-up-3 large-up-6">
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">michigan blue</div>
+      <span style="background: #00274c;"></span>
+      #00274c
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">michigan maize</div>
+      <span style="background: #ffcb05"></span>
+      #ffcb05
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">tappan red</div>
+      <span style="background: #9a3324"></span>
+      #9a3324
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">arboretum blue</div>
+      <span style="background: #407ec9"></span>
+      #407ec9
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">ross orange</div>
+      <span style="background: #d86018"></span>
+      #d86018
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">a2 amethyst</div>
+      <span style="background: #702082"></span>
+      #702082
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">black 100</div>
+      <span style="background: #000"></span>
+      #000000
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 8</div>
+      <span style="background: #202020"></span>
+      #202020
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 24</div>
+      <span style="background: #3d3d3d"></span>
+      #3d3d3d
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 54</div>
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 77</div>
+      <span style="background: #c4c4c4"></span>
+      #c4c4c4
+    </div>
+  </div>
+   <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 93</div>
+      <span style="background: #ededed"></span>
+      #ededed
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">gray 98</div>
+      <span style="background: #fafafa"></span>
+      #fafafa
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <div class="color-name">white 100</div>
+      <span style="background: #fff"></span>
+      #ffffff
+    </div>
+  </div>
+</div>
+
+
+
+# Typography
+
+<p class="lead">This design uses Pathway Gothic One for super-headings, Montserrat for headings and subheadings, and Cardo paragraph text.</p>
+
+---
+
+## Headings
+
+Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
+
+---
+
+## Paragraphs
+
+Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+---
+
+<h1 class="super-headings">Super Heading Level 1</h1>
+
+<h2 class="super-headings">Super Heading Level 2</h2>
+
+<h3 class="super-headings">Super Heading Level 3</h3>
+
+<h4 class="super-headings">Super Heading Level 4</h4>
+
+<h5 class="super-headings">Super Heading Level 5</h5>
+
+<h6 class="super-headings">Super Heading Level 6</h6>
+
+---
+
+<h1>Heading Level 1</h1>
+
+<h2>Heading Level 2</h2>
+
+<h3>Heading Level 3</h3>
+
+<h4>Heading Level 4</h4>
+
+<h5>Heading Level 5</h5>
+
+<h6>Heading Level 6</h6>
+
+
+
 # The Grid
 
 <p class="lead">Problem: You've got tons of content, each needing different sized cells, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
@@ -122,91 +277,6 @@ As you've probably noticed in the examples above, you have access to a small, me
   <div class="small-3 cell">3</div>
   <div class="small-9 cell">9, last</div>
 </div>
-
-
-
-# Colors
-
-<p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>\_settings.scss</code></p>
-
----
-
-<div class="row up-1 medium-up-3 large-up-5">
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #2199e8"></span>
-      #2199e8
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #3adb76"></span>
-      #3adb76
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #ffae00"></span>
-      #ffae00
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #ec5840"></span>
-      #ec5840
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
-    </div>
-  </div>
-</div>
-
-
-
-# Typography
-
-<p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
-
----
-
-## Headings
-
-Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
-
----
-
-## Paragraphs
-
-Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.
-
----
-
-<h1>Heading Level 1</h1>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
-
-<h2>Heading Level 2</h2>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
-
-<h3>Heading Level 3</h3>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
-
-<h4>Heading Level 4</h4>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
-
-<h5>Heading Level 5</h5>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
-
-<h6>Heading Level 6</h6>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
 
 

@@ -113,8 +113,6 @@
                             }
                         }
                         &.welcome-slide {
-                            // width: 100vw;
-                            // height: 100%;
                             .hed {
                                 .eyebrow {
                                     color: $michigan-maize;
@@ -931,12 +929,8 @@
             }
             @include breakpoint(medium down) {
                 padding-left: 0;
-                padding-right: 0; // margin-bottom: 1rem;
-                &:first-child {
-                    // padding-left: 1rem;
-                }
+                padding-right: 0;
                 &:last-child {
-                    // padding-right: 1rem;
                     margin-bottom: 0;
                 }
             }
