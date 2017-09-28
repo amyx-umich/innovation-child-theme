@@ -1239,7 +1239,7 @@
                                     text-transform: uppercase;
                                     border-top: 1px solid $white;
                                     padding-top: .625rem;
-                                    @include breakpoint(medium down) {
+                                    @include breakpoint(small only) {
                                         font-size: 1rem;
                                     }
                                 }
