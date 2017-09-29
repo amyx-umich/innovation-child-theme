@@ -5,14 +5,14 @@
 ---
 <h3>Primary Colors</h3>
 <div class="row up-1 medium-up-3 large-up-6">
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">michigan blue</div>
       <span style="background: #00274c;"></span>
       #00274c
 </div>
 </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">michigan maize</div>
       <span style="background: #ffcb05"></span>
@@ -22,28 +22,28 @@
 </div>
 <h3>Secondary Colors</h3>
   <div class="row up-1 medium-up-3 large-up-6">
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">tappan red</div>
       <span style="background: #9a3324"></span>
       #9a3324
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">arboretum blue</div>
       <span style="background: #407ec9"></span>
       #407ec9
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">ross orange</div>
       <span style="background: #d86018"></span>
       #d86018
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">a2 amethyst</div>
       <span style="background: #702082"></span>
@@ -53,56 +53,56 @@
   </div>
   <h3>Supporting Values</h3>
   <div class="row up-1 medium-up-3 large-up-6">
-   <div class="column">
+   <div class="columns">
     <div class="color-block">
       <div class="color-name">black 100</div>
       <span style="background: #000"></span>
       #000000
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">gray 8</div>
       <span style="background: #202020"></span>
       #202020
     </div>
   </div>
-   <div class="column">
+   <div class="columns">
     <div class="color-block">
       <div class="color-name">gray 24</div>
       <span style="background: #3d3d3d"></span>
       #3d3d3d
     </div>
   </div>
-   <div class="column">
+   <div class="columns">
     <div class="color-block">
       <div class="color-name">gray 54</div>
       <span style="background: #8a8a8a"></span>
       #8a8a8a
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">gray 77</div>
       <span style="background: #c4c4c4"></span>
       #c4c4c4
     </div>
   </div>
-   <div class="column">
+   <div class="columns">
     <div class="color-block">
       <div class="color-name">gray 93</div>
       <span style="background: #ededed"></span>
       #ededed
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">gray 98</div>
       <span style="background: #fafafa"></span>
       #fafafa
     </div>
   </div>
-  <div class="column">
+  <div class="columns">
     <div class="color-block">
       <div class="color-name">white 100</div>
       <span style="background: #fff"></span>
@@ -156,101 +156,101 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 
 # The Grid
 
-<p class="lead">Problem: You've got tons of content, each needing different sized columns, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+<p class="lead">Problem: You've got tons of content, each needing different sized columnss, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
 
 ---
 
 ## Overview
 
-The grid is built around two key elements: row and columns. grid-container create a max-width and contain the grid, and columns create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or column.
+The grid is built around two key elements: row and columnss. grid-container create a max-width and contain the grid, and columnss create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
 
 ---
 
 ## Nesting
 
-In the Grid you can nest columns down as far as you'd like. Just embed row inside columns and go from there. Each embedded row can contain up to 12 columns.
+In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
 
 ---
 
 ## How to Use
 
-Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create columns.
+Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create columnss.
 
 ```html
 <div class="row">
-  <div class="small-6 medium-4 large-3 column">...</div>
-  <div class="small-6 medium-8 large-9 column">...</div>
+  <div class="small-6 medium-4 large-3 columns">...</div>
+  <div class="small-6 medium-8 large-9 columns">...</div>
 </div>
 ```
 
 <div class="row display">
-  <div class="small-12 large-4 column">4</div>
-<div class="small-12 large-4 column">4</div>
-<div class="small-12 large-4 column">4</div>
+  <div class="small-12 large-4 columns">4</div>
+<div class="small-12 large-4 columns">4</div>
+<div class="small-12 large-4 columns">4</div>
 </div>
 <div class="row display">
-  <div class="small-12 large-3 column">3</div>
-  <div class="small-12 large-6 column">6</div>
-  <div class="small-12 large-3 column">3</div>
+  <div class="small-12 large-3 columns">3</div>
+  <div class="small-12 large-6 columns">6</div>
+  <div class="small-12 large-3 columns">3</div>
 </div>
 <div class="row display">
-  <div class="small-12 large-2 column">2</div>
-  <div class="small-12 large-8 column">8</div>
-  <div class="small-12 large-2 column">2</div>
+  <div class="small-12 large-2 columns">2</div>
+  <div class="small-12 large-8 columns">8</div>
+  <div class="small-12 large-2 columns">2</div>
 </div>
 <div class="row display">
-  <div class="small-12 large-3 column">3</div>
-  <div class="small-12 large-9 column">9</div>
+  <div class="small-12 large-3 columns">3</div>
+  <div class="small-12 large-9 columns">9</div>
 </div>
 <div class="row display">
-  <div class="small-12 large-4 column">4</div>
-  <div class="small-12 large-8 column">8</div>
+  <div class="small-12 large-4 columns">4</div>
+  <div class="small-12 large-8 columns">8</div>
 </div>
 <div class="row display">
-  <div class="small-12 large-5 column">5</div>
-  <div class="small-12 large-7 column">7</div>
+  <div class="small-12 large-5 columns">5</div>
+  <div class="small-12 large-7 columns">7</div>
 </div>
 <div class="row display">
-  <div class="small-12 large-6 column">6</div>
-  <div class="small-12 large-6 column">6</div>
+  <div class="small-12 large-6 columns">6</div>
+  <div class="small-12 large-6 columns">6</div>
 </div>
 
 ---
 
 ## Nesting row
 
-In the Grid you can nest columns down as far as you'd like. Just embed row inside columns and go from there. Each embedded row can contain up to 12 columns.
+In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
 
 ```html
 <div class="row">
-  <div class="small-8 column">8
+  <div class="small-8 columns">8
     <div class="row">
-      <div class="small-8 column">8 Nested
+      <div class="small-8 columns">8 Nested
         <div class="row">
-          <div class="small-8 column">8 Nested Again</div>
-          <div class="small-4 column">4</div>
+          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-4 columns">4</div>
         </div>
       </div>
-      <div class="small-4 column">4</div>
+      <div class="small-4 columns">4</div>
     </div>
   </div>
-  <div class="small-4 column">4</div>
+  <div class="small-4 columns">4</div>
 </div>
 ```
 
 <div class="row display">
-  <div class="small-8 column">8
-    <div class="row display">
-      <div class="small-8 column">8 Nested
-        <div class="row display">
-          <div class="small-8 column">8 Nested Again</div>
-<div class="small-4 column">4</div>
+  <div class="small-8 columns">8
+    <div class="row align-center display">
+      <div class="small-8 columns">8 Nested
+        <div class="row align-center display">
+          <div class="small-8 columns">8 Nested Again</div>
+<div class="small-4 columns">4</div>
 </div>
       </div>
-      <div class="small-4 column">4</div>
+      <div class="small-4 columns">4</div>
     </div>
   </div>
-  <div class="small-4 columngi">4</div>
+  <div class="small-4 columns">4</div>
 </div>
 
 ---
@@ -261,22 +261,22 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 ```html
 <div class="row">
-  <div class="small-2 column">2</div>
-  <div class="small-10 column">10, last</div>
+  <div class="small-2 columns">2</div>
+  <div class="small-10 columns">10, last</div>
 </div>
 <div class="row">
-  <div class="small-3 column">3</div>
-  <div class="small-9 column">9, last</div>
+  <div class="small-3 columns">3</div>
+  <div class="small-9 columns">9, last</div>
 </div>
 ```
 
 <div class="row display">
-  <div class="small-2 column">2</div>
-  <div class="small-10 column">10, last</div>
+  <div class="small-2 columns">2</div>
+  <div class="small-10 columns">10, last</div>
 </div>
 <div class="row display">
-  <div class="small-3 column">3</div>
-  <div class="small-9 column">9, last</div>
+  <div class="small-3 columns">3</div>
+  <div class="small-9 columns">9, last</div>
 </div>
 
 
@@ -350,10 +350,10 @@ Check out the [Foundation Docs](http://foundation.zurb.com/sites/docs) to learn 
 
 ## Form Layouts
 
-Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage — they are full width by default. That means that inputs will run as wide as the column that contains them. However, you have two options which make these forms extremely versatile:
+Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage — they are full width by default. That means that inputs will run as wide as the columns that contains them. However, you have two options which make these forms extremely versatile:
 
-- You can size inputs using column sizes, like `.medium-6`, `.small-6`.
-- You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.
+- You can size inputs using columns sizes, like `.medium-6`, `.small-6`.
+- You can create row elements inside your form and use columnss for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.
 
 ---
 
@@ -362,17 +362,17 @@ Form elements in Foundation are styled based on their type attribute rather than
 ```html_example
 <form>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 columnss">
       <label>Label</label>
       <input type="text" placeholder="placeholder">
     </div>
   </div>
   <div class="row">
-    <div class="large-6 columns">
+    <div class="large-6 columnss">
       <label>Label</label>
       <input type="text" placeholder="placeholder">
     </div>
-    <div class="large-6 columns">
+    <div class="large-6 columnss">
       <div class="row collapse">
         <label>Label</label>
         <div class="input-group">
@@ -383,7 +383,7 @@ Form elements in Foundation are styled based on their type attribute rather than
     </div>
   </div>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 columnss">
       <label>Select Box</label>
       <select>
         <option value="good">Good</option>
@@ -393,19 +393,19 @@ Form elements in Foundation are styled based on their type attribute rather than
     </div>
   </div>
   <div class="row">
-    <div class="large-6 columns">
+    <div class="large-6 columnss">
       <label>Choose Your Favorite</label>
       <input type="radio" name="radio1" value="radio1" id="radio1"><label for="radio1">Red</label>
       <input type="radio" name="radio2" value="radio2" id="radio2"><label for="radio2">Blue</label>
     </div>
-    <div class="large-6 columns">
+    <div class="large-6 columnss">
       <label>Check these out</label>
       <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
       <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
     </div>
   </div>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 columnss">
       <label>Textarea Label</label>
       <textarea placeholder="placeholder"></textarea>
     </div>
