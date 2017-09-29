@@ -679,7 +679,7 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 
 # Typography
 
-<p class="lead">This design uses [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One) for super-headings, [Montserrat](https://fonts.google.com/specimen/Montserrat) for headings and subheadings, and [Cardo](https://fonts.google.com/specimen/Cardo) paragraph text.</p>
+<p class="lead">This design uses <a href="https://fonts.google.com/specimen/Pathway+Gothic+One" target="_blank">Pathway Gothic One</a> for super-headings, <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for headings and subheadings, and <a href="https://fonts.google.com/specimen/Cardo" target="_blank">Cardo</a> paragraph text.</p>
 
 ---
 
