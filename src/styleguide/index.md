@@ -1,301 +1,3 @@
-# Colors
-
-<p class="lead">Below you can find the different values used for the theme.</p>
-
----
-<h3>Primary Colors</h3>
-<div class="row up-1 medium-up-3 large-up-6">
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">michigan blue</div>
-      <span style="background: #00274c;"></span>
-      #00274c
-</div>
-</div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">michigan maize</div>
-      <span style="background: #ffcb05"></span>
-      #ffcb05
-    </div>
-  </div>
-</div>
-<h3>Secondary Colors</h3>
-  <div class="row up-1 medium-up-3 large-up-6">
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">tappan red</div>
-      <span style="background: #9a3324"></span>
-      #9a3324
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">arboretum blue</div>
-      <span style="background: #407ec9"></span>
-      #407ec9
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">ross orange</div>
-      <span style="background: #d86018"></span>
-      #d86018
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">a2 amethyst</div>
-      <span style="background: #702082"></span>
-      #702082
-    </div>
-  </div>
-  </div>
-  <h3>Supporting Values</h3>
-  <div class="row up-1 medium-up-3 large-up-6">
-   <div class="columns">
-    <div class="color-block">
-      <div class="color-name">black 100</div>
-      <span style="background: #000"></span>
-      #000000
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">gray 8</div>
-      <span style="background: #202020"></span>
-      #202020
-    </div>
-  </div>
-   <div class="columns">
-    <div class="color-block">
-      <div class="color-name">gray 24</div>
-      <span style="background: #3d3d3d"></span>
-      #3d3d3d
-    </div>
-  </div>
-   <div class="columns">
-    <div class="color-block">
-      <div class="color-name">gray 54</div>
-      <span style="background: #8a8a8a"></span>
-      #8a8a8a
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">gray 77</div>
-      <span style="background: #c4c4c4"></span>
-      #c4c4c4
-    </div>
-  </div>
-   <div class="columns">
-    <div class="color-block">
-      <div class="color-name">gray 93</div>
-      <span style="background: #ededed"></span>
-      #ededed
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">gray 98</div>
-      <span style="background: #fafafa"></span>
-      #fafafa
-    </div>
-  </div>
-  <div class="columns">
-    <div class="color-block">
-      <div class="color-name">white 100</div>
-      <span style="background: #fff"></span>
-      #ffffff
-    </div>
-  </div>
-</div>
-
-
-
-# Typography
-
-<p class="lead">This design uses [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One) for super-headings, [Montserrat](https://fonts.google.com/specimen/Montserrat) for headings and subheadings, and [Cardo](https://fonts.google.com/specimen/Cardo) paragraph text.</p>
-
----
-
-### Headings
-
-Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
-
----
-
-### Paragraphs
-
-Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
-
----
-
-<h1 class="super-headings">Super Heading h1</h1>
-
-<h2 class="super-headings">Super Heading h2</h2>
-
-<h3 class="super-headings">Super Heading h3</h3>
-
-<h4 class="super-headings">Super Heading h4</h4>
-
-<h5 class="super-headings">Super Heading h5</h5>
-
-<h6 class="super-headings">Super Heading h6</h6>
-
----
-
-<h1>Heading h1</h1>
-
-<h2>Heading h2</h2>
-
-<h3>Heading h3</h3>
-
-<h4>Heading h4</h4>
-
-<h5>Heading h5</h5>
-
-<h6>Heading h6</h6>
-
----
-
-### Eyebrows
-<p class="lead">Eyebrows appear atop headlines in certain cases. They usually denote a category the item appears in.</p>
-
-<div class="hed">
-  <div class="eyebrow">Eyebrow</div>
-  <h3>This is a headline</h3>
-</div>
-
-
-
-# The Grid
-
-<p class="lead">This is mostly just and explanation of the grid we're using. Most likely, you won't need to add it to any page templates.</p>
-
----
-
-### Overview
-
-The grid is built around two key elements: row and columns. `.row` creates a max-width and contain the grid, and `.columns` create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
-
----
-
-### Nesting
-
-In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
-
----
-
-### How to Use
-
-Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create columnss.
-
-```html
-<div class="row">
-  <div class="small-6 medium-4 large-3 columns">...</div>
-  <div class="small-6 medium-8 large-9 columns">...</div>
-</div>
-```
-
-<div class="row display">
-  <div class="small-12 large-4 columns">4</div>
-<div class="small-12 large-4 columns">4</div>
-<div class="small-12 large-4 columns">4</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-3 columns">3</div>
-  <div class="small-12 large-6 columns">6</div>
-  <div class="small-12 large-3 columns">3</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-2 columns">2</div>
-  <div class="small-12 large-8 columns">8</div>
-  <div class="small-12 large-2 columns">2</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-3 columns">3</div>
-  <div class="small-12 large-9 columns">9</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-4 columns">4</div>
-  <div class="small-12 large-8 columns">8</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-5 columns">5</div>
-  <div class="small-12 large-7 columns">7</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-6 columns">6</div>
-  <div class="small-12 large-6 columns">6</div>
-</div>
-
----
-
-### Nesting row
-
-In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
-
-```html
-<div class="row">
-  <div class="small-8 columns">8
-    <div class="row">
-      <div class="small-8 columns">8 Nested
-        <div class="row">
-          <div class="small-8 columns">8 Nested Again</div>
-          <div class="small-4 columns">4</div>
-        </div>
-      </div>
-      <div class="small-4 columns">4</div>
-    </div>
-  </div>
-  <div class="small-4 columns">4</div>
-</div>
-```
-
-<div class="row display">
-  <div class="small-8 columns">8
-    <div class="row align-center display">
-      <div class="small-8 columns">8 Nested
-        <div class="row align-center display">
-          <div class="small-8 columns">8 Nested Again</div>
-<div class="small-4 columns">4</div>
-</div>
-      </div>
-      <div class="small-4 columns">4</div>
-    </div>
-  </div>
-  <div class="small-4 columns">4</div>
-</div>
-
----
-
-### Small Grid
-
-As you've probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.
-
-```html
-<div class="row">
-  <div class="small-2 columns">2</div>
-  <div class="small-10 columns">10, last</div>
-</div>
-<div class="row">
-  <div class="small-3 columns">3</div>
-  <div class="small-9 columns">9, last</div>
-</div>
-```
-
-<div class="row display">
-  <div class="small-2 columns">2</div>
-  <div class="small-10 columns">10, last</div>
-</div>
-<div class="row display">
-  <div class="small-3 columns">3</div>
-  <div class="small-9 columns">9, last</div>
-</div>
-
-
-
 # Breadcrumbs
 
 ```html_example
@@ -459,6 +161,248 @@ These buttons are used for less important, secondary actions on a page.
 
 
 
+# Colors
+
+<p class="lead">Below you can find the different values used for the theme.</p>
+
+---
+<h3>Primary Colors</h3>
+<div class="row up-1 medium-up-3 large-up-6">
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">michigan blue</div>
+      <span style="background: #00274c;"></span>
+      #00274c
+</div>
+</div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">michigan maize</div>
+      <span style="background: #ffcb05"></span>
+      #ffcb05
+    </div>
+  </div>
+</div>
+<h3>Secondary Colors</h3>
+  <div class="row up-1 medium-up-3 large-up-6">
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">tappan red</div>
+      <span style="background: #9a3324"></span>
+      #9a3324
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">arboretum blue</div>
+      <span style="background: #407ec9"></span>
+      #407ec9
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">ross orange</div>
+      <span style="background: #d86018"></span>
+      #d86018
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">a2 amethyst</div>
+      <span style="background: #702082"></span>
+      #702082
+    </div>
+  </div>
+  </div>
+  <h3>Supporting Values</h3>
+  <div class="row up-1 medium-up-3 large-up-6">
+   <div class="columns">
+    <div class="color-block">
+      <div class="color-name">black 100</div>
+      <span style="background: #000"></span>
+      #000000
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">gray 8</div>
+      <span style="background: #202020"></span>
+      #202020
+    </div>
+  </div>
+   <div class="columns">
+    <div class="color-block">
+      <div class="color-name">gray 24</div>
+      <span style="background: #3d3d3d"></span>
+      #3d3d3d
+    </div>
+  </div>
+   <div class="columns">
+    <div class="color-block">
+      <div class="color-name">gray 54</div>
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">gray 77</div>
+      <span style="background: #c4c4c4"></span>
+      #c4c4c4
+    </div>
+  </div>
+   <div class="columns">
+    <div class="color-block">
+      <div class="color-name">gray 93</div>
+      <span style="background: #ededed"></span>
+      #ededed
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">gray 98</div>
+      <span style="background: #fafafa"></span>
+      #fafafa
+    </div>
+  </div>
+  <div class="columns">
+    <div class="color-block">
+      <div class="color-name">white 100</div>
+      <span style="background: #fff"></span>
+      #ffffff
+    </div>
+  </div>
+</div>
+
+
+
+# The Grid
+
+<p class="lead">This is mostly just and explanation of the grid we're using. Most likely, you won't need to add it to any page templates.</p>
+
+---
+
+### Overview
+
+The grid is built around two key elements: row and columns. `.row` creates a max-width and contain the grid, and `.columns` create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
+
+---
+
+### Nesting
+
+In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
+
+---
+
+### How to Use
+
+Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create columnss.
+
+```html
+<div class="row">
+  <div class="small-6 medium-4 large-3 columns">...</div>
+  <div class="small-6 medium-8 large-9 columns">...</div>
+</div>
+```
+
+<div class="row display">
+  <div class="small-12 large-4 columns">4</div>
+<div class="small-12 large-4 columns">4</div>
+<div class="small-12 large-4 columns">4</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-3 columns">3</div>
+  <div class="small-12 large-6 columns">6</div>
+  <div class="small-12 large-3 columns">3</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-2 columns">2</div>
+  <div class="small-12 large-8 columns">8</div>
+  <div class="small-12 large-2 columns">2</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-3 columns">3</div>
+  <div class="small-12 large-9 columns">9</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-4 columns">4</div>
+  <div class="small-12 large-8 columns">8</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-5 columns">5</div>
+  <div class="small-12 large-7 columns">7</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-6 columns">6</div>
+  <div class="small-12 large-6 columns">6</div>
+</div>
+
+---
+
+### Nesting row
+
+In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
+
+```html
+<div class="row">
+  <div class="small-8 columns">8
+    <div class="row">
+      <div class="small-8 columns">8 Nested
+        <div class="row">
+          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-4 columns">4</div>
+        </div>
+      </div>
+      <div class="small-4 columns">4</div>
+    </div>
+  </div>
+  <div class="small-4 columns">4</div>
+</div>
+```
+
+<div class="row display">
+  <div class="small-8 columns">8
+    <div class="row align-center display">
+      <div class="small-8 columns">8 Nested
+        <div class="row align-center display">
+          <div class="small-8 columns">8 Nested Again</div>
+<div class="small-4 columns">4</div>
+</div>
+      </div>
+      <div class="small-4 columns">4</div>
+    </div>
+  </div>
+  <div class="small-4 columns">4</div>
+</div>
+
+---
+
+### Small Grid
+
+As you've probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.
+
+```html
+<div class="row">
+  <div class="small-2 columns">2</div>
+  <div class="small-10 columns">10, last</div>
+</div>
+<div class="row">
+  <div class="small-3 columns">3</div>
+  <div class="small-9 columns">9, last</div>
+</div>
+```
+
+<div class="row display">
+  <div class="small-2 columns">2</div>
+  <div class="small-10 columns">10, last</div>
+</div>
+<div class="row display">
+  <div class="small-3 columns">3</div>
+  <div class="small-9 columns">9, last</div>
+</div>
+
+
+
 # Images
 
 <p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1.</p>
@@ -618,3 +562,59 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
   </tbody>
 </table>
 ```
+
+
+
+# Typography
+
+<p class="lead">This design uses [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One) for super-headings, [Montserrat](https://fonts.google.com/specimen/Montserrat) for headings and subheadings, and [Cardo](https://fonts.google.com/specimen/Cardo) paragraph text.</p>
+
+---
+
+### Headings
+
+Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
+
+---
+
+### Paragraphs
+
+Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+---
+
+<h1 class="super-headings">Super Heading h1</h1>
+
+<h2 class="super-headings">Super Heading h2</h2>
+
+<h3 class="super-headings">Super Heading h3</h3>
+
+<h4 class="super-headings">Super Heading h4</h4>
+
+<h5 class="super-headings">Super Heading h5</h5>
+
+<h6 class="super-headings">Super Heading h6</h6>
+
+---
+
+<h1>Heading h1</h1>
+
+<h2>Heading h2</h2>
+
+<h3>Heading h3</h3>
+
+<h4>Heading h4</h4>
+
+<h5>Heading h5</h5>
+
+<h6>Heading h6</h6>
+
+---
+
+### Eyebrows
+<p class="lead">Eyebrows appear atop headlines in certain cases. They usually denote a category the item appears in.</p>
+
+<div class="hed">
+  <div class="eyebrow">Eyebrow</div>
+  <h3>This is a headline</h3>
+</div>
