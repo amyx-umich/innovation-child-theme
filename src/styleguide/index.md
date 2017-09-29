@@ -498,12 +498,9 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 # Links
 
-```html_example
-<span class="secondary label">Secondary Label</span>
-<span class="success label">Success Label</span>
-<span class="alert label">Alert Label</span>
-<span class="warning label">Warning Label</span>
-```
+<p class="lead"><a href="#">Internal links</a> and <a href="#" target="_blank">external links</a> get their own treatments.</p>
+
+
 
 
 

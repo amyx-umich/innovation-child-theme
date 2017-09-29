@@ -62,6 +62,26 @@
         p {
             font-size: 1.125rem;
         }
+        #links {
+            a {
+                color: $tappan-red;
+                border-bottom: 2px solid transparent;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $tappan-red;
+                    border-bottom: 2px solid $tappan-red;
+                }
+            }
+            a[target="_blank"] {
+                &:after {
+                    font-family: 'FontAwesome';
+                    content: '\f08e';
+                    font-size: .75rem;
+                    color: inherit;
+                    padding-left: 4px;
+                }
+            }
+        }
         #typography {
             a {
                 color: $tappan-red;
