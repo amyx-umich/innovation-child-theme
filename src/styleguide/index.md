@@ -146,11 +146,26 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 ---
 
 <h1>Heading h1</h1>
+
 <h2>Heading h2</h2>
+
 <h3>Heading h3</h3>
+
 <h4>Heading h4</h4>
+
 <h5>Heading h5</h5>
+
 <h6>Heading h6</h6>
+
+---
+
+### Eyebrows
+<p class="lead">Eyebrows appear atop headlines in certain cases. They usually denote a category the item appears in.</p>
+
+<div class="hed">
+  <div class="eyebrow">Eyebrow</div>
+  <h3>This is a headline</h3>
+</div>
 
 
 
@@ -441,6 +456,88 @@ These buttons are used for less important, secondary actions on a page.
     </div>
 </div>
 ```
+
+
+
+# Images
+
+<p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1.</p>
+
+
+### Large featured image (for sliders or pages)
+<div class="image">
+  <img src="../assets/img/orbit-bg-2.jpg" alt="">
+  <span class="secondary label overlay">16:9 ratio, 2830 × 1274 pixels upload size</span>
+</div>
+
+---
+
+### Card images
+<div class="image">
+  <img src="../assets/img/aud-01.jpg" alt="">
+  <span class="secondary label overlay">3:2 ratio, 1200 × 800 pixels upload size</span>
+</div>
+
+---
+
+### Stat and promo images
+<div class="image">
+  <img src="../assets/img/stats.jpg" alt="">
+  <span class="secondary label overlay">1:1 ratio, 600 × 600 pixels upload size</span>
+</div>
+
+---
+
+### Research row images
+<div class="image">
+  <img src="../assets/img/research-img-02.jpg" alt="">
+  <span class="secondary label overlay">3:4 ratio, 1278 × 1500 pixels upload size</span>
+</div>
+
+---
+
+## Image treatments
+
+<p class="lead">The theme will take care of the duotones. Within certain fields in the backend, you will have a selection of duotones you can use over uploaded images. Please note that not every image will work. Use your best judgement on what works and does not. However, desaturated images tend to work best with duotones.</p>
+
+<div class="row collapse large-up-3">
+    <div class="image duotones columns">
+        <div class="blue-duotone" style="background-image: url('../assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="dark-blue-duotone" style="background-image: url('../assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Dark Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="red-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Red Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="yellow-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="purple-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Purple Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="green-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Green Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="orange-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Orange Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-red-blue-dark" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Blue Red Blend Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-blue-yellow-light" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Blue Blend Duotone</span>
+    </div>
+</div>
 
 
 

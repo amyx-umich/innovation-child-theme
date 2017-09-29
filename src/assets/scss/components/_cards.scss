@@ -1,9 +1,13 @@
 .card {
-    box-shadow: 0 0 0 rgba($tappan-red, 0);
+    box-shadow: 0 0 0 rgba($medium-gray, 0);
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
-        border-left-color: $tappan-red;
-        box-shadow: -5px 5px 0 rgba($tappan-red, 1);
+        box-shadow: -5px 5px 0 rgba($medium-gray, 1);
+    }
+    .card-divider {
+    	font-family: $header-font-family;
+    	font-weight: 700;
+    	color: $white;
     }
 }

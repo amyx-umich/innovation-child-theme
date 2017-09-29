@@ -72,6 +72,55 @@
                     border-bottom: 2px solid $tappan-red;
                 }
             }
+            .hed {
+                margin-bottom: 1.5rem;
+                padding: 1rem 1rem .5rem;
+                background-color: $light-gray;
+                border-radius: $global-radius;
+                border: 1px solid $medium-gray;
+                @include breakpoint(small only) {
+                    margin-bottom: .5rem;
+                }
+                .eyebrow {
+                    font-family: $super-header-font-family;
+                    font-size: 1.25rem;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    color: $ross-orange;
+                    @include breakpoint(small only) {
+                        font-size: 1.1rem;
+                    }
+                }
+                h3 {
+                    font-size: 2rem;
+                    line-height: 1;
+                    padding-bottom: .5rem;
+                    @include breakpoint(medium down) {
+                        font-size: 1.875rem;
+                    }
+                    @include breakpoint(small only) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        #images {
+            .image {
+                position: relative;
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: .8;
+                }
+                &.duotones {
+                    div {
+                        background-size: cover;
+                        height: 100%;
+                        padding-bottom: 56.25%;
+                    }
+                }
+            }
         }
         h1,
         h2,

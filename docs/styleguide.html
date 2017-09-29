@@ -31,6 +31,7 @@
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#buttons">Buttons</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#callouts">Callouts</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#cards">Cards</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#images">Images</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#labels">Labels</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#tooltips">Tooltips</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#tables">Tables</a></li>
@@ -172,12 +173,25 @@
 <h6 class="super-headings">Super Heading h6</h6>
 
 <hr>
-<p><h1>Heading h1</h1></p>
-<p><h2>Heading h2</h2></p>
-<p><h3>Heading h3</h3></p>
-<p><h4>Heading h4</h4></p>
-<p><h5>Heading h5</h5></p>
+<h1>Heading h1</h1>
+
+<h2>Heading h2</h2>
+
+<h3>Heading h3</h3>
+
+<h4>Heading h4</h4>
+
+<h5>Heading h5</h5>
+
 <h6>Heading h6</h6>
+
+<hr>
+<h3>Eyebrows</h3><p class="lead">Eyebrows appear atop headlines in certain cases. They usually denote a category the item appears in.</p>
+
+<div class="hed">
+  <div class="eyebrow">Eyebrow</div>
+  <h3>This is a headline</h3>
+</div>
                 </section>
                 <section class="ss-section" id="the-grid" data-magellan-target="the-grid">
                     <h1>The Grid</h1><p class="lead">This is mostly just and explanation of the grid we&#39;re using. Most likely, you won&#39;t need to add it to any page templates.</p>
@@ -524,6 +538,75 @@
         </div>
     </div>
 </div></div>
+                </section>
+                <section class="ss-section" id="images" data-magellan-target="images">
+                    <h1>Images</h1><p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1.</p>
+
+
+<h3>Large featured image (for sliders or pages)</h3><div class="image">
+  <img src="../assets/img/orbit-bg-2.jpg" alt="">
+  <span class="secondary label overlay">16:9 ratio, 2830 × 1274 pixels upload size</span>
+</div>
+
+<hr>
+<h3>Card images</h3><div class="image">
+  <img src="../assets/img/aud-01.jpg" alt="">
+  <span class="secondary label overlay">3:2 ratio, 1200 × 800 pixels upload size</span>
+</div>
+
+<hr>
+<h3>Stat and promo images</h3><div class="image">
+  <img src="../assets/img/stats.jpg" alt="">
+  <span class="secondary label overlay">1:1 ratio, 600 × 600 pixels upload size</span>
+</div>
+
+<hr>
+<h3>Research row images</h3><div class="image">
+  <img src="../assets/img/research-img-02.jpg" alt="">
+  <span class="secondary label overlay">3:4 ratio, 1278 × 1500 pixels upload size</span>
+</div>
+
+<hr>
+<h2>Image treatments</h2><p class="lead">The theme will take care of the duotones. Within certain fields in the backend, you will have a selection of duotones you can use over uploaded images. Please note that not every image will work. Use your best judgement on what works and does not. However, desaturated images tend to work best with duotones.</p>
+
+<div class="row collapse large-up-3">
+    <div class="image duotones columns">
+        <div class="blue-duotone" style="background-image: url('../assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="dark-blue-duotone" style="background-image: url('../assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Dark Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="red-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Red Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="yellow-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="purple-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Purple Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="green-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Green Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="orange-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Orange Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-red-blue-dark" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Blue Red Blend Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-blue-yellow-light" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Blue Blend Duotone</span>
+    </div>
+</div>
                 </section>
                 <section class="ss-section" id="labels" data-magellan-target="labels">
                     <h1>Labels</h1><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary label"</span>&gt;</span>Secondary Label<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
