@@ -124,6 +124,34 @@
                 }
             }
         }
+        #iconography {
+            .lead {
+                a {
+                    color: $tappan-red;
+                    border-bottom: 2px solid transparent;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        color: $tappan-red;
+                        border-bottom: 2px solid $tappan-red;
+                    }
+                }
+            }
+            .icon-fonts {
+                margin-bottom: 1rem;
+                i {
+                    margin-right: .625rem;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .icon {
+                margin-bottom: 1.5rem;
+                .word {
+                    font-family: $header-font-family;
+                }
+            }
+        }
         #images {
             .image {
                 position: relative;

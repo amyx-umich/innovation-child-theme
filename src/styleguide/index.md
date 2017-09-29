@@ -403,6 +403,102 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 
 
+# Iconography
+
+<p class="lead">This theme uses a combination of [Font Awesome](http://fontawesome.io/cheatsheet/) icon fonts and custom SVGs.</p>
+
+### Font Awesome
+<div class="icon-fonts"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i> <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>  <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> <i class="fa fa-flickr fa-lg" aria-hidden="true"></i> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> <i class="fa fa-youtube fa-lg" aria-hidden="true"></i> <i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i> <i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></div>
+<div class="icon-fonts"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i> <i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i> <i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i> <i class="fa fa-external-link" aria-hidden="true"></i> <i class="fa fa-envelope-o" aria-hidden="true"></i> <i class="fa fa-close" aria-hidden="true"></i> <i class="fa fa-camera" aria-hidden="true"></i>
+</div>
+
+
+---
+
+
+### SVGs
+We're currently offering a limited number, but will add more on an as-needed basis.
+<div class="row large-up-8">
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+        </div>
+        <div class="word">Award</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+        </div>
+        <div class="word">Globe</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+        </div>
+        <div class="word">Briefcase</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </div>
+        <div class="word">Eye</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud-rain">
+                <line x1="16" y1="13" x2="16" y2="21"></line>
+                <line x1="8" y1="13" x2="8" y2="21"></line>
+                <line x1="12" y1="15" x2="12" y2="23"></line>
+                <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>
+            </svg>
+        </div>
+        <div class="word">Rain cloud</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+        </div>
+        <div class="word">CPU</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+        </div>
+        <div class="word">Users</div>
+    </div>
+</div>
+
+
+
 # Images
 
 <p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1.</p>
