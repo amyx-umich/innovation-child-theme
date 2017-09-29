@@ -278,7 +278,7 @@ These buttons are used for less important, secondary actions on a page.
 
 # The Grid
 
-<p class="lead">This is mostly just and explanation of the grid we're using. Most likely, you won't need to add it to any page templates.</p>
+<p class="lead">This is just an explanation of the grid we're using. Most likely you won't need to add it to any page templates.</p>
 
 ---
 
@@ -485,8 +485,18 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 
 
-
 # Labels
+
+```html_example
+<span class="secondary label">Secondary Label</span>
+<span class="success label">Success Label</span>
+<span class="alert label">Alert Label</span>
+<span class="warning label">Warning Label</span>
+```
+
+
+
+# Links
 
 ```html_example
 <span class="secondary label">Secondary Label</span>
