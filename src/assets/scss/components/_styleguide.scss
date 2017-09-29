@@ -13,6 +13,24 @@
     }
     .lead {
         font-family: $header-font-family;
+        a {
+            color: $tappan-red;
+            border-bottom: 2px solid transparent;
+            transition: all .2s ease-in-out;
+            &:hover {
+                color: $tappan-red;
+                border-bottom: 2px solid $tappan-red;
+            }
+        }
+        a[target="_blank"] {
+            &:after {
+                font-family: 'FontAwesome';
+                content: '\f08e';
+                font-size: .75rem;
+                color: inherit;
+                padding-left: 4px;
+            }
+        }
     }
     .sticky-container {
         nav {
@@ -65,8 +83,23 @@
     }
     .main {
         background-color: $white;
+        section {
+            padding: $global-padding;
+        }
         p {
             font-size: 1.125rem;
+        }
+        #callouts {
+            a {
+                font-family: $header-font-family;
+                color: $tappan-red;
+                border-bottom: 2px solid transparent;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $tappan-red;
+                    border-bottom: 2px solid $tappan-red;
+                }
+            }
         }
         #links {
             a {

@@ -1,3 +1,10 @@
+# About
+
+<p class="lead">This style guide is intended for the CoE department child theme: Innovation. It is generated and maintained by the <a href="https://cm.engin.umich.edu/" target="_blank">Michigan Engineering Office of Communications &amp; Marketing</a>.</p>
+
+
+
+
 # Breadcrumbs
 
 ```html_example
