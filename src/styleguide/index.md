@@ -385,7 +385,7 @@ These buttons are used for less important, secondary actions on a page.
 <div class="row large-up-3">
     <div class="column">
         <div class="card">
-            <img src="../assets/img/aud-01.jpg">
+            <img src="assets/img/aud-01.jpg">
             <div class="card-section">
                 <h4>Dreams feel real</h4>
                 <p>I'm going to improvise. Listen, there's something you should know about me... about inception.</p>
@@ -395,7 +395,7 @@ These buttons are used for less important, secondary actions on a page.
     </div>
     <div class="column">
         <div class="card">
-            <img src="../assets/img/aud-02.jpg">
+            <img src="assets/img/aud-02.jpg">
             <div class="card-section">
                 <h4>Menus</h4>
                 <p>Cards play nicely with menus too! Give them a try.</p>
@@ -420,7 +420,7 @@ These buttons are used for less important, secondary actions on a page.
     </div>
     <div class="column">
         <div class="card">
-            <img src="../assets/img/aud-03.jpg">
+            <img src="assets/img/aud-03.jpg">
             <div class="card-section">
                 <h4>Buttons!</h4>
                 <p>Who doesn't love a good button? Buttons work in all of their forms too.</p>
@@ -430,7 +430,7 @@ These buttons are used for less important, secondary actions on a page.
     </div>
     <div class="column">
         <div class="card">
-            <img src="../assets/img/aud-04.jpg">
+            <img src="assets/img/aud-04.jpg">
             <div class="card-section">
                 <h4>And button groups...</h4>
                 <p>Button groups also work great!</p>
@@ -447,7 +447,7 @@ These buttons are used for less important, secondary actions on a page.
             <div class="card-divider">
                 <p>Centered</p>
             </div>
-            <img src="../assets/img/aud-01.jpg">
+            <img src="assets/img/aud-01.jpg">
             <div class="card-section">
                 <p>The utility classes like .text-center work great too.</p>
                 <a class="button" href="#">Click me</a>
@@ -466,7 +466,7 @@ These buttons are used for less important, secondary actions on a page.
 
 ### Large featured image (for sliders or pages)
 <div class="image">
-  <img src="../assets/img/orbit-bg-2.jpg" alt="">
+  <img src="assets/img/orbit-bg-2.jpg" alt="">
   <span class="secondary label overlay">16:9 ratio, 2830 × 1274 pixels upload size</span>
 </div>
 
@@ -474,7 +474,7 @@ These buttons are used for less important, secondary actions on a page.
 
 ### Card images
 <div class="image">
-  <img src="../assets/img/aud-01.jpg" alt="">
+  <img src="assets/img/aud-01.jpg" alt="">
   <span class="secondary label overlay">3:2 ratio, 1200 × 800 pixels upload size</span>
 </div>
 
@@ -482,7 +482,7 @@ These buttons are used for less important, secondary actions on a page.
 
 ### Stat and promo images
 <div class="image">
-  <img src="../assets/img/stats.jpg" alt="">
+  <img src="assets/img/stats.jpg" alt="">
   <span class="secondary label overlay">1:1 ratio, 600 × 600 pixels upload size</span>
 </div>
 
@@ -490,7 +490,7 @@ These buttons are used for less important, secondary actions on a page.
 
 ### Research row images
 <div class="image">
-  <img src="../assets/img/research-img-02.jpg" alt="">
+  <img src="assets/img/research-img-02.jpg" alt="">
   <span class="secondary label overlay">3:4 ratio, 1278 × 1500 pixels upload size</span>
 </div>
 
@@ -502,39 +502,39 @@ These buttons are used for less important, secondary actions on a page.
 
 <div class="row collapse large-up-3">
     <div class="image duotones columns">
-        <div class="blue-duotone" style="background-image: url('../assets/img/duotone-src.jpg');"></div>
+        <div class="blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
         <span class="secondary label overlay">Blue Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="dark-blue-duotone" style="background-image: url('../assets/img/duotone-src.jpg');"></div>
+        <div class="dark-blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
         <span class="secondary label overlay">Dark Blue Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="red-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="red-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Red Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="yellow-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="yellow-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Yellow Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="purple-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="purple-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Purple Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="green-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="green-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Green Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="orange-duotone" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="orange-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Orange Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="blend-red-blue-dark" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="blend-red-blue-dark" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Blue Red Blend Duotone</span>
     </div>
     <div class="image duotones columns">
-        <div class="blend-blue-yellow-light" style="background-image: url('../assets/img/duotone-src.jpg');">asdf</div>
+        <div class="blend-blue-yellow-light" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
         <span class="secondary label overlay">Yellow Blue Blend Duotone</span>
     </div>
 </div>
