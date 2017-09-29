@@ -419,7 +419,7 @@ $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
 $card-border: 1px solid $light-gray;
 $card-shadow: none;
-$card-border-radius: $global-radius;
+$card-border-radius: 0;
 $card-padding: $global-padding;
 $card-margin-bottom: $global-margin;
 
@@ -922,7 +922,7 @@ $titlebar-icon-spacing: 0.25rem;
 $has-tip-cursor: help;
 $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: dotted 1px $dark-gray;
-$tooltip-background-color: $black;
+$tooltip-background-color: $tappan-red;
 $tooltip-color: $white;
 $tooltip-padding: 0.75rem;
 $tooltip-max-width: 10rem;

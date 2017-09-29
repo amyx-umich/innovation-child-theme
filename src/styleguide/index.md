@@ -119,13 +119,13 @@
 
 ---
 
-## Headings
+### Headings
 
 Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
 
 ---
 
-## Paragraphs
+### Paragraphs
 
 Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
 
@@ -160,19 +160,19 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 
 ---
 
-## Overview
+### Overview
 
 The grid is built around two key elements: row and columns. `.row` creates a max-width and contain the grid, and `.columns` create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
 
 ---
 
-## Nesting
+### Nesting
 
 In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
 
 ---
 
-## How to Use
+### How to Use
 
 Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create columnss.
 
@@ -217,7 +217,7 @@ Using this framework is easy. Here's how your code will look when you use a seri
 
 ---
 
-## Nesting row
+### Nesting row
 
 In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
 
@@ -255,7 +255,7 @@ In the Grid you can nest columnss down as far as you'd like. Just embed row insi
 
 ---
 
-## Small Grid
+### Small Grid
 
 As you've probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.
 
@@ -286,9 +286,8 @@ As you've probably noticed in the examples above, you have access to a small, me
 ```html_example
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
-    <li><a href="#">Home</a></li>
+    <li><a class="home" href="#">Home</a></li>
     <li><a href="#">Features</a></li>
-    <li class="disabled">Gene Splicing</li>
     <li><span class="show-for-sr">Current: </span> Cloning</li>
   </ul>
 </nav>
@@ -302,7 +301,7 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 ---
 
-## Primary Buttons
+### Primary Buttons
 
 These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the `.tiny`, `.small`, and `.large` classes.
 
@@ -315,7 +314,7 @@ These buttons are primary calls to action and should be used sparingly. Their si
 
 ---
 
-## Secondary Buttons
+### Secondary Buttons
 
 These buttons are used for less important, secondary actions on a page.
 

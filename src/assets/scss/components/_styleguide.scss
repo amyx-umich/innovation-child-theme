@@ -11,6 +11,9 @@
     .title {
         margin-bottom: 3rem;
     }
+    .lead {
+        font-family: $header-font-family;
+    }
     .sticky-container {
         nav {
             .sidebar {
@@ -135,9 +138,6 @@
                 height: 100px;
                 margin-bottom: 0.42857rem;
             }
-        }
-        .lead {
-            font-family: $header-font-family;
         }
     }
 }
