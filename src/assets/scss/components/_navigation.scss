@@ -1,10 +1,7 @@
 #navigation {
     will-change: transform;
-    transition: transform 200ms linear; // position: fixed;
-    @include breakpoint(small only) {
-        padding-left: max($global-padding, constant(safe-area-inset-left));
-        padding-right: max($global-padding, constant(safe-area-inset-right));
-    }
+    transition: transform 200ms linear; 
+    // position: fixed;
     width: 100%;
     z-index: 9999;
     &.slideDown {

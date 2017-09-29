@@ -1,8 +1,4 @@
 .main-content {
-    @include breakpoint(small only) {
-        padding-left: max($global-padding, constant(safe-area-inset-left));
-        padding-right: max($global-padding, constant(safe-area-inset-right));
-    }
     .blue-duotone {
         background-color: rgba($arboretum-blue, 1);
         background-blend-mode: multiply;
