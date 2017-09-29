@@ -27,6 +27,7 @@
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#colors">Colors</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#typography">Typography</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#the-grid">The Grid</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#breadcrumbs">Breadcrumbs</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#buttons">Buttons</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#callouts">Callouts</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#cards">Cards</a></li>
@@ -179,10 +180,10 @@
 <h6>Heading h6</h6>
                 </section>
                 <section class="ss-section" id="the-grid" data-magellan-target="the-grid">
-                    <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized columnss, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+                    <h1>The Grid</h1><p class="lead">This is mostly just and explanation of the grid we&#39;re using. Most likely, you won&#39;t need to add it to any page templates.</p>
 
 <hr>
-<h2>Overview</h2><p>The grid is built around two key elements: row and columnss. grid-container create a max-width and contain the grid, and columnss create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a row or columns.</p>
+<h2>Overview</h2><p>The grid is built around two key elements: row and columns. <code>.row</code> creates a max-width and contain the grid, and <code>.columns</code> create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a row or columns.</p>
 <hr>
 <h2>Nesting</h2><p>In the Grid you can nest columnss down as far as you&#39;d like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.</p>
 <hr>
@@ -270,8 +271,27 @@
   <div class="small-9 columns">9, last</div>
 </div>
                 </section>
+                <section class="ss-section" id="breadcrumbs" data-magellan-target="breadcrumbs">
+                    <h1>Breadcrumbs</h1><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"You are here:"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"navigation"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"breadcrumbs"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Features<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span>Gene Splicing<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"show-for-sr"</span>&gt;</span>Current: <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> Cloning<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Features</a></li>
+    <li class="disabled">Gene Splicing</li>
+    <li><span class="show-for-sr">Current: </span> Cloning</li>
+  </ul>
+</nav></div>
+                </section>
                 <section class="ss-section" id="buttons" data-magellan-target="buttons">
-                    <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
+                    <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind.</p>
 
 <hr>
 <h2>Primary Buttons</h2><p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code>.tiny</code>, <code>.small</code>, and <code>.large</code> classes.</p>
@@ -519,8 +539,34 @@
 <span class="warning label">Warning Label</span></div>
                 </section>
                 <section class="ss-section" id="tooltips" data-magellan-target="tooltips">
-                    <h1>Tooltips</h1><p>The <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.</p>
+                    <h1>Tooltips</h1><p class="lead">Tooltips are for displaying extended information for a term or action on a page.</p>
 
+<p>The <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.</p>
+<p>By default, clicking on a tooltip will leave it open until you click somewhere else. However, you can disable that by adding <code>data-click-open=&quot;false&quot;</code></p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+this
+<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">data-tooltip</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"has-tip top"</span> <span class="hljs-attribute">data-disable-hover</span>=<span class="hljs-value">"false"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"2"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"You see?  I'm open!"</span>&gt;</span>tooltip will stay open<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+while
+<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">data-tooltip</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"has-tip top"</span> <span class="hljs-attribute">data-click-open</span>=<span class="hljs-value">"false"</span> <span class="hljs-attribute">data-disable-hover</span>=<span class="hljs-value">"false"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"2"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"I don't stay open"</span>&gt;</span>this one will only be open when hovered<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><p>
+this
+<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="You see?  I'm open!">tooltip will stay open</span>
+
+while
+<span data-tooltip aria-haspopup="true" class="has-tip top" data-click-open="false" data-disable-hover="false" tabindex="2" title="I don't stay open">this one will only be open when hovered</span>
+</p></div><p>You can also position the tooltips to the right and left of the word by adding the classes <code>.right</code> or <code>.left</code> to the <code>&lt;span&gt;</code> element.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.
+<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">data-tooltip</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"has-tip right"</span> <span class="hljs-attribute">data-disable-hover</span>=<span class="hljs-value">"false"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Yes."</span>&gt;</span>Do androids dream of electric sheep?<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">data-tooltip</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"has-tip left"</span> <span class="hljs-attribute">data-disable-hover</span>=<span class="hljs-value">"false"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"4"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Star"</span>&gt;</span>Wars<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> onec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><p>
+Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.
+<span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Yes.">Do androids dream of electric sheep?</span> Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+<span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="4" title="Star">Wars</span> onec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p></div>
                 </section>
                 <section class="ss-section" id="tables" data-magellan-target="tables">
                     <h1>Tables</h1><p class="lead">To stack a table on small screens, add the class <code>.stack</code>. Add the class <code>.hover</code> to lightly darken the table rows on hover.</p>

@@ -156,13 +156,13 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 
 # The Grid
 
-<p class="lead">Problem: You've got tons of content, each needing different sized columnss, and don't know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+<p class="lead">This is mostly just and explanation of the grid we're using. Most likely, you won't need to add it to any page templates.</p>
 
 ---
 
 ## Overview
 
-The grid is built around two key elements: row and columnss. grid-container create a max-width and contain the grid, and columnss create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
+The grid is built around two key elements: row and columns. `.row` creates a max-width and contain the grid, and `.columns` create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
 
 ---
 
@@ -281,9 +281,24 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 
 
+# Breadcrumbs
+
+```html_example
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Features</a></li>
+    <li class="disabled">Gene Splicing</li>
+    <li><span class="show-for-sr">Current: </span> Cloning</li>
+  </ul>
+</nav>
+```
+
+
+
 # Buttons
 
-<p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you're strapped to. On the web, we follow similar conventions.</p>
+<p class="lead">Buttons are tied to an action of some kind.</p>
 
 ---
 
@@ -444,13 +459,36 @@ These buttons are used for less important, secondary actions on a page.
 
 # Tooltips
 
+<p class="lead">Tooltips are for displaying extended information for a term or action on a page.</p>
+
 The <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
+
+By default, clicking on a tooltip will leave it open until you click somewhere else. However, you can disable that by adding `data-click-open="false"`
+
+```html_example
+<p>
+this
+<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="You see?  I'm open!">tooltip will stay open</span>
+
+while
+<span data-tooltip aria-haspopup="true" class="has-tip top" data-click-open="false" data-disable-hover="false" tabindex="2" title="I don't stay open">this one will only be open when hovered</span>
+</p>
+```
+
+You can also position the tooltips to the right and left of the word by adding the classes `.right` or `.left` to the `<span>` element.
+
+```html_example
+<p>
+Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.
+<span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Yes.">Do androids dream of electric sheep?</span> Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+<span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="4" title="Star">Wars</span> onec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+```
 
 
 
 # Tables
 
-<p class="lead">To stack a table on small screens, add the class ```.stack```. Add the class ```.hover``` to lightly darken the table rows on hover.</p>
+<p class="lead">To stack a table on small screens, add the class `.stack`. Add the class `.hover` to lightly darken the table rows on hover.</p>
 
 ```html_example
 <table class="hover stack">
