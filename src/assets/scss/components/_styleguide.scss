@@ -20,14 +20,14 @@
                 font-family: $header-font-family;
                 li {
                     a {
-                        color: $dark-gray;
+                        color: $black-54;
                         border-left: 2px solid $light-gray;
                         background-color: $white;
                         transition: all .2s ease-in-out;
                         &.is-active {
                             border-left-color: $dark-gray;
                             background-color: $light-gray;
-                            color: $darker-gray;
+                            color: $black-100;
                         }
                         &:hover {
                             border-left-color: $black-26;
