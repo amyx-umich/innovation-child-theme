@@ -498,9 +498,11 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 # Links
 
-<p class="lead"><a href="#">Internal links</a> and <a href="#" target="_blank">external links</a> get their own treatments.</p>
-
-
+<p class="lead"><a href="#">Internal links</a> and <a href="#" target="_blank">external links</a> get their own treatments. Adding the `target="_blank"` attribute will trigger the theme to place an indicator at the end of the link.</p>
+```
+<a href="#">Internal links</a>
+<a href="#" target="_blank">External links</a>
+```
 
 
 
