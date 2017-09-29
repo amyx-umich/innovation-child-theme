@@ -113,11 +113,11 @@ $global-font-size: 100%;
 $global-width: rem-calc(1300);
 $global-lineheight: 1.54;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  primary: #00274c,
+  secondary: #407ec9,
+  success: #ada400,
+  warning: #ffcb05,
+  alert: #9a3324,
 );
 // U-M Brand Colors
 $michigan-blue: #00274c;
@@ -175,7 +175,7 @@ $global-padding: 1.25rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: 700;
-$global-radius: 0;
+$global-radius: 2px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -365,16 +365,18 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
+$button-font-family: $header-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $michigan-blue;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
+$button-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$button-box-shadow-hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
@@ -385,7 +387,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 // 12. Button Group
 // ----------------

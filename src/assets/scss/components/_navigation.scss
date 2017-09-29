@@ -1,7 +1,10 @@
 #navigation {
     will-change: transform;
-    transition: transform 200ms linear;
-    // position: fixed;
+    transition: transform 200ms linear; // position: fixed;
+    @include breakpoint(small only) {
+        padding-left: max($global-padding, constant(safe-area-inset-left));
+        padding-right: max($global-padding, constant(safe-area-inset-right));
+    }
     width: 100%;
     z-index: 9999;
     &.slideDown {
@@ -88,8 +91,7 @@
     }
     .title-bar {
         background: transparent;
-        width: 100%;
-        // height: 70px;
+        width: 100%; // height: 70px;
         padding: 0;
         transition: all .2s ease-in-out;
         -webkit-user-select: none;
@@ -102,8 +104,7 @@
         }
         &.hover {
             background: rgba($michigan-blue, .98);
-        }
-        // progress bar
+        } // progress bar
         // ------------
         progress {
             position: absolute;
@@ -403,8 +404,7 @@
         &.hide-for-large {
             .hamburger {
                 span.hamburger-box {
-                    bottom: 4px;
-                    // top: 0;
+                    bottom: 4px; // top: 0;
                 }
             }
         }
@@ -419,8 +419,7 @@
             }
             @include breakpoint(xlarge down) {
                 width: 90%;
-            }
-            // @include breakpoint(xxlarge) {
+            } // @include breakpoint(xxlarge) {
             //     width: 70%;
             // }
         }
@@ -431,8 +430,7 @@
             font-size: 1rem;
             border-bottom: 1px solid #001426;
             cursor: pointer;
-            z-index: 99;
-            // margin-top: 2rem;
+            z-index: 99; // margin-top: 2rem;
             &.is-active {
                 color: $michigan-maize;
             }
