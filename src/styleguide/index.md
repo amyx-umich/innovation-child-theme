@@ -418,7 +418,7 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 ### SVGs
 We're currently offering a limited number, but will add more on an as-needed basis.
-<div class="row large-up-8">
+<div class="row large-up-8 text-center">
     <div class="icon column">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
