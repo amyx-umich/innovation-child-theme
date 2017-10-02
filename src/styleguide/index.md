@@ -49,6 +49,16 @@ These buttons are used for less important, secondary actions on a page.
 <a href="#" class="secondary tiny button">Tiny button</a>
 ```
 
+--
+
+### Other Button Colors
+
+```html_example
+<a href="#" class="success large button">Large button</a>
+<a href="#" class="alert button">Regular button</a>
+<a href="#" class="warning small button">Small button</a>
+```
+
 
 
 # Callouts

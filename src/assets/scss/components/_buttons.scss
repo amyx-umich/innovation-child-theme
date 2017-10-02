@@ -3,4 +3,7 @@
     &:hover {
         box-shadow: $button-box-shadow-hover;
     }
+    &.success {
+    	color: $black;
+    }
 }
