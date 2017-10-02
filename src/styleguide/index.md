@@ -101,7 +101,7 @@ These buttons are used for less important, secondary actions on a page.
 # Cards
 
 ```html_example
-<div class="row large-up-3">
+<div class="row small-up-1 medium-up-3 large-up-3">
     <div class="column">
         <div class="card">
             <img src="assets/img/aud-01.jpg">
@@ -201,7 +201,7 @@ These buttons are used for less important, secondary actions on a page.
   </div>
 </div>
 <h3>Secondary Colors</h3>
-  <div class="row up-1 medium-up-3 large-up-6">
+  <div class="row up-1 small-up-1 medium-up-3 large-up-6">
   <div class="columns">
     <div class="color-block">
       <div class="color-name">tappan red</div>
@@ -232,7 +232,7 @@ These buttons are used for less important, secondary actions on a page.
   </div>
   </div>
   <h3>Supporting Values</h3>
-  <div class="row up-1 medium-up-3 large-up-6">
+  <div class="row up-1 small-up-1 medium-up-3 large-up-6">
    <div class="columns">
     <div class="color-block">
       <div class="color-name">black 100</div>
@@ -435,7 +435,7 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 ### SVGs
 We're currently offering a limited number, but will add more on an as-needed basis.
-<div class="row large-up-8 text-center">
+<div class="row small-up-3 large-up-8 text-center">
     <div class="icon column">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
@@ -560,7 +560,7 @@ We're currently offering a limited number, but will add more on an as-needed bas
 
 <p class="lead">The theme will take care of the duotones. Within certain fields in the backend, you will have a selection of duotones you can use over uploaded images. Please note that not every image will work. Use your best judgement on what works and does not. However, desaturated images tend to work best with duotones.</p>
 
-<div class="row collapse large-up-3">
+<div class="row collapse small-up-1 medium-up-3 large-up-3">
     <div class="image duotones columns">
         <div class="blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
         <span class="secondary label overlay">Blue Duotone</span>
