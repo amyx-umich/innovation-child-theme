@@ -295,7 +295,7 @@ These buttons are used for less important, secondary actions on a page.
 
 # The Grid
 
-<p class="lead">This is just an explanation of the grid we're using. Most likely you won't need to add it to any page templates.</p>
+<p class="lead">This is just an explanation of the grid we're using. Most likely you won't need to add it to any page templates. The Grid is powered by Flexbox. For more in-depth details regarding The Grid, please see [Foundation's documentation](https://foundation.zurb.com/sites/docs/flex-grid.html).</p>
 
 ---
 
