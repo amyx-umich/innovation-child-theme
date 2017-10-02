@@ -537,7 +537,10 @@ We're currently offering a limited number, but will add more on an as-needed bas
 
 ---
 
-### Stat and promo images
+### Statistics and promo images
+
+The theme will take care of the border radius, no need to create it in a photo editor.
+
 <div class="image">
   <img src="assets/img/stats.jpg" alt="">
   <span class="secondary label overlay">1:1 ratio, 600 × 600 pixels upload size</span>
