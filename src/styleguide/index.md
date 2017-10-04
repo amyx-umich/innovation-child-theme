@@ -6,7 +6,7 @@
 
 # Accessibility
 
-<p class="lead">In addition to the accessibility features built into the theme's components, be sure to follow best practices for making your site more accessible.</p>
+<p class="lead">In addition to the accessibility features built into the theme's components, be sure to follow best practices for making your site more accessible. <i>this will be added to in more detail as they're worked out</i></p> 
 
 * Structure your document properly. Use the right HTML tags for the job when marking up navigation, lists, links, controls, and so on.
 * Label everything. If a control or form element has no text label, add one. You can use the visibility classes to hide labels visually while maintaining accessibility. Use the alt attribute on all images to describe what they are.
@@ -745,7 +745,31 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 
 ### Headings
 
-Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
+Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest). Whenever possible try not to skip heading levels.
+
+#### Header Styles
+
+The theme includes two typographic scales—one uses a narrow range of sizes for small-sized screens, and the other uses a wider range of sizes for medium- and larger-sized screens.
+
+```html
+small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+)
+```
+
 
 ---
 
