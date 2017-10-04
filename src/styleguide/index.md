@@ -739,7 +739,7 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 
 # Typography
 
-<p class="lead">This design uses <a href="https://fonts.google.com/specimen/Pathway+Gothic+One" target="_blank">Pathway Gothic One</a> for super-headings, <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for headings and subheadings, and <a href="https://fonts.google.com/specimen/Cardo" target="_blank">Cardo</a> paragraph text. Base type is set at 100%(16 px).</p>
+<p class="lead">This design uses <a href="https://fonts.google.com/specimen/Pathway+Gothic+One" target="_blank">Pathway Gothic One</a> for super-headings, <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for headings and subheadings, and <a href="https://fonts.google.com/specimen/Cardo" target="_blank">Cardo</a> paragraph text.  Base type is set at 100%(16 px).</p>
 
 ---
 
@@ -770,15 +770,6 @@ small: (
 )
 ```
 
-
----
-
-### Paragraphs
-
-Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Line heights are set at 1.6 times the font size. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
-
----
-
 <h1 class="super-headings">Super Heading h1</h1>
 
 <h2 class="super-headings">Super Heading h2</h2>
@@ -804,6 +795,12 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 <h5>Heading h5</h5>
 
 <h6>Heading h6</h6>
+
+---
+
+### Paragraphs
+
+Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Line heights are set at 1.6 times the font size. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
 
 ---
 

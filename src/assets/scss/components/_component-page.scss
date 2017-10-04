@@ -1,0 +1,11 @@
+.component-page {
+	.component-title {
+		margin-top: 5rem;
+		&.bottom {
+			margin-bottom: 10rem;
+		}
+		h1 {
+			text-transform: uppercase;
+		}
+	}
+}

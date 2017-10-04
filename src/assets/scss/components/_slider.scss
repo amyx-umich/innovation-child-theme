@@ -1,0 +1,248 @@
+.slider-parent {
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    .slider-bg {
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-size: cover;
+        filter: blur(7px);
+        transform: translate3d(0, 0, 0) scale(1.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include breakpoint(small only) {
+            background-size: cover;
+            background-attachment: scroll;
+        }
+    }
+    .orbit {
+        z-index: 1;
+        .orbit-wrapper {
+            margin: 5vh 0;
+            .orbit-controls {
+                bottom: 0;
+                button {
+                    cursor: pointer;
+                }
+            }
+            .orbit-container {
+                .orbit-slide {
+                    color: $white;
+                    width: 100vw;
+                    .hed {
+                        margin-bottom: 1.5rem;
+                        text-shadow: 2px 2px 7px rgba($black, .4);
+                        @include breakpoint(small only) {
+                            margin-bottom: .5rem;
+                        }
+                        .eyebrow {
+                            font-family: $super-header-font-family;
+                            font-size: 2.25rem;
+                            line-height: 1;
+                            text-transform: uppercase;
+                            color: $ross-orange;
+                            @include breakpoint(small only) {
+                                font-size: 1.1rem;
+                            }
+                        }
+                        h3 {
+                            font-size: 2rem;
+                            line-height: 1;
+                            padding-bottom: .5rem;
+                            border-bottom: 1px solid $white-24;
+                            @include breakpoint(medium down) {
+                                font-size: 1.875rem;
+                            }
+                            @include breakpoint(small only) {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    .dek {
+                        font-size: 1.1rem;
+                        text-shadow: 2px 2px 7px rgba($black, .4);
+                        @include breakpoint(medium down) {
+                            font-size: 1rem;
+                        }
+                        @include breakpoint(small only) {
+                            font-size: .85rem;
+                            margin-top: .5rem;
+                        }
+                        .cta {
+                            font-weight: 700;
+                            margin-bottom: 0;
+                            a {
+                                color: $michigan-maize;
+                                transition: all .1s ease-in-out;
+                                &:hover {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    &.welcome-slide {
+                        .hed {
+                            .eyebrow {
+                                color: $michigan-maize;
+                                font-size: 1.25rem;
+                                @include breakpoint(small only) {
+                                    font-size: .95rem;
+                                }
+                            }
+                            .brand {
+                                font-size: 5.275rem;
+                                font-weight: 800;
+                                border-bottom: 0;
+                                font-style: italic;
+                                @include breakpoint(medium down) {
+                                    font-size: 3.75rem;
+                                }
+                                @include breakpoint(small only) {
+                                    font-size: 2.25rem;
+                                    margin-bottom: .0625rem;
+                                }
+                                i {
+                                    font-weight: 400;
+                                    color: $michigan-maize;
+                                }
+                            }
+                            .tagline {
+                                font-family: $header-font-family;
+                                font-size: 2.75rem;
+                                text-transform: uppercase;
+                                border-top: 1px solid $white-54;
+                                border-bottom: 1px solid $white-54;
+                                @include breakpoint(medium down) {
+                                    font-size: 2rem;
+                                }
+                                @include breakpoint(small only) {
+                                    font-size: 1.125rem;
+                                    text-align: center;
+                                }
+                            }
+                            .cta {
+                                font-family: $header-font-family;
+                                @include breakpoint(small only) {
+                                    font-size: .85rem;
+                                }
+                                a {
+                                    color: $michigan-maize;
+                                    transition: all .2s ease-in-out;
+                                    &:hover {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .orbit-bullets {
+            background-color: transparent;
+            button {
+                cursor: pointer;
+                width: 7px;
+                height: 7px;
+                margin: 0 .75rem;
+                background-color: $white;
+                transition: all .1s ease-in-out;
+                &:hover {
+                    background-color: darken($white, 50%);
+                }
+                &.is-active {
+                    background-color: $michigan-maize;
+                }
+            }
+        }
+    }
+}
+
+.slider-parent-full {
+    .orbit-slide {}
+    .orbit-container {
+        position: static;
+        height: 100%;
+    }
+    .orbit-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 66.666%;
+        background-color: $black-54;
+        @include breakpoint(medium down) {
+            font-size: 1rem;
+        }
+        @include breakpoint(small only) {
+            font-size: .85rem;
+            position: static;
+            background-color: $michigan-blue;
+            width: 100%;
+            padding: 1rem 2.5rem;
+        }
+        .eyebrow {
+            font-family: $super-header-font-family;
+            font-size: 2.25rem;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $ross-orange;
+            @include breakpoint(small only) {
+                font-size: 1.1rem;
+            }
+        }
+        h3 {
+            font-size: 3rem;
+            line-height: 1;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid $white-24;
+            @include breakpoint(medium down) {
+                font-size: 1.875rem;
+            }
+            @include breakpoint(small only) {
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            margin-bottom: 2.25rem;
+        }
+        .cta {
+            font-weight: 700;
+            color: $michigan-maize;
+            transition: all .1s ease-in-out;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .orbit-bullets {
+        margin: 0;
+        padding: 1rem 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        button {
+            cursor: pointer;
+            width: 7px;
+            height: 7px;
+            margin: 0 .75rem;
+            padding: 0;
+            background-color: $white;
+            transition: all .1s ease-in-out;
+            &:hover {
+                background-color: darken($white, 50%);
+            }
+            &.is-active {
+                background-color: $michigan-maize;
+            }
+        }
+        @include breakpoint(small only) {
+            position: static;
+            background-color: $michigan-blue;
+            width: 100%;
+        }
+    }
+}
