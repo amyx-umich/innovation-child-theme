@@ -305,6 +305,33 @@ The grid is built around two key elements: row and columns. `.row` creates a max
 
 ---
 
+### Details on Gutters, Margins, and Padding
+
+Here are the <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="A scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.">SASS</span> variables regarding the maximum width of the theme, breakpoints, columns, and block grid.
+
+```html
+$global-width: rem-calc(1300);
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1300px,
+  xxlarge: 1440px,
+);
+$breakpoint-classes: (small medium large xlarge xxlarge);
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-column-align-edge: true;
+$grid-column-alias: 'columns';
+$block-grid-max: 8;
+```
+
+---
+
 ### Nesting
 
 In the Grid you can nest columnss down as far as you'd like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.
