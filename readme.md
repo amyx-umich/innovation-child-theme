@@ -1,5 +1,9 @@
 # Innovation Theme Docs
 
-The theme prototoype may be found at [https://michiganengineering.github.io/innovation-theme-docs/](https://michiganengineering.github.io/innovation-theme-docs/).  
-
-The theme style guide may be found at [https://michiganengineering.github.io/innovation-theme-docs/styleguide.html](https://michiganengineering.github.io/innovation-theme-docs/styleguide.html).
+This project contains both a [theme prototype](https://michiganengineering.github.io/innovation-theme-docs/) and a 
+[theme style guide](https://michiganengineering.github.io/innovation-theme-docs/styleguide.html). The [Zurb template for Foundation for sites](https://github.com/zurb/foundation-zurb-template) 
+is used to generate both documents, you can find instructions for working with the project source there.  
+  
+This project and these documents are largely for providing technical support to outside vendors working with our departments 
+and units. While issues and pull requests to this repo will be monitored it is unlikely they will be accepted or acted upon 
+unless directly related to the contents of this specific project.
