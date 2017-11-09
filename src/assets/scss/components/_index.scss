@@ -496,17 +496,36 @@
                     margin-bottom: 1rem;
                     .custom-widget {
                         background-color: $michigan-blue;
-                        .widget {}
+                        position: relative;
+                        overflow: hidden;
+                        .widget {
+                            z-index: 1;
+                        }
+                        .bg-blur {
+                            z-index: 0;
+                            width: 100%;
+                            height: 100%;
+                            transform: translate3d(0, 0, 0) scale(1.1);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-blend-mode: multiply;
+                            background-color: $arboretum-blue;
+                            filter: blur(8px) grayscale(1);
+                        }
                     }
                     .copy {
                         .column {
                             h3 {
+                                line-height: 1.1;
+                                margin-top: 1rem;
                                 a {
                                     font-family: 'Pathway Gothic One';
                                     text-transform: uppercase;
-                                    color: $white;
-                                    font-size: 2.5rem;
-                                    line-height: 1.5;
+                                    color: $white; // font-size: 2.5rem;
+                                    line-height: 1.1;
                                     transition: all .2s ease-in-out;
                                     &:hover {
                                         color: $michigan-maize;
@@ -516,13 +535,14 @@
                             p {
                                 a {
                                     color: $white;
-                                    font-size: 1rem;
+                                    font-size: .9rem;
                                     line-height: 1.5;
                                     transition: all .2s ease-in-out;
                                     &:hover {
                                         color: $michigan-maize;
                                     }
                                     .cta {
+                                        display: block;
                                         color: $michigan-maize;
                                     }
                                 }
