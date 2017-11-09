@@ -2,6 +2,7 @@
     .stats {
         background: linear-gradient(160deg, $arboretum-blue, $michigan-blue);
         padding: 5rem 0;
+        margin-bottom: 5rem;
         font-family: $header-font-family;
         font-size: 1.125rem;
         @include breakpoint(small only) {
@@ -84,7 +85,7 @@
     }
     .aud-row {
         margin-top: 1px;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         @include breakpoint(small only) {
             margin-bottom: 2rem;
         }
@@ -454,8 +455,7 @@
                         }
                         .hed {
                             font-family: $header-font-family;
-                            font-weight: 700;
-                            font-size: 1.85rem;
+                            font-weight: 700; // font-size: 1.25rem;
                             line-height: 1.2;
                             @include breakpoint(small only) {
                                 font-size: .9rem;
@@ -491,6 +491,45 @@
                 padding-bottom: 0;
                 border: 0;
                 background-color: transparent;
+                .custom-block {
+                    background-color: $arboretum-blue;
+                    margin-bottom: 1rem;
+                    .custom-widget {
+                        background-color: $michigan-blue;
+                        .widget {}
+                    }
+                    .copy {
+                        .column {
+                            h3 {
+                                a {
+                                    font-family: 'Pathway Gothic One';
+                                    text-transform: uppercase;
+                                    color: $white;
+                                    font-size: 2.5rem;
+                                    line-height: 1.5;
+                                    transition: all .2s ease-in-out;
+                                    &:hover {
+                                        color: $michigan-maize;
+                                    }
+                                }
+                            }
+                            p {
+                                a {
+                                    color: $white;
+                                    font-size: 1rem;
+                                    line-height: 1.5;
+                                    transition: all .2s ease-in-out;
+                                    &:hover {
+                                        color: $michigan-maize;
+                                    }
+                                    .cta {
+                                        color: $michigan-maize;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 .wunderground {
                     background-color: $arboretum-blue;
                     margin-bottom: 1rem;
