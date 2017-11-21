@@ -36,10 +36,10 @@
 @include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
-@include foundation-switch;
+// @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
-@include foundation-thumbnail;
+// @include foundation-thumbnail;
 @include foundation-title-bar;
 @include foundation-tooltip;
 @include foundation-top-bar;
@@ -54,6 +54,7 @@
 
 @import 'global';
 @import 'components/navigation';
+@import 'components/navigation-alt';
 @import 'components/hamburgers/hamburgers';
 @import 'components/index';
 @import 'components/breadcrumbs';
