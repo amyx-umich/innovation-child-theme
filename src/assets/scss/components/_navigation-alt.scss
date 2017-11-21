@@ -1,8 +1,5 @@
 .navigation-alt {
     .top-bar-left {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 10%;
         .top-bar-title {
             .logo {
                 padding: 1.2rem;
@@ -59,6 +56,34 @@
                         &:hover {
                             color: $michigan-maize;
                             transition: all .2s ease-in-out;
+                        }
+                    }
+                    &.search {
+                        align-self: center;
+                        button {
+                            cursor: pointer;
+                            transition: all .2s ease-in-out;
+                            &:hover {
+                                .fa-search {
+                                    transition: all .2s ease-in-out;
+                                    color: $michigan-maize;
+                                }
+                            }
+                            &.hover {
+                                .fa-search {
+                                    color: $michigan-maize;
+                                }
+                            }
+                        }
+                    }
+                    &.is-active {
+                        a {
+                            color: $michigan-maize;
+                        }
+                        .submenu {
+                            a {
+                                color: $white;
+                            }
                         }
                     }
                 }

@@ -81,8 +81,8 @@
                         <li><a href="#">About</a></li>
                     </ul>
                 </div>
-                <div class="grid-x main-menu align-middle">
-                    <ul class="dropdown menu cell align-spaced" data-dropdown-menu data-alignment="auto" data-click-open="true" data-disable-hover="true">
+                <div class="grid-x grid-padding-x main-menu align-middle">
+                    <ul class="dropdown menu cell large-11 align-spaced" data-dropdown-menu data-alignment="auto" data-click-open="true" data-disable-hover="true">
                         <li class="opens-right">
                             <a href="#">About</a>
                             <ul class="menu vertical">
@@ -139,7 +139,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Giving</a>
+                            <a class="" href="#">Giving</a>
                             <ul class="menu vertical">
                                 <li><a href="#">Giving</a></li>
                                 <li><a href="#">Giving</a></li>
@@ -149,15 +149,28 @@
                                 <li><a href="#">Giving</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <button class="menu_icon"><i class="fa fa-search" aria-hidden="true"></i>
-                                <div class="icon_label search show-for-sr">search</div>
-                            </button>
-                        </li>
                     </ul>
+                    <div class="search cell shrink align-self-right">
+                        <button data-toggle="search-dropdown" class=""><i class="fa fa-search fa-inverse" aria-hidden="true"></i>
+                            <div class="icon_label search show-for-sr">Search</div>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </nav>        <div class="off-canvas-content" data-off-canvas-content>
+        </nav>
+        <div class="dropdown-pane hide-for-small-only" id="search-dropdown" data-dropdown data-close-on-click="true" data-auto-focus="true">
+            <div class="search_row row align-center expanded">
+                <form class="search column small-12 align-center" action="search_results.html" method="get">
+                    <label for="input-group">
+                        <span class="search_hed">SEARCH</span>
+                        <br>Enter search term(s)</label>
+                    <div class="input-group">
+                        <input class="input-group-field" type="text" id="input-group" name="search">
+                        <input type="submit" class="button" value="go">
+                    </div>
+                </form>
+            </div>
+        </div>        <div class="off-canvas-content" data-off-canvas-content>
         <div class="main-content">
             <section class="slider-parent-full row expanded collapse align-middle align-center">
                 <div class="small-12 medium-12 large-12 columns">
