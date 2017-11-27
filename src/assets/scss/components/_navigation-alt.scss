@@ -1,11 +1,12 @@
 .navigation-alt {
+    height: 6.25rem;
     .top-bar-left {
+        background-color: $michigan-blue;
         .top-bar-title {
             .logo {
                 padding: 1.2rem;
                 height: auto;
                 display: block;
-                background-color: $michigan-blue;
                 img {
                     width: 100%;
                 }
@@ -46,13 +47,17 @@
         .main-menu {
             height: 60%;
             .dropdown {
+                height: 100%;
                 font-family: $super-header-font-family;
                 text-transform: uppercase;
                 li {
                     a {
+                        display: flex;
+                        height: 100%;
                         font-size: 1.2rem;
                         color: $white;
                         transition: all .2s ease-in-out;
+                        @extend .align-middle;
                         &:hover {
                             color: $michigan-maize;
                             transition: all .2s ease-in-out;
@@ -83,6 +88,33 @@
                         .submenu {
                             a {
                                 color: $white;
+                            }
+                        }
+                    }
+                    .search-drop {
+                        padding: 1rem;
+                        max-width: none;
+                        width: 22rem;
+                        label {
+                            .search_hed {
+                                font-family: $super-header-font-family;
+                            }
+                            color: $white;
+                            font-family: $header-font-family;
+                        }
+                    }
+                    .submenu {
+                        border-top: 2px solid $michigan-maize;
+                        li {
+                            a {
+                                font-size: .95rem;
+                                font-family: $header-font-family;
+                                text-transform: none;
+                                padding: .7rem 1.125rem;
+                                display: block;
+                                &:hover {
+                                    color: $michigan-maize;
+                                }
                             }
                         }
                     }
