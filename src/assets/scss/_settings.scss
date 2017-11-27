@@ -479,7 +479,7 @@ $dropdownmenu-arrow-color: $michigan-maize;
 $dropdownmenu-arrow-size: .25rem;
 $dropdownmenu-arrow-padding: 1.75rem;
 $dropdownmenu-min-width: 300px;
-$dropdownmenu-background: $white;
+$dropdownmenu-background: $michigan-maize;
 $dropdownmenu-submenu-background: $dropdownmenu-background;
 $dropdownmenu-padding: $global-menu-padding;
 $dropdownmenu-nested-margin: 0;
@@ -525,11 +525,11 @@ $input-line-height: $global-lineheight;
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
+$input-border: 1px solid $black;
 $input-border-focus: 1px solid $dark-gray;
 $input-padding: $form-spacing / 2;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
-$input-shadow-focus: 0 0 5px $medium-gray;
+$input-shadow-focus: 0 0 5px $light-gray;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
@@ -936,9 +936,9 @@ $tooltip-radius: $global-radius;
 
 $topbar-padding: 0;
 $topbar-background:  darken($michigan-blue, 5%);
-$topbar-submenu-background: $black;
+$topbar-submenu-background: $black-100;
 $topbar-title-spacing: 0;
-$topbar-input-width: 200px;
+$topbar-input-width: 310px;
 $topbar-unstack-breakpoint: medium;
 
 // 56. Xy Grid
