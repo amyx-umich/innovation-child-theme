@@ -1,14 +1,31 @@
+.no-js {
+    @include breakpoint(small only) {
+        .navigation-alt {
+            display: none;
+        }
+    }
+
+    @include breakpoint(medium) {
+        .navigation-alt {
+            display: none;
+        }
+    }
+}
+
 .navigation-alt {
-    // height: 6.25rem;
+    height: 6.25rem;
     &.is-stuck {
         box-shadow: 0px 5px 8px 0px $black-26;
     }
     .top-bar-left {
         background-color: $michigan-blue;
+        overflow: hidden;
         .top-bar-title {
             .logo {
-                padding: 1.2rem;
-                display: block;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                padding: .85rem;
                 img {
                     @include breakpoint(xxlarge) {
                         width: 70%;

@@ -1,20 +1,24 @@
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
 <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-    <nav class="site-navigation top-bar navigation-alt" role="navigation">
-        <div class="title-bar" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle="roffCanvas"></button>
-            <div class="title-bar-title"><a class="logo" href="{{root}}/index-nav-test.html"><img src="{{root}}assets/img/CoE-block-m.svg" alt="College of Engineering | University of Michigan"></a></div>
-        </div>
-        <ul class="vertical menu">
-            <li><a href="#">Foundation</a></li>
-            <li><a href="#">Dot</a></li>
-            <li><a href="#">ZURB</a></li>
-            <li><a href="#">Com</a></li>
-            <li><a href="#">Slash</a></li>
-            <li><a href="#">Sites</a></li>
-        </ul>
-    </nav>
+    <ul class="vertical menu" id="menu">
+        <li><a href="#">Foundation</a></li>
+        <li><a href="#">Dot</a></li>
+        <li><a href="#">ZURB</a></li>
+        <li><a href="#">Com</a></li>
+        <li><a href="#">Slash</a></li>
+        <li><a href="#">Sites</a></li>
+    </ul>
 </div>
+<nav class="site-navigation top-bar navigation-alt-mobile" role="navigation" data-responsive-toggle="navigation" data-hide-for="medium">
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+        </div>
+        <div class="title-bar-right">
+            <div class="title-bar-title"><a class="logo" href="{{root}}/index-nav-test.html"><img src="{{root}}assets/img/CoE-horiz-rev.svg" alt="College of Engineering | University of Michigan"></a></div>
+        </div>
+    </div>
+</nav>
 <div class="nav-wrapper" data-sticky-container>
     <nav class="site-navigation top-bar navigation-alt grid-x align-stretch" role="navigation" id="navigation" data-sticky data-options="marginTop:0;" style="width:100%">
         <div class="top-bar-left cell small-1">
@@ -32,7 +36,7 @@
                 </ul>
             </div>
             <div class="grid-x grid-padding-x main-menu align-middle align-right">
-                <ul class="dropdown menu cell large-11 align-spaced" data-dropdown-menu data-alignment="auto" data-close-on-click-inside="false" data-autoclose="false">
+                <ul class="dropdown menu cell large-11 align-spaced" data-dropdown-menu data-alignment="auto" data-close-on-click-inside="false" data-autoclose="true">
                     <li>
                         <a href="#">About</a>
                         <ul class="menu vertical">
