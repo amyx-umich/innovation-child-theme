@@ -87,23 +87,8 @@
                             color: $michigan-maize;
                             transition: all .2s ease-in-out;
                         }
-                    }
-                    &.search {
-                        align-self: center;
-                        button {
-                            cursor: pointer;
-                            transition: all .2s ease-in-out;
-                            &:hover {
-                                .fa-search {
-                                    transition: all .2s ease-in-out;
-                                    color: $michigan-maize;
-                                }
-                            }
-                            &.hover {
-                                .fa-search {
-                                    color: $michigan-maize;
-                                }
-                            }
+                        i {
+                            font-size: 1rem;
                         }
                     }
                     &.is-active {
