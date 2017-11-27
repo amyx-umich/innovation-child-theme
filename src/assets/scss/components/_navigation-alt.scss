@@ -108,9 +108,13 @@
                     }
                     &.is-active {
                         a {
-                            color: $michigan-maize;
+                            color: $black-100;
+                            background-color: $michigan-maize;
                             i {
-                                color: $michigan-maize;
+                                color: $black-100;
+                            }
+                            &:after {
+                                border-color: $black-100 transparent transparent;
                             }
                         }
                         .submenu {
@@ -139,6 +143,7 @@
                                 padding: .7rem 1.125rem;
                                 display: block;
                                 line-height: 1.2;
+                                background-color: $black-100;
                                 &:hover {
                                     color: $michigan-maize;
                                 }
