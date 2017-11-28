@@ -1,4 +1,7 @@
 .no-js {
+    .navigation-alt-mobile {
+        display: none;
+    }
     @include breakpoint(small only) {
         .navigation-alt {
             display: none;
@@ -15,6 +18,18 @@
 .nav-wrapper,
 .sticky.is-anchored {
     transition: all .2s ease-in-out !important;
+}
+.navigation-alt-mobile {
+    padding: .7rem;
+    .title-bar-right {
+        .title-bar-title {
+            .logo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 .navigation-alt {
