@@ -12,21 +12,58 @@
     }
 }
 
+.nav-wrapper,
+.sticky.is-anchored {
+    transition: all .2s ease-in-out !important;
+}
+
 .navigation-alt {
     height: 6.25rem;
+    transition: all .2s ease-in-out;
     &.is-stuck {
+        height: 3.75rem;
         box-shadow: 0px 5px 8px 0px $black-26;
+        transition: all .2s ease-in-out !important;
+        // .top-bar-left {
+        //     height: auto;
+        //     .top-bar-title {
+        //         height: auto;
+        //         .logo {
+        //             height: 50%;
+        //             img {
+        //                 width: 50%;
+        //             }
+        //         }
+        //     }
+        // }
+        .top-bar-right {
+            .global-nav {
+                padding: 0;
+                height: 0;
+                font-size: 0;
+                line-height: 0;
+                transition: all .2s ease-in-out;
+            }
+            .main-menu {
+                height: 100%;
+                transition: all .2s ease-in-out;
+            }
+        }
     }
     .top-bar-left {
         background-color: $michigan-blue;
         overflow: hidden;
+        transition: all .2s ease-in-out;
         .top-bar-title {
+            transition: all .2s ease-in-out;
             .logo {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
                 padding: .85rem;
+                transition: all .2s ease-in-out;
                 img {
+                    transition: all .2s ease-in-out;
                     @include breakpoint(xxlarge) {
                         width: 70%;
                         margin: 0 auto;
@@ -43,6 +80,8 @@
             font-weight: 700;
             padding: .25rem 0;
             background-color: darken($michigan-blue, 7%);
+            height: auto;
+            transition: all .2s ease-in-out;
             .global-items {
                 background-color: transparent;
                 li {
@@ -75,6 +114,7 @@
                 height: 100%;
                 font-family: $super-header-font-family;
                 text-transform: uppercase;
+                background-color: transparent;
                 li {
                     a {
                         display: flex;
@@ -103,6 +143,7 @@
                             }
                         }
                         .submenu {
+                            padding: .7rem 0;
                             a {
                                 color: $white;
                             }
@@ -125,7 +166,6 @@
                                 font-size: .95rem;
                                 font-family: $header-font-family;
                                 text-transform: none;
-                                padding: .7rem 1.125rem;
                                 display: block;
                                 line-height: 1.2;
                                 background-color: $black-100;

@@ -52,8 +52,9 @@
   <body>
     <div class="off-canvas-wrapper">        
         {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        <a class="show-on-focus" href="#mainContent">Skip to Content</a>
         {{> navigation-alt}}
-        <div class="off-canvas-content" data-off-canvas-content>
+        <div class="off-canvas-content" data-off-canvas-content id="mainContent">
         {{> body}}
         {{> footer}}
         </div>

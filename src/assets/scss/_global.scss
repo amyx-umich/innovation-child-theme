@@ -4,12 +4,7 @@ html {
 
 body {
     overflow-x: hidden;
-    #skip {
-        display: none;
-        &:focus {
-            display: block;
-        }
-    }
+    
     .main-content {
         // padding-top: 4rem;
         @include breakpoint(medium only) {

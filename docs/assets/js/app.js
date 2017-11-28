@@ -22275,6 +22275,16 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Navigation dropdown closes when scrolling
+(0, _jquery2.default)(window).scroll(function () {
+  var scroll = (0, _jquery2.default)(window).scrollTop();
+  if (scroll >= 100) {
+    (0, _jquery2.default)('.global-nav').addClass('shrink');
+  } else {
+    (0, _jquery2.default)('.global-nav').removeClass('shrink');
+  }
+});
+
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
