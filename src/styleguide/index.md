@@ -62,7 +62,7 @@ These buttons are used for less important, secondary actions on a page.
 <a href="#" class="secondary tiny button">Tiny button</a>
 ```
 
---
+---
 
 ### Other Button Colors
 
@@ -305,7 +305,7 @@ These buttons are used for less important, secondary actions on a page.
 </div>
 
 
---
+---
 
 ### Contrast
 
