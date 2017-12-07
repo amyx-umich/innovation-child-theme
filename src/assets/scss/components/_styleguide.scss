@@ -11,6 +11,19 @@
     .title {
         margin-bottom: 3rem;
     }
+
+    .anchor-floater {
+        opacity: .75;
+        transition: opacity .2s ease-in-out;
+        float: right;
+        &:hover {
+            opacity: 1;
+        }
+        .fa {
+            font-size: 1.5rem;
+        }
+    }
+
     .lead {
         font-family: $header-font-family;
         a {
