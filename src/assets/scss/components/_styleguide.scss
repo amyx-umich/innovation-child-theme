@@ -28,11 +28,13 @@
         font-family: $header-font-family;
         a {
             color: $tappan-red;
-            border-bottom: 2px solid transparent;
+            background-color: rgba($tappan-red, 0);
+            border-bottom: 1px solid $tappan-red;
             transition: all .2s ease-in-out;
             &:hover {
                 color: $tappan-red;
-                border-bottom: 2px solid $tappan-red;
+                background-color: rgba($michigan-maize, .15);
+                border-bottom: 1px solid $tappan-red;
             }
         }
         a[target="_blank"] {
@@ -102,6 +104,22 @@
         p {
             font-size: 1.125rem;
         }
+        #accessibility {
+            li {
+                margin-bottom: .5rem;
+                a {
+                    color: $tappan-red;
+                    background-color: rgba($tappan-red, 0);
+                    border-bottom: 1px solid $tappan-red;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        color: $tappan-red;
+                        background-color: rgba($michigan-maize, .15);
+                        border-bottom: 1px solid $tappan-red;
+                    }
+                }
+            }
+        }
         #callouts {
             a {
                 font-family: $header-font-family;
@@ -109,19 +127,21 @@
                 border-bottom: 2px solid transparent;
                 transition: all .2s ease-in-out;
                 &:hover {
-                    color: $tappan-red;
-                    border-bottom: 2px solid $tappan-red;
+                    color: $black;
+                    border-bottom: 2px solid transparent;
                 }
             }
         }
         #links {
             a {
                 color: $tappan-red;
-                border-bottom: 2px solid transparent;
+                background-color: rgba($tappan-red, 0);
+                border-bottom: 1px solid $tappan-red;
                 transition: all .2s ease-in-out;
                 &:hover {
                     color: $tappan-red;
-                    border-bottom: 2px solid $tappan-red;
+                    background-color: rgba($michigan-maize, .15);
+                    border-bottom: 1px solid $tappan-red;
                 }
             }
             a[target="_blank"] {
@@ -137,11 +157,13 @@
         #typography {
             a {
                 color: $tappan-red;
-                border-bottom: 2px solid transparent;
+                background-color: rgba($tappan-red, 0);
+                border-bottom: 1px solid $tappan-red;
                 transition: all .2s ease-in-out;
                 &:hover {
                     color: $tappan-red;
-                    border-bottom: 2px solid $tappan-red;
+                    background-color: rgba($michigan-maize, .15);
+                    border-bottom: 1px solid $tappan-red;
                 }
             }
             .hed {
@@ -180,11 +202,13 @@
             .lead {
                 a {
                     color: $tappan-red;
-                    border-bottom: 2px solid transparent;
+                    background-color: rgba($tappan-red, 0);
+                    border-bottom: 1px solid $tappan-red;
                     transition: all .2s ease-in-out;
                     &:hover {
                         color: $tappan-red;
-                        border-bottom: 2px solid $tappan-red;
+                        background-color: rgba($michigan-maize, .15);
+                        border-bottom: 1px solid $tappan-red;
                     }
                 }
             }
