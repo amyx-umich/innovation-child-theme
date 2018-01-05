@@ -564,7 +564,7 @@ We're currently offering a limited number, but will add more on an as-needed bas
 
 # Images
 
-<p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1.</p>
+<p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1. For information on image file naming conventions and other image best practices, <a href="https://docs.google.com/document/d/1IMU9ft-sKw3gyefLggQ7nIzNRFOCv08_vUyWSpJkua0/edit" target="_blank">see this document</a>.</p>
 
 
 ### Large featured image (for sliders or pages)
